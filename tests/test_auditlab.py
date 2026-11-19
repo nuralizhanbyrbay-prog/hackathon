@@ -76,6 +76,25 @@ class AuditTests(unittest.TestCase):
     def test_submit_last_step(self):
         s=Session();o,_=s.reset(1,max_steps=1)
         self.assertTrue(s.step({'action':'submit','findings':{'episode_id':o['manifest']['episode_id'],'findings':[]}})[2])
+    def test_malformed_submit_terminates(self):
+        s=Session();s.reset(7)
+        o,r,t,tr,i=s.step({'action':'submit'})
+        self.assertTrue(t);self.assertFalse(tr);self.assertEqual(r,-1)
+    def test_get_document_and_record(self):
+        s=Session();s.reset(7)
+        row=s.episode['tables']['invoices'][0]
+        self.assertEqual(s.step({'action':'get_document','doc_id':row['doc_id']})[0]['result'],row)
+        self.assertEqual(s.step({'action':'get_record','table':'invoices','id':row['doc_id']})[0]['result'],row)
+    def test_complete_episode_replay(self):
+        actions=[{'action':'list_records','table':'ledger','limit':50}, {'action':'calculator','expression':'100 / 3'},
+                 {'action':'submit','findings':self.good}]
+        a=Session();b=Session();self.assertEqual(a.reset(7),b.reset(7))
+        for action in actions:self.assertEqual(a.step(action),b.step(action))
+    def test_maximum_supported_size(self):
+        with AuditEnv() as e:
+            o,_=e.reset(9,{'invoices':200})
+            run_policy('reconcile',o,e.step)
+            self.assertEqual(e.report()['F1'],1);self.assertLess(e.report()['steps'],100)
     def test_second_submit(self):
         s=Session();s.reset(7)
         first=s.step({'action':'submit','findings':self.good});report=copy.deepcopy(s.report)

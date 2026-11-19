@@ -1,0 +1,162 @@
+AUDITLAB / FINTECH / synthetic financial audit
+{
+  "task": "Audit this synthetic company. Submit evidence-backed discrepancies.",
+  "manifest": {
+    "schema_version": "1.0.0",
+    "episode_id": "ep-bfba42397b1b6726",
+    "company": "Synthetic Alma",
+    "base_currency": "KZT",
+    "period_start": "2026-10-01T00:00:00+05:00",
+    "period_end": "2026-11-01T00:00:00+05:00",
+    "timezone": "+05:00",
+    "record_counts": {
+      "ledger": 269,
+      "invoices": 60,
+      "payments": 72,
+      "fx": 96,
+      "policy": 1
+    },
+    "document_count": 133,
+    "rounding": "ROUND_HALF_EVEN"
+  },
+  "policy": {
+    "doc_id": "policy",
+    "fx_date": "payment_local_date",
+    "period_rule": "service_at",
+    "period_interval": "[start,end)",
+    "rounding": "ROUND_HALF_EVEN",
+    "amount_tolerance_minor": 0,
+    "currency_exponents": {
+      "KZT": 2,
+      "USD": 2,
+      "EUR": 2
+    },
+    "allocation_rule": "sum signed invoice_refs per payment; no guessing null refs"
+  },
+  "remaining_steps": 100
+}
+step=01 action=list_records remaining=99 reward=0.000
+step=02 action=list_records remaining=98 reward=0.000
+step=03 action=list_records remaining=97 reward=0.000
+step=04 action=list_records remaining=96 reward=0.000
+step=05 action=list_records remaining=95 reward=0.000
+step=06 action=list_records remaining=94 reward=0.000
+step=07 action=list_records remaining=93 reward=0.000
+step=08 action=list_records remaining=92 reward=0.000
+step=09 action=list_records remaining=91 reward=0.000
+step=10 action=list_records remaining=90 reward=0.000
+step=11 action=list_records remaining=89 reward=0.000
+step=12 action=list_records remaining=88 reward=0.000
+step=13 action=list_records remaining=87 reward=0.000
+step=14 action=submit remaining=86 reward=0.974
+EVALUATOR REPORT / after episode
+{
+  "P": 1.0,
+  "R": 1.0,
+  "F1": 1.0,
+  "TP": 6,
+  "FP": 0,
+  "FN": 0,
+  "invalid": false,
+  "reward": 0.974,
+  "inspection_steps": 13,
+  "steps": 14,
+  "seconds": 0.031000000017229468,
+  "truncated": false,
+  "answer": {
+    "episode_id": "ep-bfba42397b1b6726",
+    "findings": [
+      {
+        "type": "period_cutoff",
+        "affected_ids": [
+          "inv-db4cbf5f85e2"
+        ],
+        "claimed_amount_minor": 32317920,
+        "currency": "KZT",
+        "evidence_ids": [
+          "doc-31d018bee074",
+          "policy",
+          "row-0397ea9e7ab5"
+        ],
+        "explanation": "Reconciled source documents, policy and ledger postings."
+      },
+      {
+        "type": "period_cutoff",
+        "affected_ids": [
+          "inv-b01a9f478926"
+        ],
+        "claimed_amount_minor": 13264445,
+        "currency": "KZT",
+        "evidence_ids": [
+          "doc-add4b6fd8e22",
+          "policy",
+          "row-a41f341d057a"
+        ],
+        "explanation": "Reconciled source documents, policy and ledger postings."
+      },
+      {
+        "type": "duplicate_invoice",
+        "affected_ids": [
+          "inv-e5e6ddd284e8"
+        ],
+        "claimed_amount_minor": 23153,
+        "currency": "KZT",
+        "evidence_ids": [
+          "doc-6961038d04fb",
+          "row-0eab03f33851",
+          "row-bc2409963085",
+          "row-d3249f067c31",
+          "row-f7266a1e860d"
+        ],
+        "explanation": "Reconciled source documents, policy and ledger postings."
+      },
+      {
+        "type": "payment_allocation",
+        "affected_ids": [
+          "inv-820e6dd229a4",
+          "pay-b765dfb1dd4e"
+        ],
+        "claimed_amount_minor": 13101769,
+        "currency": "KZT",
+        "evidence_ids": [
+          "doc-c699454b78f8",
+          "fx-02f0731c9452",
+          "policy",
+          "row-adb18f133eed",
+          "row-d9042b7a3cf0"
+        ],
+        "explanation": "Reconciled source documents, policy and ledger postings."
+      },
+      {
+        "type": "fx_conversion",
+        "affected_ids": [
+          "pay-eea38bed5b65"
+        ],
+        "claimed_amount_minor": 1615896,
+        "currency": "KZT",
+        "evidence_ids": [
+          "doc-94a47383d496",
+          "fx-b15142969a50",
+          "policy",
+          "row-1543d61b5e08"
+        ],
+        "explanation": "Reconciled source documents, policy and ledger postings."
+      },
+      {
+        "type": "fx_conversion",
+        "affected_ids": [
+          "pay-e0df6fce4808"
+        ],
+        "claimed_amount_minor": 260050,
+        "currency": "KZT",
+        "evidence_ids": [
+          "doc-b715bc42513d",
+          "fx-e2617b6bc3c6",
+          "policy",
+          "row-480b060ecc8a"
+        ],
+        "explanation": "Reconciled source documents, policy and ledger postings."
+      }
+    ]
+  }
+}

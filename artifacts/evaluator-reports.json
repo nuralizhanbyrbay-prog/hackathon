@@ -32,7 +32,7 @@
     "reward": 0.978,
     "inspection_steps": 11,
     "steps": 12,
-    "seconds": 0.01600000000325963,
+    "seconds": 0.0,
     "truncated": false,
     "answer": {
       "episode_id": "ep-96c5008d2f66db60",
@@ -52,7 +52,7 @@
     "reward": -1.0,
     "inspection_steps": 11,
     "steps": 12,
-    "seconds": 0.014999999955762178,
+    "seconds": 0.01600000000325963,
     "truncated": false,
     "answer": {
       "episode_id": "ep-96c5008d2f66db60",
@@ -473,7 +473,7 @@
     "reward": 0.976,
     "inspection_steps": 12,
     "steps": 13,
-    "seconds": 0.014999999955762178,
+    "seconds": 0.015000000013969839,
     "truncated": false,
     "answer": {
       "episode_id": "ep-96ebe5e16bff9509",
@@ -493,7 +493,7 @@
     "reward": -1.0,
     "inspection_steps": 12,
     "steps": 13,
-    "seconds": 0.01600000000325963,
+    "seconds": 0.014999999955762178,
     "truncated": false,
     "answer": {
       "episode_id": "ep-96ebe5e16bff9509",
@@ -894,7 +894,7 @@
     "reward": 0.984,
     "inspection_steps": 8,
     "steps": 9,
-    "seconds": 0.014999999955762178,
+    "seconds": 0.0,
     "truncated": false,
     "answer": {
       "episode_id": "ep-181c2e90c47ec5cc",
@@ -934,7 +934,7 @@
     "reward": -1.0,
     "inspection_steps": 12,
     "steps": 13,
-    "seconds": 0.015000000013969839,
+    "seconds": 0.01600000000325963,
     "truncated": false,
     "answer": {
       "episode_id": "ep-181c2e90c47ec5cc",
@@ -1355,7 +1355,7 @@
     "reward": 0.974,
     "inspection_steps": 13,
     "steps": 14,
-    "seconds": 0.015000000013969839,
+    "seconds": 0.030999999959021807,
     "truncated": false,
     "answer": {
       "episode_id": "ep-aa86af935a4703eb",
@@ -1375,7 +1375,7 @@
     "reward": -1.0,
     "inspection_steps": 13,
     "steps": 14,
-    "seconds": 0.03200000000651926,
+    "seconds": 0.031000000017229468,
     "truncated": false,
     "answer": {
       "episode_id": "ep-aa86af935a4703eb",
@@ -1776,7 +1776,7 @@
     "reward": 0.984,
     "inspection_steps": 8,
     "steps": 9,
-    "seconds": 0.0,
+    "seconds": 0.015000000013969839,
     "truncated": false,
     "answer": {
       "episode_id": "ep-e6918cd4736d920c",
@@ -1816,7 +1816,7 @@
     "reward": -1.0,
     "inspection_steps": 13,
     "steps": 14,
-    "seconds": 0.01600000000325963,
+    "seconds": 0.015000000013969839,
     "truncated": false,
     "answer": {
       "episode_id": "ep-e6918cd4736d920c",
@@ -2217,7 +2217,7 @@
     "reward": -1.0,
     "inspection_steps": 8,
     "steps": 9,
-    "seconds": 0.015000000013969839,
+    "seconds": 0.0,
     "truncated": false,
     "answer": {
       "episode_id": "ep-571e360765376ef8",
@@ -2237,7 +2237,7 @@
     "reward": 0.974,
     "inspection_steps": 13,
     "steps": 14,
-    "seconds": 0.030999999959021807,
+    "seconds": 0.01600000000325963,
     "truncated": false,
     "answer": {
       "episode_id": "ep-571e360765376ef8",
@@ -2351,7 +2351,7 @@
     "reward": -1.0,
     "inspection_steps": 13,
     "steps": 14,
-    "seconds": 0.03200000000651926,
+    "seconds": 0.01600000000325963,
     "truncated": false,
     "answer": {
       "episode_id": "ep-571e360765376ef8",
@@ -2866,7 +2866,7 @@
     "reward": 0.972,
     "inspection_steps": 14,
     "steps": 15,
-    "seconds": 0.015000000013969839,
+    "seconds": 0.01600000000325963,
     "truncated": false,
     "answer": {
       "episode_id": "ep-38651ad8c5a1ac70",
@@ -2978,7 +2978,7 @@
     "reward": -1.0,
     "inspection_steps": 14,
     "steps": 15,
-    "seconds": 0.031000000017229468,
+    "seconds": 0.01600000000325963,
     "truncated": false,
     "answer": {
       "episode_id": "ep-38651ad8c5a1ac70",
@@ -3491,7 +3491,7 @@
     "reward": 0.972,
     "inspection_steps": 14,
     "steps": 15,
-    "seconds": 0.03200000000651926,
+    "seconds": 0.015000000013969839,
     "truncated": false,
     "answer": {
       "episode_id": "ep-e96cca0f92b3c3d5",
@@ -3605,7 +3605,7 @@
     "reward": -1.0,
     "inspection_steps": 14,
     "steps": 15,
-    "seconds": 0.01600000000325963,
+    "seconds": 0.030999999959021807,
     "truncated": false,
     "answer": {
       "episode_id": "ep-e96cca0f92b3c3d5",
@@ -4120,7 +4120,7 @@
     "reward": 0.972,
     "inspection_steps": 14,
     "steps": 15,
-    "seconds": 0.030999999959021807,
+    "seconds": 0.01600000000325963,
     "truncated": false,
     "answer": {
       "episode_id": "ep-477c41ba50381854",
@@ -4232,7 +4232,7 @@
     "reward": -1.0,
     "inspection_steps": 14,
     "steps": 15,
-    "seconds": 0.03200000000651926,
+    "seconds": 0.01600000000325963,
     "truncated": false,
     "answer": {
       "episode_id": "ep-477c41ba50381854",
@@ -4745,7 +4745,7 @@
     "reward": 0.972,
     "inspection_steps": 14,
     "steps": 15,
-    "seconds": 0.031000000017229468,
+    "seconds": 0.03200000000651926,
     "truncated": false,
     "answer": {
       "episode_id": "ep-17042aa82e88dbfc",
@@ -4859,7 +4859,7 @@
     "reward": -1.0,
     "inspection_steps": 14,
     "steps": 15,
-    "seconds": 0.030999999959021807,
+    "seconds": 0.01600000000325963,
     "truncated": false,
     "answer": {
       "episode_id": "ep-17042aa82e88dbfc",
@@ -5354,7 +5354,7 @@
     "reward": -1.0,
     "inspection_steps": 8,
     "steps": 9,
-    "seconds": 0.015000000013969839,
+    "seconds": 0.0,
     "truncated": false,
     "answer": {
       "episode_id": "ep-e1d94eaf84f866bc",
@@ -5374,7 +5374,7 @@
     "reward": 0.97,
     "inspection_steps": 15,
     "steps": 16,
-    "seconds": 0.03200000000651926,
+    "seconds": 0.031000000017229468,
     "truncated": false,
     "answer": {
       "episode_id": "ep-e1d94eaf84f866bc",
@@ -5921,7 +5921,7 @@
     "reward": -1.0,
     "inspection_steps": 8,
     "steps": 9,
-    "seconds": 0.01600000000325963,
+    "seconds": 0.0,
     "truncated": false,
     "answer": {
       "episode_id": "ep-c3cfe7085cbd8bc0",
@@ -5941,7 +5941,7 @@
     "reward": 0.97,
     "inspection_steps": 15,
     "steps": 16,
-    "seconds": 0.03200000000651926,
+    "seconds": 0.031000000017229468,
     "truncated": false,
     "answer": {
       "episode_id": "ep-c3cfe7085cbd8bc0",
@@ -6024,7 +6024,7 @@
     "reward": -1.0,
     "inspection_steps": 15,
     "steps": 16,
-    "seconds": 0.030999999959021807,
+    "seconds": 0.015000000013969839,
     "truncated": false,
     "answer": {
       "episode_id": "ep-c3cfe7085cbd8bc0",
@@ -6488,7 +6488,7 @@
     "reward": -1.0,
     "inspection_steps": 8,
     "steps": 9,
-    "seconds": 0.0,
+    "seconds": 0.01600000000325963,
     "truncated": false,
     "answer": {
       "episode_id": "ep-9474b55edcdbe1ed",
@@ -6508,7 +6508,7 @@
     "reward": 0.968,
     "inspection_steps": 16,
     "steps": 17,
-    "seconds": 0.03200000000651926,
+    "seconds": 0.01600000000325963,
     "truncated": false,
     "answer": {
       "episode_id": "ep-9474b55edcdbe1ed",
@@ -6591,7 +6591,7 @@
     "reward": -1.0,
     "inspection_steps": 16,
     "steps": 17,
-    "seconds": 0.030999999959021807,
+    "seconds": 0.031000000017229468,
     "truncated": false,
     "answer": {
       "episode_id": "ep-9474b55edcdbe1ed",
@@ -7075,7 +7075,7 @@
     "reward": 0.968,
     "inspection_steps": 16,
     "steps": 17,
-    "seconds": 0.03200000000651926,
+    "seconds": 0.030999999959021807,
     "truncated": false,
     "answer": {
       "episode_id": "ep-e823a0306762068d",
@@ -7158,7 +7158,7 @@
     "reward": -1.0,
     "inspection_steps": 16,
     "steps": 17,
-    "seconds": 0.030999999959021807,
+    "seconds": 0.031000000017229468,
     "truncated": false,
     "answer": {
       "episode_id": "ep-e823a0306762068d",
@@ -7622,7 +7622,7 @@
     "reward": -1.0,
     "inspection_steps": 8,
     "steps": 9,
-    "seconds": 0.015000000013969839,
+    "seconds": 0.0,
     "truncated": false,
     "answer": {
       "episode_id": "ep-3469919c14166a8a",
@@ -7642,7 +7642,7 @@
     "reward": 0.966,
     "inspection_steps": 17,
     "steps": 18,
-    "seconds": 0.031000000017229468,
+    "seconds": 0.030999999959021807,
     "truncated": false,
     "answer": {
       "episode_id": "ep-3469919c14166a8a",
@@ -7725,7 +7725,7 @@
     "reward": -1.0,
     "inspection_steps": 17,
     "steps": 18,
-    "seconds": 0.030999999959021807,
+    "seconds": 0.031000000017229468,
     "truncated": false,
     "answer": {
       "episode_id": "ep-3469919c14166a8a",
@@ -8189,7 +8189,7 @@
     "reward": -1.0,
     "inspection_steps": 8,
     "steps": 9,
-    "seconds": 0.015000000013969839,
+    "seconds": 0.0,
     "truncated": false,
     "answer": {
       "episode_id": "ep-b79c25954557b5ea",
@@ -8209,7 +8209,7 @@
     "reward": 0.966,
     "inspection_steps": 17,
     "steps": 18,
-    "seconds": 0.046999999962281436,
+    "seconds": 0.030999999959021807,
     "truncated": false,
     "answer": {
       "episode_id": "ep-b79c25954557b5ea",
@@ -8292,7 +8292,7 @@
     "reward": -1.0,
     "inspection_steps": 17,
     "steps": 18,
-    "seconds": 0.03200000000651926,
+    "seconds": 0.031000000017229468,
     "truncated": false,
     "answer": {
       "episode_id": "ep-b79c25954557b5ea",
@@ -8776,7 +8776,7 @@
     "reward": 0.966,
     "inspection_steps": 17,
     "steps": 18,
-    "seconds": 0.031000000017229468,
+    "seconds": 0.030999999959021807,
     "truncated": false,
     "answer": {
       "episode_id": "ep-43b330d9e176594e",
@@ -9323,7 +9323,7 @@
     "reward": -1.0,
     "inspection_steps": 8,
     "steps": 9,
-    "seconds": 0.015000000013969839,
+    "seconds": 0.0,
     "truncated": false,
     "answer": {
       "episode_id": "ep-ece7b93f5ac79470",
@@ -9343,7 +9343,7 @@
     "reward": 0.964,
     "inspection_steps": 18,
     "steps": 19,
-    "seconds": 0.031000000017229468,
+    "seconds": 0.0470000000204891,
     "truncated": false,
     "answer": {
       "episode_id": "ep-ece7b93f5ac79470",
@@ -9426,7 +9426,7 @@
     "reward": -1.0,
     "inspection_steps": 18,
     "steps": 19,
-    "seconds": 0.046999999962281436,
+    "seconds": 0.031000000017229468,
     "truncated": false,
     "answer": {
       "episode_id": "ep-ece7b93f5ac79470",
@@ -9890,7 +9890,7 @@
     "reward": -1.0,
     "inspection_steps": 8,
     "steps": 9,
-    "seconds": 0.01600000000325963,
+    "seconds": 0.0,
     "truncated": false,
     "answer": {
       "episode_id": "ep-a05297065321492a",
@@ -9910,7 +9910,7 @@
     "reward": 0.962,
     "inspection_steps": 19,
     "steps": 20,
-    "seconds": 0.0470000000204891,
+    "seconds": 0.031000000017229468,
     "truncated": false,
     "answer": {
       "episode_id": "ep-a05297065321492a",
@@ -9993,7 +9993,7 @@
     "reward": -1.0,
     "inspection_steps": 19,
     "steps": 20,
-    "seconds": 0.0470000000204891,
+    "seconds": 0.030999999959021807,
     "truncated": false,
     "answer": {
       "episode_id": "ep-a05297065321492a",
@@ -10457,7 +10457,7 @@
     "reward": -1.0,
     "inspection_steps": 8,
     "steps": 9,
-    "seconds": 0.0,
+    "seconds": 0.015000000013969839,
     "truncated": false,
     "answer": {
       "episode_id": "ep-c6ce1ec98f2fde7d",
@@ -10477,7 +10477,7 @@
     "reward": 0.962,
     "inspection_steps": 19,
     "steps": 20,
-    "seconds": 0.0470000000204891,
+    "seconds": 0.031000000017229468,
     "truncated": false,
     "answer": {
       "episode_id": "ep-c6ce1ec98f2fde7d",

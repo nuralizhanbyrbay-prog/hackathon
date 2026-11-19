@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AuditLab v1.0.0 public record definitions",
+  "$defs": {
+    "id": {"type":"string","minLength":1},
+    "nullable_id": {"type":["string","null"]},
+    "timestamp": {"type":"string","format":"date-time"},
+    "money": {"type":"integer","description":"Signed minor units; credit notes and reversals may be negative."},
+    "currency": {"enum":["KZT","USD","EUR"]},
+    "ledger": {
+      "type":"object","required":["row_id","timestamp","account","debit_minor","credit_minor","currency","entity_id","invoice_id","payment_id"],
+      "properties": {
+        "row_id":{"$ref":"#/$defs/id"},"timestamp":{"$ref":"#/$defs/timestamp"},
+        "account":{"enum":["receivable","revenue","bank","unallocated","fx_adjustment"]},
+        "debit_minor":{"$ref":"#/$defs/money"},"credit_minor":{"$ref":"#/$defs/money"},
+        "currency":{"$ref":"#/$defs/currency"},"entity_id":{"$ref":"#/$defs/nullable_id"},
+        "invoice_id":{"$ref":"#/$defs/nullable_id"},"payment_id":{"$ref":"#/$defs/nullable_id"}
+      }
+    },
+    "invoice": {
+      "type":"object","required":["doc_id","invoice_id","entity_id","issued_at","due_at","service_at","currency","total_minor","line_items"],
+      "properties": {
+        "doc_id":{"$ref":"#/$defs/id"},"invoice_id":{"$ref":"#/$defs/id"},"entity_id":{"$ref":"#/$defs/nullable_id"},
+        "issued_at":{"$ref":"#/$defs/timestamp"},"due_at":{"$ref":"#/$defs/timestamp"},"service_at":{"$ref":"#/$defs/timestamp"},
+        "currency":{"$ref":"#/$defs/currency"},"total_minor":{"$ref":"#/$defs/money"},"supplier_name":{"type":"string"},
+        "line_items":{"type":"array","minItems":1,"items":{"type":"object","required":["description","total_minor"],"properties":{"description":{"type":"string"},"total_minor":{"$ref":"#/$defs/money"}}}}
+      }
+    },
+    "payment": {
+      "type":"object","required":["doc_id","payment_id","timestamp","currency","amount_minor","invoice_refs"],
+      "properties": {
+        "doc_id":{"$ref":"#/$defs/id"},"payment_id":{"$ref":"#/$defs/id"},"timestamp":{"$ref":"#/$defs/timestamp"},
+        "currency":{"$ref":"#/$defs/currency"},"amount_minor":{"$ref":"#/$defs/money"},
+        "invoice_refs":{"type":"array","items":{"type":"object","required":["invoice_id","amount_minor"],"properties":{"invoice_id":{"$ref":"#/$defs/nullable_id"},"amount_minor":{"$ref":"#/$defs/money"}}}}
+      }
+    },
+    "fx": {
+      "type":"object","required":["row_id","date","source_currency","target_currency","rate"],
+      "properties":{"row_id":{"$ref":"#/$defs/id"},"date":{"type":"string","format":"date"},"source_currency":{"$ref":"#/$defs/currency"},"target_currency":{"$ref":"#/$defs/currency"},"rate":{"type":"string","pattern":"^[0-9]+(\\.[0-9]+)?$"}}
+    },
+    "manifest": {
+      "type":"object","required":["schema_version","episode_id","base_currency","period_start","period_end","timezone","record_counts","document_count","rounding"],
+      "properties":{"schema_version":{"const":"1.0.0"},"episode_id":{"$ref":"#/$defs/id"},"base_currency":{"const":"KZT"},"period_start":{"$ref":"#/$defs/timestamp"},"period_end":{"$ref":"#/$defs/timestamp"},"timezone":{"type":"string"},"record_counts":{"type":"object","additionalProperties":{"type":"integer","minimum":0}},"document_count":{"type":"integer","minimum":0},"rounding":{"const":"ROUND_HALF_EVEN"}}
+    }
+  }
+}
