@@ -1,0 +1,14 @@
+{
+  "doc_id": "policy",
+  "fx_date": "payment_local_date",
+  "period_rule": "service_at",
+  "period_interval": "[start,end)",
+  "rounding": "ROUND_HALF_EVEN",
+  "amount_tolerance_minor": 0,
+  "currency_exponents": {
+    "KZT": 2,
+    "USD": 2,
+    "EUR": 2
+  },
+  "allocation_rule": "sum signed invoice_refs per payment; no guessing null refs"
+}

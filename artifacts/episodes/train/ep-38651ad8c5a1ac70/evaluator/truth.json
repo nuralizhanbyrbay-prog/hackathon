@@ -1,0 +1,105 @@
+[
+  {
+    "issue_id": "issue-8751cb668139",
+    "type": "duplicate_invoice",
+    "affected_ids": [
+      "inv-91050b795c62"
+    ],
+    "expected_amount_minor": 40547,
+    "currency": "KZT",
+    "evidence_sets": [
+      [
+        "doc-68fbab34252d",
+        "row-368a93c16447",
+        "row-37c4c7d6af4e",
+        "row-4e8168478fd0",
+        "row-f76b6297f303"
+      ]
+    ]
+  },
+  {
+    "issue_id": "issue-8ed1c39b823b",
+    "type": "payment_allocation",
+    "affected_ids": [
+      "inv-33a786087f76",
+      "pay-84f0882ef236"
+    ],
+    "expected_amount_minor": 3333,
+    "currency": "KZT",
+    "evidence_sets": [
+      [
+        "doc-a7a8f9c36425",
+        "fx-645a2ea8bdea",
+        "policy",
+        "row-26102804787f",
+        "row-60b937760feb"
+      ]
+    ]
+  },
+  {
+    "issue_id": "issue-1b42dd3f2507",
+    "type": "fx_conversion",
+    "affected_ids": [
+      "pay-0d16bca7393c"
+    ],
+    "expected_amount_minor": 2159472,
+    "currency": "KZT",
+    "evidence_sets": [
+      [
+        "doc-52387a337349",
+        "fx-61e2c480c6cc",
+        "policy",
+        "row-b082e0786b7f"
+      ]
+    ]
+  },
+  {
+    "issue_id": "issue-026b75cdc9a1",
+    "type": "fx_conversion",
+    "affected_ids": [
+      "pay-b235011815dc"
+    ],
+    "expected_amount_minor": 554252,
+    "currency": "KZT",
+    "evidence_sets": [
+      [
+        "doc-ab7589e14b3b",
+        "fx-009b4eb832d5",
+        "policy",
+        "row-6534f79e7049"
+      ]
+    ]
+  },
+  {
+    "issue_id": "issue-0e2e11375d1f",
+    "type": "period_cutoff",
+    "affected_ids": [
+      "inv-ee7a0f104752"
+    ],
+    "expected_amount_minor": 43189440,
+    "currency": "KZT",
+    "evidence_sets": [
+      [
+        "doc-2c50499cbb52",
+        "policy",
+        "row-425722272fe9"
+      ]
+    ]
+  },
+  {
+    "issue_id": "issue-511b8ee48f25",
+    "type": "period_cutoff",
+    "affected_ids": [
+      "inv-c67a75b70b42"
+    ],
+    "expected_amount_minor": 36736706,
+    "currency": "KZT",
+    "evidence_sets": [
+      [
+        "doc-9287b418e37a",
+        "policy",
+        "row-d20b5893d88e"
+      ]
+    ]
+  }
+]

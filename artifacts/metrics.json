@@ -1,0 +1,47 @@
+{
+  "version": "1.0.0",
+  "python": "3.12.14",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "unit_tests": 31,
+  "episodes": 20,
+  "clean_episodes": 5,
+  "interaction_episodes": 5,
+  "metamorphic_pairs": 20,
+  "elapsed_seconds": 7.15972039999906,
+  "policies": {
+    "random": {
+      "P": 0.0,
+      "R": 0.0,
+      "F1": 0.25,
+      "reward": -0.504,
+      "steps": 9.0,
+      "seconds": 0.006100000001606531
+    },
+    "reconcile": {
+      "P": 0.75,
+      "R": 0.75,
+      "F1": 1.0,
+      "reward": 0.9701000000000001,
+      "steps": 15.95,
+      "seconds": 0.02900000000081491
+    },
+    "flag_all": {
+      "P": 0.0,
+      "R": 0.0,
+      "F1": 0.0,
+      "reward": -1.0,
+      "steps": 15.95,
+      "seconds": 0.0289499999867985
+    },
+    "oracle": {
+      "P": 0.75,
+      "R": 0.75,
+      "F1": 1.0,
+      "reward": 1.0,
+      "steps": 1.0,
+      "seconds": 0.0
+    }
+  },
+  "evaluation_rewards_hidden_in_trajectories": true,
+  "note": "Development benchmark, not organizer-hidden results; no model training claim."
+}

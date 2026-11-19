@@ -1,0 +1,15 @@
+name: Offline verification
+on: [push, pull_request, workflow_dispatch]
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m auditlab.verify
+      - uses: actions/upload-artifact@v4
+        with:
+          name: auditlab-results
+          path: artifacts/

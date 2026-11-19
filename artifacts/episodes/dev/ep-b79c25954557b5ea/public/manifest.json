@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "ep-b79c25954557b5ea",
+  "company": "Synthetic Alma",
+  "base_currency": "KZT",
+  "period_start": "2026-10-01T00:00:00+09:00",
+  "period_end": "2026-11-01T00:00:00+09:00",
+  "timezone": "+09:00",
+  "record_counts": {
+    "ledger": 422,
+    "invoices": 95,
+    "payments": 114,
+    "fx": 96,
+    "policy": 1
+  },
+  "document_count": 210,
+  "rounding": "ROUND_HALF_EVEN"
+}

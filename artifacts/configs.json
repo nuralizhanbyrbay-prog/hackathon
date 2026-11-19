@@ -1,0 +1,248 @@
+{
+  "train_seeds": [
+    1000,
+    1001,
+    1002,
+    1003,
+    1004,
+    1005,
+    1006,
+    1007,
+    1008,
+    1009
+  ],
+  "dev_seeds": [
+    1010,
+    1011,
+    1012,
+    1013,
+    1014,
+    1015,
+    1016,
+    1017,
+    1018,
+    1019
+  ],
+  "configs": [
+    {
+      "invoices": 50,
+      "errors": {
+        "duplicate_invoice": 0,
+        "payment_allocation": 0,
+        "fx_conversion": 0,
+        "period_cutoff": 0
+      },
+      "interaction": null,
+      "timezone": "+05:00"
+    },
+    {
+      "invoices": 53,
+      "errors": {
+        "duplicate_invoice": 0,
+        "payment_allocation": 0,
+        "fx_conversion": 0,
+        "period_cutoff": 0
+      },
+      "interaction": null,
+      "timezone": "+00:00"
+    },
+    {
+      "invoices": 56,
+      "errors": {
+        "duplicate_invoice": 0,
+        "payment_allocation": 0,
+        "fx_conversion": 0,
+        "period_cutoff": 0
+      },
+      "interaction": null,
+      "timezone": "-04:00"
+    },
+    {
+      "invoices": 59,
+      "errors": {
+        "duplicate_invoice": 0,
+        "payment_allocation": 0,
+        "fx_conversion": 0,
+        "period_cutoff": 0
+      },
+      "interaction": null,
+      "timezone": "+09:00"
+    },
+    {
+      "invoices": 62,
+      "errors": {
+        "duplicate_invoice": 0,
+        "payment_allocation": 0,
+        "fx_conversion": 0,
+        "period_cutoff": 0
+      },
+      "interaction": null,
+      "timezone": "+05:00"
+    },
+    {
+      "invoices": 65,
+      "errors": {
+        "duplicate_invoice": 1,
+        "payment_allocation": 1,
+        "fx_conversion": 1,
+        "period_cutoff": 1
+      },
+      "interaction": "allocation_cutoff",
+      "timezone": "+00:00"
+    },
+    {
+      "invoices": 68,
+      "errors": {
+        "duplicate_invoice": 1,
+        "payment_allocation": 1,
+        "fx_conversion": 1,
+        "period_cutoff": 1
+      },
+      "interaction": "fx_cutoff",
+      "timezone": "-04:00"
+    },
+    {
+      "invoices": 71,
+      "errors": {
+        "duplicate_invoice": 1,
+        "payment_allocation": 1,
+        "fx_conversion": 1,
+        "period_cutoff": 1
+      },
+      "interaction": "allocation_cutoff",
+      "timezone": "+09:00"
+    },
+    {
+      "invoices": 74,
+      "errors": {
+        "duplicate_invoice": 1,
+        "payment_allocation": 1,
+        "fx_conversion": 1,
+        "period_cutoff": 1
+      },
+      "interaction": "fx_cutoff",
+      "timezone": "+05:00"
+    },
+    {
+      "invoices": 77,
+      "errors": {
+        "duplicate_invoice": 1,
+        "payment_allocation": 1,
+        "fx_conversion": 1,
+        "period_cutoff": 1
+      },
+      "interaction": "allocation_cutoff",
+      "timezone": "+00:00"
+    },
+    {
+      "invoices": 80,
+      "errors": {
+        "duplicate_invoice": 1,
+        "payment_allocation": 1,
+        "fx_conversion": 1,
+        "period_cutoff": 1
+      },
+      "interaction": null,
+      "timezone": "-04:00"
+    },
+    {
+      "invoices": 83,
+      "errors": {
+        "duplicate_invoice": 1,
+        "payment_allocation": 1,
+        "fx_conversion": 1,
+        "period_cutoff": 1
+      },
+      "interaction": null,
+      "timezone": "+09:00"
+    },
+    {
+      "invoices": 86,
+      "errors": {
+        "duplicate_invoice": 1,
+        "payment_allocation": 1,
+        "fx_conversion": 1,
+        "period_cutoff": 1
+      },
+      "interaction": null,
+      "timezone": "+05:00"
+    },
+    {
+      "invoices": 89,
+      "errors": {
+        "duplicate_invoice": 1,
+        "payment_allocation": 1,
+        "fx_conversion": 1,
+        "period_cutoff": 1
+      },
+      "interaction": null,
+      "timezone": "+00:00"
+    },
+    {
+      "invoices": 92,
+      "errors": {
+        "duplicate_invoice": 1,
+        "payment_allocation": 1,
+        "fx_conversion": 1,
+        "period_cutoff": 1
+      },
+      "interaction": null,
+      "timezone": "-04:00"
+    },
+    {
+      "invoices": 95,
+      "errors": {
+        "duplicate_invoice": 1,
+        "payment_allocation": 1,
+        "fx_conversion": 1,
+        "period_cutoff": 1
+      },
+      "interaction": null,
+      "timezone": "+09:00"
+    },
+    {
+      "invoices": 98,
+      "errors": {
+        "duplicate_invoice": 1,
+        "payment_allocation": 1,
+        "fx_conversion": 1,
+        "period_cutoff": 1
+      },
+      "interaction": null,
+      "timezone": "+05:00"
+    },
+    {
+      "invoices": 101,
+      "errors": {
+        "duplicate_invoice": 1,
+        "payment_allocation": 1,
+        "fx_conversion": 1,
+        "period_cutoff": 1
+      },
+      "interaction": null,
+      "timezone": "+00:00"
+    },
+    {
+      "invoices": 104,
+      "errors": {
+        "duplicate_invoice": 1,
+        "payment_allocation": 1,
+        "fx_conversion": 1,
+        "period_cutoff": 1
+      },
+      "interaction": null,
+      "timezone": "-04:00"
+    },
+    {
+      "invoices": 107,
+      "errors": {
+        "duplicate_invoice": 1,
+        "payment_allocation": 1,
+        "fx_conversion": 1,
+        "period_cutoff": 1
+      },
+      "interaction": null,
+      "timezone": "+09:00"
+    }
+  ]
+}

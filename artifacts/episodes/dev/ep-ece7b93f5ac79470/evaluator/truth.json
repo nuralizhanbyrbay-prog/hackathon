@@ -1,0 +1,72 @@
+[
+  {
+    "issue_id": "issue-0607dd304059",
+    "type": "duplicate_invoice",
+    "affected_ids": [
+      "inv-07095dd6d0fe"
+    ],
+    "expected_amount_minor": 27066,
+    "currency": "KZT",
+    "evidence_sets": [
+      [
+        "doc-a06c3c803b88",
+        "row-1cfd35b4f8f3",
+        "row-5cb1af8f3d50",
+        "row-73867cc37188",
+        "row-b8a74e490d68"
+      ]
+    ]
+  },
+  {
+    "issue_id": "issue-fada3ed8d0be",
+    "type": "payment_allocation",
+    "affected_ids": [
+      "inv-59a88a30a51c",
+      "pay-1eef65395b67"
+    ],
+    "expected_amount_minor": 1601000,
+    "currency": "KZT",
+    "evidence_sets": [
+      [
+        "doc-5ca7b3206857",
+        "fx-27fc1e191962",
+        "policy",
+        "row-7a9c2937205c",
+        "row-d982553fed20"
+      ]
+    ]
+  },
+  {
+    "issue_id": "issue-29f4100db66c",
+    "type": "fx_conversion",
+    "affected_ids": [
+      "pay-0613e9cd8819"
+    ],
+    "expected_amount_minor": 853578,
+    "currency": "KZT",
+    "evidence_sets": [
+      [
+        "doc-9af23b9fdfa5",
+        "fx-d9d57a4b5dc2",
+        "policy",
+        "row-a3cfcf3b19f5"
+      ]
+    ]
+  },
+  {
+    "issue_id": "issue-100a4b75c4d4",
+    "type": "period_cutoff",
+    "affected_ids": [
+      "inv-6efa1c2856c5"
+    ],
+    "expected_amount_minor": 9441884,
+    "currency": "KZT",
+    "evidence_sets": [
+      [
+        "doc-92acc99c6274",
+        "policy",
+        "row-bef753ca26d7"
+      ]
+    ]
+  }
+]
