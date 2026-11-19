@@ -1,0 +1,6095 @@
+{
+  "version": "1.1.0",
+  "seed": 1000,
+  "config": {
+    "invoices": 50,
+    "errors": {
+      "duplicate_invoice": 0,
+      "payment_allocation": 0,
+      "fx_conversion": 0,
+      "period_cutoff": 0
+    },
+    "interaction": null,
+    "timezone": "+05:00",
+    "transform": 0,
+    "payment_delay_days": 5
+  },
+  "clean": {
+    "ledger": [
+      {
+        "row_id": "row-8d05c779bc50",
+        "timestamp": "2026-10-31T23:42:00+05:00",
+        "account": "receivable",
+        "debit_minor": -10000,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-5fa275977e2e",
+        "invoice_id": "inv-36ce8a380c8a",
+        "payment_id": null
+      },
+      {
+        "row_id": "row-8529aa825c9b",
+        "timestamp": "2026-10-31T23:42:00+05:00",
+        "account": "revenue",
+        "debit_minor": 0,
+        "credit_minor": -10000,
+        "currency": "KZT",
+        "entity_id": "entity-5fa275977e2e",
+        "invoice_id": "inv-36ce8a380c8a",
+        "payment_id": null
+      },
+      {
+        "row_id": "row-7279a07d19cf",
+        "timestamp": "2026-11-03T23:42:00+05:00",
+        "account": "bank",
+        "debit_minor": -5000,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-5fa275977e2e",
+        "invoice_id": "inv-36ce8a380c8a",
+        "payment_id": "pay-bdbc00b90bde"
+      },
+      {
+        "row_id": "row-e67fd2713517",
+        "timestamp": "2026-11-03T23:42:00+05:00",
+        "account": "receivable",
+        "debit_minor": 0,
+        "credit_minor": -5000,
+        "currency": "KZT",
+        "entity_id": "entity-5fa275977e2e",
+        "invoice_id": "inv-36ce8a380c8a",
+        "payment_id": "pay-bdbc00b90bde"
+      },
+      {
+        "row_id": "row-dd94dd84f20e",
+        "timestamp": "2026-11-02T23:42:00+05:00",
+        "account": "bank",
+        "debit_minor": -5000,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-5fa275977e2e",
+        "invoice_id": "inv-36ce8a380c8a",
+        "payment_id": "pay-3edb3065ea08"
+      },
+      {
+        "row_id": "row-104fc03562d3",
+        "timestamp": "2026-11-02T23:42:00+05:00",
+        "account": "receivable",
+        "debit_minor": 0,
+        "credit_minor": -5000,
+        "currency": "KZT",
+        "entity_id": "entity-5fa275977e2e",
+        "invoice_id": "inv-36ce8a380c8a",
+        "payment_id": "pay-3edb3065ea08"
+      },
+      {
+        "row_id": "row-082107a89c28",
+        "timestamp": "2026-10-31T23:51:00+05:00",
+        "account": "receivable",
+        "debit_minor": 37378080,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-43b7dc5b5943",
+        "invoice_id": "inv-0f450871a0fd",
+        "payment_id": null
+      },
+      {
+        "row_id": "row-fd9ac08c1777",
+        "timestamp": "2026-10-31T23:51:00+05:00",
+        "account": "revenue",
+        "debit_minor": 0,
+        "credit_minor": 37378080,
+        "currency": "KZT",
+        "entity_id": "entity-43b7dc5b5943",
+        "invoice_id": "inv-0f450871a0fd",
+        "payment_id": null
+      },
+      {
+        "row_id": "row-f97e3810eed2",
+        "timestamp": "2026-11-01T23:51:00+05:00",
+        "account": "bank",
+        "debit_minor": 37385867,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-43b7dc5b5943",
+        "invoice_id": "inv-0f450871a0fd",
+        "payment_id": "pay-8025a6ad522a"
+      },
+      {
+        "row_id": "row-4b6b7f602a34",
+        "timestamp": "2026-11-01T23:51:00+05:00",
+        "account": "receivable",
+        "debit_minor": 0,
+        "credit_minor": 37385867,
+        "currency": "KZT",
+        "entity_id": "entity-43b7dc5b5943",
+        "invoice_id": "inv-0f450871a0fd",
+        "payment_id": "pay-8025a6ad522a"
+      },
+      {
+        "row_id": "row-f73fef52b40f",
+        "timestamp": "2026-11-01T23:51:00+05:00",
+        "account": "receivable",
+        "debit_minor": 7787,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-43b7dc5b5943",
+        "invoice_id": "inv-0f450871a0fd",
+        "payment_id": "pay-8025a6ad522a"
+      },
+      {
+        "row_id": "row-4fe8b7e62884",
+        "timestamp": "2026-11-01T23:51:00+05:00",
+        "account": "fx_revaluation",
+        "debit_minor": 0,
+        "credit_minor": 7787,
+        "currency": "KZT",
+        "entity_id": "entity-43b7dc5b5943",
+        "invoice_id": "inv-0f450871a0fd",
+        "payment_id": "pay-8025a6ad522a"
+      },
+      {
+        "row_id": "row-a2f920321b32",
+        "timestamp": "2026-10-31T23:04:00+05:00",
+        "account": "receivable",
+        "debit_minor": 17504240,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-5c12a006bb67",
+        "invoice_id": "inv-6fb1a2ca647d",
+        "payment_id": null
+      },
+      {
+        "row_id": "row-0d28e09476c5",
+        "timestamp": "2026-10-31T23:04:00+05:00",
+        "account": "revenue",
+        "debit_minor": 0,
+        "credit_minor": 17504240,
+        "currency": "KZT",
+        "entity_id": "entity-5c12a006bb67",
+        "invoice_id": "inv-6fb1a2ca647d",
+        "payment_id": null
+      },
+      {
+        "row_id": "row-0b37f35bef6d",
+        "timestamp": "2026-11-01T23:04:00+05:00",
+        "account": "bank",
+        "debit_minor": 17507606,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-5c12a006bb67",
+        "invoice_id": "inv-6fb1a2ca647d",
+        "payment_id": "pay-6a6674844128"
+      },
+      {
+        "row_id": "row-a85b50b783d5",
+        "timestamp": "2026-11-01T23:04:00+05:00",
+        "account": "receivable",
+        "debit_minor": 0,
+        "credit_minor": 17507606,
+        "currency": "KZT",
+        "entity_id": "entity-5c12a006bb67",
+        "invoice_id": "inv-6fb1a2ca647d",
+        "payment_id": "pay-6a6674844128"
+      },
+      {
+        "row_id": "row-3896463579b1",
+        "timestamp": "2026-11-01T23:04:00+05:00",
+        "account": "receivable",
+        "debit_minor": 3366,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-5c12a006bb67",
+        "invoice_id": "inv-6fb1a2ca647d",
+        "payment_id": "pay-6a6674844128"
+      },
+      {
+        "row_id": "row-597b306a21b9",
+        "timestamp": "2026-11-01T23:04:00+05:00",
+        "account": "fx_revaluation",
+        "debit_minor": 0,
+        "credit_minor": 3366,
+        "currency": "KZT",
+        "entity_id": "entity-5c12a006bb67",
+        "invoice_id": "inv-6fb1a2ca647d",
+        "payment_id": "pay-6a6674844128"
+      },
+      {
+        "row_id": "row-f4d0e8549694",
+        "timestamp": "2026-10-31T23:34:00+05:00",
+        "account": "receivable",
+        "debit_minor": 5419200,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-fdf100265875",
+        "invoice_id": "inv-81fbe37855d2",
+        "payment_id": null
+      },
+      {
+        "row_id": "row-da4f27199ebf",
+        "timestamp": "2026-10-31T23:34:00+05:00",
+        "account": "revenue",
+        "debit_minor": 0,
+        "credit_minor": 5419200,
+        "currency": "KZT",
+        "entity_id": "entity-fdf100265875",
+        "invoice_id": "inv-81fbe37855d2",
+        "payment_id": null
+      },
+      {
+        "row_id": "row-31de758d9600",
+        "timestamp": "2026-11-02T23:34:00+05:00",
+        "account": "bank",
+        "debit_minor": 5780480,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-fdf100265875",
+        "invoice_id": "inv-81fbe37855d2",
+        "payment_id": "pay-67b31ded9672"
+      },
+      {
+        "row_id": "row-2c59a84ae3de",
+        "timestamp": "2026-11-02T23:34:00+05:00",
+        "account": "receivable",
+        "debit_minor": 0,
+        "credit_minor": 5780480,
+        "currency": "KZT",
+        "entity_id": "entity-fdf100265875",
+        "invoice_id": "inv-81fbe37855d2",
+        "payment_id": "pay-67b31ded9672"
+      },
+      {
+        "row_id": "row-4162aec06a19",
+        "timestamp": "2026-11-02T23:34:00+05:00",
+        "account": "receivable",
+        "debit_minor": 361280,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-fdf100265875",
+        "invoice_id": "inv-81fbe37855d2",
+        "payment_id": "pay-67b31ded9672"
+      },
+      {
+        "row_id": "row-02b1174cd20b",
+        "timestamp": "2026-11-02T23:34:00+05:00",
+        "account": "fx_revaluation",
+        "debit_minor": 0,
+        "credit_minor": 361280,
+        "currency": "KZT",
+        "entity_id": "entity-fdf100265875",
+        "invoice_id": "inv-81fbe37855d2",
+        "payment_id": "pay-67b31ded9672"
+      },
+      {
+        "row_id": "row-621aaae3e565",
+        "timestamp": "2026-10-31T23:21:00+05:00",
+        "account": "receivable",
+        "debit_minor": 9354715,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-0e347ce1f5ec",
+        "invoice_id": "inv-5a2b07abd515",
+        "payment_id": null
+      },
+      {
+        "row_id": "row-387b6ad65bd3",
+        "timestamp": "2026-10-31T23:21:00+05:00",
+        "account": "revenue",
+        "debit_minor": 0,
+        "credit_minor": 9354715,
+        "currency": "KZT",
+        "entity_id": "entity-0e347ce1f5ec",
+        "invoice_id": "inv-5a2b07abd515",
+        "payment_id": null
+      },
+      {
+        "row_id": "row-fa98ab542a2a",
+        "timestamp": "2026-11-01T23:21:00+05:00",
+        "account": "bank",
+        "debit_minor": 9355319,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-0e347ce1f5ec",
+        "invoice_id": "inv-5a2b07abd515",
+        "payment_id": "pay-e448b7243d3c"
+      },
+      {
+        "row_id": "row-1e53218cce29",
+        "timestamp": "2026-11-01T23:21:00+05:00",
+        "account": "receivable",
+        "debit_minor": 0,
+        "credit_minor": 9355319,
+        "currency": "KZT",
+        "entity_id": "entity-0e347ce1f5ec",
+        "invoice_id": "inv-5a2b07abd515",
+        "payment_id": "pay-e448b7243d3c"
+      },
+      {
+        "row_id": "row-af03b7b32e0f",
+        "timestamp": "2026-11-01T23:21:00+05:00",
+        "account": "receivable",
+        "debit_minor": 604,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-0e347ce1f5ec",
+        "invoice_id": "inv-5a2b07abd515",
+        "payment_id": "pay-e448b7243d3c"
+      },
+      {
+        "row_id": "row-5e5ca4898803",
+        "timestamp": "2026-11-01T23:21:00+05:00",
+        "account": "fx_revaluation",
+        "debit_minor": 0,
+        "credit_minor": 604,
+        "currency": "KZT",
+        "entity_id": "entity-0e347ce1f5ec",
+        "invoice_id": "inv-5a2b07abd515",
+        "payment_id": "pay-e448b7243d3c"
+      },
+      {
+        "row_id": "row-c2d10aff7ccc",
+        "timestamp": "2026-10-31T23:40:00+05:00",
+        "account": "receivable",
+        "debit_minor": 50295,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-55e15f522e58",
+        "invoice_id": "inv-b02992f7eb1f",
+        "payment_id": null
+      },
+      {
+        "row_id": "row-f723c6987129",
+        "timestamp": "2026-10-31T23:40:00+05:00",
+        "account": "revenue",
+        "debit_minor": 0,
+        "credit_minor": 50295,
+        "currency": "KZT",
+        "entity_id": "entity-55e15f522e58",
+        "invoice_id": "inv-b02992f7eb1f",
+        "payment_id": null
+      },
+      {
+        "row_id": "row-74a0bf2edb83",
+        "timestamp": "2026-11-04T23:40:00+05:00",
+        "account": "bank",
+        "debit_minor": 25147,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-55e15f522e58",
+        "invoice_id": "inv-b02992f7eb1f",
+        "payment_id": "pay-8f99eee1cdf0"
+      },
+      {
+        "row_id": "row-c6b276460451",
+        "timestamp": "2026-11-04T23:40:00+05:00",
+        "account": "receivable",
+        "debit_minor": 0,
+        "credit_minor": 25147,
+        "currency": "KZT",
+        "entity_id": "entity-55e15f522e58",
+        "invoice_id": "inv-b02992f7eb1f",
+        "payment_id": "pay-8f99eee1cdf0"
+      },
+      {
+        "row_id": "row-b970b9cef91d",
+        "timestamp": "2026-11-04T23:40:00+05:00",
+        "account": "bank",
+        "debit_minor": 25148,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-55e15f522e58",
+        "invoice_id": "inv-b02992f7eb1f",
+        "payment_id": "pay-903f5838a63a"
+      },
+      {
+        "row_id": "row-0955e7b3465a",
+        "timestamp": "2026-11-04T23:40:00+05:00",
+        "account": "receivable",
+        "debit_minor": 0,
+        "credit_minor": 25148,
+        "currency": "KZT",
+        "entity_id": "entity-55e15f522e58",
+        "invoice_id": "inv-b02992f7eb1f",
+        "payment_id": "pay-903f5838a63a"
+      },
+      {
+        "row_id": "row-0898e10fd066",
+        "timestamp": "2026-10-31T23:08:00+05:00",
+        "account": "receivable",
+        "debit_minor": 24643680,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-803e5030c3c9",
+        "invoice_id": "inv-213c9fe04f15",
+        "payment_id": null
+      },
+      {
+        "row_id": "row-5aa79310fdae",
+        "timestamp": "2026-10-31T23:08:00+05:00",
+        "account": "revenue",
+        "debit_minor": 0,
+        "credit_minor": 24643680,
+        "currency": "KZT",
+        "entity_id": "entity-803e5030c3c9",
+        "invoice_id": "inv-213c9fe04f15",
+        "payment_id": null
+      },
+      {
+        "row_id": "row-3ff991b84287",
+        "timestamp": "2026-11-03T23:08:00+05:00",
+        "account": "bank",
+        "debit_minor": 24659082,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-803e5030c3c9",
+        "invoice_id": "inv-213c9fe04f15",
+        "payment_id": "pay-b867a73f44e6"
+      },
+      {
+        "row_id": "row-e693a505a76b",
+        "timestamp": "2026-11-03T23:08:00+05:00",
+        "account": "receivable",
+        "debit_minor": 0,
+        "credit_minor": 24659082,
+        "currency": "KZT",
+        "entity_id": "entity-803e5030c3c9",
+        "invoice_id": "inv-213c9fe04f15",
+        "payment_id": "pay-b867a73f44e6"
+      },
+      {
+        "row_id": "row-fac9a1f33474",
+        "timestamp": "2026-11-03T23:08:00+05:00",
+        "account": "receivable",
+        "debit_minor": 15402,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-803e5030c3c9",
+        "invoice_id": "inv-213c9fe04f15",
+        "payment_id": "pay-b867a73f44e6"
+      },
+      {
+        "row_id": "row-5975a09ea89f",
+        "timestamp": "2026-11-03T23:08:00+05:00",
+        "account": "fx_revaluation",
+        "debit_minor": 0,
+        "credit_minor": 15402,
+        "currency": "KZT",
+        "entity_id": "entity-803e5030c3c9",
+        "invoice_id": "inv-213c9fe04f15",
+        "payment_id": "pay-b867a73f44e6"
+      },
+      {
+        "row_id": "row-bb664a90daaf",
+        "timestamp": "2026-10-31T23:10:00+05:00",
+        "account": "receivable",
+        "debit_minor": 5200000,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-2ad32e9c5bb0",
+        "invoice_id": "inv-569b0e99d0d9",
+        "payment_id": null
+      },
+      {
+        "row_id": "row-47c92e073c52",
+        "timestamp": "2026-10-31T23:10:00+05:00",
+        "account": "revenue",
+        "debit_minor": 0,
+        "credit_minor": 5200000,
+        "currency": "KZT",
+        "entity_id": "entity-2ad32e9c5bb0",
+        "invoice_id": "inv-569b0e99d0d9",
+        "payment_id": null
+      },
+      {
+        "row_id": "row-39b36ec2c7a9",
+        "timestamp": "2026-11-05T23:10:00+05:00",
+        "account": "bank",
+        "debit_minor": 5200000,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-2ad32e9c5bb0",
+        "invoice_id": "inv-569b0e99d0d9",
+        "payment_id": "pay-3ac1d0228462"
+      },
+      {
+        "row_id": "row-38bc8f43f4cf",
+        "timestamp": "2026-11-05T23:10:00+05:00",
+        "account": "receivable",
+        "debit_minor": 0,
+        "credit_minor": 5200000,
+        "currency": "KZT",
+        "entity_id": "entity-2ad32e9c5bb0",
+        "invoice_id": "inv-569b0e99d0d9",
+        "payment_id": "pay-3ac1d0228462"
+      },
+      {
+        "row_id": "row-1429ff0c7a41",
+        "timestamp": "2026-10-31T23:17:00+05:00",
+        "account": "receivable",
+        "debit_minor": 24545700,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-3404975e0325",
+        "invoice_id": "inv-c7d4449c9422",
+        "payment_id": null
+      },
+      {
+        "row_id": "row-5c8bb57d80c4",
+        "timestamp": "2026-10-31T23:17:00+05:00",
+        "account": "revenue",
+        "debit_minor": 0,
+        "credit_minor": 24545700,
+        "currency": "KZT",
+        "entity_id": "entity-3404975e0325",
+        "invoice_id": "inv-c7d4449c9422",
+        "payment_id": null
+      },
+      {
+        "row_id": "row-b5a2bccf5867",
+        "timestamp": "2026-11-05T23:17:00+05:00",
+        "account": "bank",
+        "debit_minor": 24545700,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-3404975e0325",
+        "invoice_id": "inv-c7d4449c9422",
+        "payment_id": "pay-25145ef537e7"
+      },
+      {
+        "row_id": "row-52f693d2a11c",
+        "timestamp": "2026-11-05T23:17:00+05:00",
+        "account": "receivable",
+        "debit_minor": 0,
+        "credit_minor": 24545700,
+        "currency": "KZT",
+        "entity_id": "entity-3404975e0325",
+        "invoice_id": "inv-c7d4449c9422",
+        "payment_id": "pay-25145ef537e7"
+      },
+      {
+        "row_id": "row-2ccf96d2d84d",
+        "timestamp": "2026-10-31T23:38:00+05:00",
+        "account": "receivable",
+        "debit_minor": 7784720,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-9f50c2d4e63f",
+        "invoice_id": "inv-31d4f69984fd",
+        "payment_id": null
+      },
+      {
+        "row_id": "row-e4d0d2ff4851",
+        "timestamp": "2026-10-31T23:38:00+05:00",
+        "account": "revenue",
+        "debit_minor": 0,
+        "credit_minor": 7784720,
+        "currency": "KZT",
+        "entity_id": "entity-9f50c2d4e63f",
+        "invoice_id": "inv-31d4f69984fd",
+        "payment_id": null
+      },
+      {
+        "row_id": "row-4f1a690902bc",
+        "timestamp": "2026-11-04T23:38:00+05:00",
+        "account": "bank",
+        "debit_minor": 7786729,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-9f50c2d4e63f",
+        "invoice_id": "inv-31d4f69984fd",
+        "payment_id": "pay-50d3da48bc31"
+      },
+      {
+        "row_id": "row-baced7264b00",
+        "timestamp": "2026-11-04T23:38:00+05:00",
+        "account": "receivable",
+        "debit_minor": 0,
+        "credit_minor": 7786729,
+        "currency": "KZT",
+        "entity_id": "entity-9f50c2d4e63f",
+        "invoice_id": "inv-31d4f69984fd",
+        "payment_id": "pay-50d3da48bc31"
+      },
+      {
+        "row_id": "row-1b89837b1c2e",
+        "timestamp": "2026-11-04T23:38:00+05:00",
+        "account": "receivable",
+        "debit_minor": 2009,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-9f50c2d4e63f",
+        "invoice_id": "inv-31d4f69984fd",
+        "payment_id": "pay-50d3da48bc31"
+      },
+      {
+        "row_id": "row-c041fcfae7f0",
+        "timestamp": "2026-11-04T23:38:00+05:00",
+        "account": "fx_revaluation",
+        "debit_minor": 0,
+        "credit_minor": 2009,
+        "currency": "KZT",
+        "entity_id": "entity-9f50c2d4e63f",
+        "invoice_id": "inv-31d4f69984fd",
+        "payment_id": "pay-50d3da48bc31"
+      },
+      {
+        "row_id": "row-3a53c9b1a67b",
+        "timestamp": "2026-10-31T23:50:00+05:00",
+        "account": "receivable",
+        "debit_minor": 81969,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-31f9d50fc8fb",
+        "invoice_id": "inv-5655a26b4dc8",
+        "payment_id": null
+      },
+      {
+        "row_id": "row-7ed9c45258da",
+        "timestamp": "2026-10-31T23:50:00+05:00",
+        "account": "revenue",
+        "debit_minor": 0,
+        "credit_minor": 81969,
+        "currency": "KZT",
+        "entity_id": "entity-31f9d50fc8fb",
+        "invoice_id": "inv-5655a26b4dc8",
+        "payment_id": null
+      },
+      {
+        "row_id": "row-eb80315c952f",
+        "timestamp": "2026-11-01T23:50:00+05:00",
+        "account": "bank",
+        "debit_minor": 40984,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-31f9d50fc8fb",
+        "invoice_id": "inv-5655a26b4dc8",
+        "payment_id": "pay-553093b49f47"
+      },
+      {
+        "row_id": "row-4b4efa17f8ee",
+        "timestamp": "2026-11-01T23:50:00+05:00",
+        "account": "receivable",
+        "debit_minor": 0,
+        "credit_minor": 40984,
+        "currency": "KZT",
+        "entity_id": "entity-31f9d50fc8fb",
+        "invoice_id": "inv-5655a26b4dc8",
+        "payment_id": "pay-553093b49f47"
+      },
+      {
+        "row_id": "row-31cc9fb879fc",
+        "timestamp": "2026-11-04T23:50:00+05:00",
+        "account": "bank",
+        "debit_minor": 40985,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-31f9d50fc8fb",
+        "invoice_id": "inv-5655a26b4dc8",
+        "payment_id": "pay-2e9fd0cac12b"
+      },
+      {
+        "row_id": "row-db07ea8ef25a",
+        "timestamp": "2026-11-04T23:50:00+05:00",
+        "account": "receivable",
+        "debit_minor": 0,
+        "credit_minor": 40985,
+        "currency": "KZT",
+        "entity_id": "entity-31f9d50fc8fb",
+        "invoice_id": "inv-5655a26b4dc8",
+        "payment_id": "pay-2e9fd0cac12b"
+      },
+      {
+        "row_id": "row-ae4a26f9d045",
+        "timestamp": "2026-10-31T23:48:00+05:00",
+        "account": "receivable",
+        "debit_minor": -19721280,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-1d3d57009c5b",
+        "invoice_id": "inv-187632cccdf5",
+        "payment_id": null
+      },
+      {
+        "row_id": "row-1a088c12865a",
+        "timestamp": "2026-10-31T23:48:00+05:00",
+        "account": "revenue",
+        "debit_minor": 0,
+        "credit_minor": -19721280,
+        "currency": "KZT",
+        "entity_id": "entity-1d3d57009c5b",
+        "invoice_id": "inv-187632cccdf5",
+        "payment_id": null
+      },
+      {
+        "row_id": "row-f114f93d3ec4",
+        "timestamp": "2026-11-05T23:48:00+05:00",
+        "account": "bank",
+        "debit_minor": -19721280,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-1d3d57009c5b",
+        "invoice_id": "inv-187632cccdf5",
+        "payment_id": "pay-05864ca9db0d"
+      },
+      {
+        "row_id": "row-6c9909f7cfe2",
+        "timestamp": "2026-11-05T23:48:00+05:00",
+        "account": "receivable",
+        "debit_minor": 0,
+        "credit_minor": -19721280,
+        "currency": "KZT",
+        "entity_id": "entity-1d3d57009c5b",
+        "invoice_id": "inv-187632cccdf5",
+        "payment_id": "pay-05864ca9db0d"
+      },
+      {
+        "row_id": "row-bb6867338a10",
+        "timestamp": "2026-10-18T02:08:00+05:00",
+        "account": "receivable",
+        "debit_minor": 32466202,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-2a4d6cc323c0",
+        "invoice_id": "inv-a0c00bb8064c",
+        "payment_id": null
+      },
+      {
+        "row_id": "row-1c15fceb344e",
+        "timestamp": "2026-10-18T02:08:00+05:00",
+        "account": "revenue",
+        "debit_minor": 0,
+        "credit_minor": 32466202,
+        "currency": "KZT",
+        "entity_id": "entity-2a4d6cc323c0",
+        "invoice_id": "inv-a0c00bb8064c",
+        "payment_id": null
+      },
+      {
+        "row_id": "row-7fe858e267b6",
+        "timestamp": "2026-10-21T02:08:00+05:00",
+        "account": "bank",
+        "debit_minor": 32453720,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-2a4d6cc323c0",
+        "invoice_id": "inv-a0c00bb8064c",
+        "payment_id": "pay-80a4bb611fcc"
+      },
+      {
+        "row_id": "row-3b1ae7f5a66b",
+        "timestamp": "2026-10-21T02:08:00+05:00",
+        "account": "receivable",
+        "debit_minor": 0,
+        "credit_minor": 32453720,
+        "currency": "KZT",
+        "entity_id": "entity-2a4d6cc323c0",
+        "invoice_id": "inv-a0c00bb8064c",
+        "payment_id": "pay-80a4bb611fcc"
+      },
+      {
+        "row_id": "row-8d185509bd29",
+        "timestamp": "2026-10-21T02:08:00+05:00",
+        "account": "receivable",
+        "debit_minor": -12482,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-2a4d6cc323c0",
+        "invoice_id": "inv-a0c00bb8064c",
+        "payment_id": "pay-80a4bb611fcc"
+      },
+      {
+        "row_id": "row-5684b6ac1b66",
+        "timestamp": "2026-10-21T02:08:00+05:00",
+        "account": "fx_revaluation",
+        "debit_minor": 0,
+        "credit_minor": -12482,
+        "currency": "KZT",
+        "entity_id": "entity-2a4d6cc323c0",
+        "invoice_id": "inv-a0c00bb8064c",
+        "payment_id": "pay-80a4bb611fcc"
+      },
+      {
+        "row_id": "row-32da739ca925",
+        "timestamp": "2026-10-01T14:32:00+05:00",
+        "account": "receivable",
+        "debit_minor": 2207400,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-797a4b78a443",
+        "invoice_id": "inv-7dee5541931f",
+        "payment_id": null
+      },
+      {
+        "row_id": "row-2fd4b0953a65",
+        "timestamp": "2026-10-01T14:32:00+05:00",
+        "account": "revenue",
+        "debit_minor": 0,
+        "credit_minor": 2207400,
+        "currency": "KZT",
+        "entity_id": "entity-797a4b78a443",
+        "invoice_id": "inv-7dee5541931f",
+        "payment_id": null
+      },
+      {
+        "row_id": "row-17f3a0f8de8c",
+        "timestamp": "2026-10-01T14:32:00+05:00",
+        "account": "bank",
+        "debit_minor": 2207400,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-797a4b78a443",
+        "invoice_id": "inv-7dee5541931f",
+        "payment_id": "pay-3647a2a3e7c3"
+      },
+      {
+        "row_id": "row-b8fbf172d2e2",
+        "timestamp": "2026-10-01T14:32:00+05:00",
+        "account": "receivable",
+        "debit_minor": 0,
+        "credit_minor": 2207400,
+        "currency": "KZT",
+        "entity_id": "entity-797a4b78a443",
+        "invoice_id": "inv-7dee5541931f",
+        "payment_id": "pay-3647a2a3e7c3"
+      },
+      {
+        "row_id": "row-482cb148b07c",
+        "timestamp": "2026-10-21T15:10:00+05:00",
+        "account": "receivable",
+        "debit_minor": 1550000,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-31136f6fc1e5",
+        "invoice_id": "inv-6bc1c0866f98",
+        "payment_id": null
+      },
+      {
+        "row_id": "row-bb8045d342c3",
+        "timestamp": "2026-10-21T15:10:00+05:00",
+        "account": "revenue",
+        "debit_minor": 0,
+        "credit_minor": 1550000,
+        "currency": "KZT",
+        "entity_id": "entity-31136f6fc1e5",
+        "invoice_id": "inv-6bc1c0866f98",
+        "payment_id": null
+      },
+      {
+        "row_id": "row-a55cb7eeb688",
+        "timestamp": "2026-10-22T15:10:00+05:00",
+        "account": "bank",
+        "debit_minor": 1550100,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-31136f6fc1e5",
+        "invoice_id": "inv-6bc1c0866f98",
+        "payment_id": "pay-351f91db2edf"
+      },
+      {
+        "row_id": "row-39f212376e51",
+        "timestamp": "2026-10-22T15:10:00+05:00",
+        "account": "receivable",
+        "debit_minor": 0,
+        "credit_minor": 1550100,
+        "currency": "KZT",
+        "entity_id": "entity-31136f6fc1e5",
+        "invoice_id": "inv-6bc1c0866f98",
+        "payment_id": "pay-351f91db2edf"
+      },
+      {
+        "row_id": "row-67bc21852349",
+        "timestamp": "2026-10-22T15:10:00+05:00",
+        "account": "receivable",
+        "debit_minor": 100,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-31136f6fc1e5",
+        "invoice_id": "inv-6bc1c0866f98",
+        "payment_id": "pay-351f91db2edf"
+      },
+      {
+        "row_id": "row-48928161acfd",
+        "timestamp": "2026-10-22T15:10:00+05:00",
+        "account": "fx_revaluation",
+        "debit_minor": 0,
+        "credit_minor": 100,
+        "currency": "KZT",
+        "entity_id": "entity-31136f6fc1e5",
+        "invoice_id": "inv-6bc1c0866f98",
+        "payment_id": "pay-351f91db2edf"
+      },
+      {
+        "row_id": "row-bcc2a16062f7",
+        "timestamp": "2026-10-05T07:36:00+05:00",
+        "account": "receivable",
+        "debit_minor": 42657,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-02d075ca53f7",
+        "invoice_id": "inv-abfd11f729ff",
+        "payment_id": null
+      },
+      {
+        "row_id": "row-c18c5361f50e",
+        "timestamp": "2026-10-05T07:36:00+05:00",
+        "account": "revenue",
+        "debit_minor": 0,
+        "credit_minor": 42657,
+        "currency": "KZT",
+        "entity_id": "entity-02d075ca53f7",
+        "invoice_id": "inv-abfd11f729ff",
+        "payment_id": null
+      },
+      {
+        "row_id": "row-76616fc5cf31",
+        "timestamp": "2026-10-08T07:36:00+05:00",
+        "account": "bank",
+        "debit_minor": 21328,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-02d075ca53f7",
+        "invoice_id": "inv-abfd11f729ff",
+        "payment_id": "pay-4b35add8b409"
+      },
+      {
+        "row_id": "row-c1ed1c7cecf0",
+        "timestamp": "2026-10-08T07:36:00+05:00",
+        "account": "receivable",
+        "debit_minor": 0,
+        "credit_minor": 21328,
+        "currency": "KZT",
+        "entity_id": "entity-02d075ca53f7",
+        "invoice_id": "inv-abfd11f729ff",
+        "payment_id": "pay-4b35add8b409"
+      },
+      {
+        "row_id": "row-09eb180bea07",
+        "timestamp": "2026-10-10T07:36:00+05:00",
+        "account": "bank",
+        "debit_minor": 21329,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-02d075ca53f7",
+        "invoice_id": "inv-abfd11f729ff",
+        "payment_id": "pay-0b52f378e7d0"
+      },
+      {
+        "row_id": "row-c3b8f59843ab",
+        "timestamp": "2026-10-10T07:36:00+05:00",
+        "account": "receivable",
+        "debit_minor": 0,
+        "credit_minor": 21329,
+        "currency": "KZT",
+        "entity_id": "entity-02d075ca53f7",
+        "invoice_id": "inv-abfd11f729ff",
+        "payment_id": "pay-0b52f378e7d0"
+      },
+      {
+        "row_id": "row-0111c80266f3",
+        "timestamp": "2026-10-18T02:06:00+05:00",
+        "account": "receivable",
+        "debit_minor": 3962610,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-75f6151aeb36",
+        "invoice_id": "inv-34965d31a40d",
+        "payment_id": null
+      },
+      {
+        "row_id": "row-59ac9eb2981b",
+        "timestamp": "2026-10-18T02:06:00+05:00",
+        "account": "revenue",
+        "debit_minor": 0,
+        "credit_minor": 3962610,
+        "currency": "KZT",
+        "entity_id": "entity-75f6151aeb36",
+        "invoice_id": "inv-34965d31a40d",
+        "payment_id": null
+      },
+      {
+        "row_id": "row-ea3a6d207853",
+        "timestamp": "2026-10-23T02:06:00+05:00",
+        "account": "bank",
+        "debit_minor": 3962610,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-75f6151aeb36",
+        "invoice_id": "inv-34965d31a40d",
+        "payment_id": "pay-7cb7dbed74a2"
+      },
+      {
+        "row_id": "row-4931c271d3f4",
+        "timestamp": "2026-10-23T02:06:00+05:00",
+        "account": "receivable",
+        "debit_minor": 0,
+        "credit_minor": 3962610,
+        "currency": "KZT",
+        "entity_id": "entity-75f6151aeb36",
+        "invoice_id": "inv-34965d31a40d",
+        "payment_id": "pay-7cb7dbed74a2"
+      },
+      {
+        "row_id": "row-58057275f46a",
+        "timestamp": "2026-10-05T02:17:00+05:00",
+        "account": "receivable",
+        "debit_minor": 38720362,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-c910e9cbf2d9",
+        "invoice_id": "inv-aad1ad7ccf01",
+        "payment_id": null
+      },
+      {
+        "row_id": "row-937601e8d1c3",
+        "timestamp": "2026-10-05T02:17:00+05:00",
+        "account": "revenue",
+        "debit_minor": 0,
+        "credit_minor": 38720362,
+        "currency": "KZT",
+        "entity_id": "entity-c910e9cbf2d9",
+        "invoice_id": "inv-aad1ad7ccf01",
+        "payment_id": null
+      },
+      {
+        "row_id": "row-6cb70c85d379",
+        "timestamp": "2026-10-07T02:17:00+05:00",
+        "account": "bank",
+        "debit_minor": 38698040,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-c910e9cbf2d9",
+        "invoice_id": "inv-aad1ad7ccf01",
+        "payment_id": "pay-a7a9c0be3b8e"
+      },
+      {
+        "row_id": "row-4362256b421b",
+        "timestamp": "2026-10-07T02:17:00+05:00",
+        "account": "receivable",
+        "debit_minor": 0,
+        "credit_minor": 38698040,
+        "currency": "KZT",
+        "entity_id": "entity-c910e9cbf2d9",
+        "invoice_id": "inv-aad1ad7ccf01",
+        "payment_id": "pay-a7a9c0be3b8e"
+      },
+      {
+        "row_id": "row-c01549dca26b",
+        "timestamp": "2026-10-07T02:17:00+05:00",
+        "account": "receivable",
+        "debit_minor": -22322,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-c910e9cbf2d9",
+        "invoice_id": "inv-aad1ad7ccf01",
+        "payment_id": "pay-a7a9c0be3b8e"
+      },
+      {
+        "row_id": "row-f6163e78c2be",
+        "timestamp": "2026-10-07T02:17:00+05:00",
+        "account": "fx_revaluation",
+        "debit_minor": 0,
+        "credit_minor": -22322,
+        "currency": "KZT",
+        "entity_id": "entity-c910e9cbf2d9",
+        "invoice_id": "inv-aad1ad7ccf01",
+        "payment_id": "pay-a7a9c0be3b8e"
+      },
+      {
+        "row_id": "row-07244baaa45e",
+        "timestamp": "2026-10-05T16:57:00+05:00",
+        "account": "receivable",
+        "debit_minor": 18162120,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-68b7f3ff820d",
+        "invoice_id": "inv-29ea3b4f7930",
+        "payment_id": null
+      },
+      {
+        "row_id": "row-eac9f1a71958",
+        "timestamp": "2026-10-05T16:57:00+05:00",
+        "account": "revenue",
+        "debit_minor": 0,
+        "credit_minor": 18162120,
+        "currency": "KZT",
+        "entity_id": "entity-68b7f3ff820d",
+        "invoice_id": "inv-29ea3b4f7930",
+        "payment_id": null
+      },
+      {
+        "row_id": "row-e154e198c63b",
+        "timestamp": "2026-10-05T16:57:00+05:00",
+        "account": "bank",
+        "debit_minor": 18162120,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-68b7f3ff820d",
+        "invoice_id": "inv-29ea3b4f7930",
+        "payment_id": "pay-66471e9df33f"
+      },
+      {
+        "row_id": "row-d79a88edfe17",
+        "timestamp": "2026-10-05T16:57:00+05:00",
+        "account": "receivable",
+        "debit_minor": 0,
+        "credit_minor": 18162120,
+        "currency": "KZT",
+        "entity_id": "entity-68b7f3ff820d",
+        "invoice_id": "inv-29ea3b4f7930",
+        "payment_id": "pay-66471e9df33f"
+      },
+      {
+        "row_id": "row-51368ab79115",
+        "timestamp": "2026-10-01T00:58:00+05:00",
+        "account": "receivable",
+        "debit_minor": 7169835,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-7ad8842dd30b",
+        "invoice_id": "inv-aea17cce6400",
+        "payment_id": null
+      },
+      {
+        "row_id": "row-c6363300f7d0",
+        "timestamp": "2026-10-01T00:58:00+05:00",
+        "account": "revenue",
+        "debit_minor": 0,
+        "credit_minor": 7169835,
+        "currency": "KZT",
+        "entity_id": "entity-7ad8842dd30b",
+        "invoice_id": "inv-aea17cce6400",
+        "payment_id": null
+      },
+      {
+        "row_id": "row-8c8881d21666",
+        "timestamp": "2026-10-03T00:58:00+05:00",
+        "account": "bank",
+        "debit_minor": 7170760,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-7ad8842dd30b",
+        "invoice_id": "inv-aea17cce6400",
+        "payment_id": "pay-390908351408"
+      },
+      {
+        "row_id": "row-a8092352518f",
+        "timestamp": "2026-10-03T00:58:00+05:00",
+        "account": "receivable",
+        "debit_minor": 0,
+        "credit_minor": 7170760,
+        "currency": "KZT",
+        "entity_id": "entity-7ad8842dd30b",
+        "invoice_id": "inv-aea17cce6400",
+        "payment_id": "pay-390908351408"
+      },
+      {
+        "row_id": "row-9fdf73e68857",
+        "timestamp": "2026-10-03T00:58:00+05:00",
+        "account": "receivable",
+        "debit_minor": 925,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-7ad8842dd30b",
+        "invoice_id": "inv-aea17cce6400",
+        "payment_id": "pay-390908351408"
+      },
+      {
+        "row_id": "row-907583f6edad",
+        "timestamp": "2026-10-03T00:58:00+05:00",
+        "account": "fx_revaluation",
+        "debit_minor": 0,
+        "credit_minor": 925,
+        "currency": "KZT",
+        "entity_id": "entity-7ad8842dd30b",
+        "invoice_id": "inv-aea17cce6400",
+        "payment_id": "pay-390908351408"
+      },
+      {
+        "row_id": "row-82682f06cebb",
+        "timestamp": "2026-10-28T14:38:00+05:00",
+        "account": "receivable",
+        "debit_minor": 54193,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-0f2755249abf",
+        "invoice_id": "inv-1b9605afe56c",
+        "payment_id": null
+      },
+      {
+        "row_id": "row-e2b7530a6039",
+        "timestamp": "2026-10-28T14:38:00+05:00",
+        "account": "revenue",
+        "debit_minor": 0,
+        "credit_minor": 54193,
+        "currency": "KZT",
+        "entity_id": "entity-0f2755249abf",
+        "invoice_id": "inv-1b9605afe56c",
+        "payment_id": null
+      },
+      {
+        "row_id": "row-da11904b489c",
+        "timestamp": "2026-10-29T14:38:00+05:00",
+        "account": "bank",
+        "debit_minor": 27096,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-0f2755249abf",
+        "invoice_id": "inv-1b9605afe56c",
+        "payment_id": "pay-8f13d423cd72"
+      },
+      {
+        "row_id": "row-035b09e6a8e3",
+        "timestamp": "2026-10-29T14:38:00+05:00",
+        "account": "receivable",
+        "debit_minor": 0,
+        "credit_minor": 27096,
+        "currency": "KZT",
+        "entity_id": "entity-0f2755249abf",
+        "invoice_id": "inv-1b9605afe56c",
+        "payment_id": "pay-8f13d423cd72"
+      },
+      {
+        "row_id": "row-8ce7940a0ac3",
+        "timestamp": "2026-11-01T14:38:00+05:00",
+        "account": "bank",
+        "debit_minor": 27097,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-0f2755249abf",
+        "invoice_id": "inv-1b9605afe56c",
+        "payment_id": "pay-87a3819e3119"
+      },
+      {
+        "row_id": "row-cad6d4685d78",
+        "timestamp": "2026-11-01T14:38:00+05:00",
+        "account": "receivable",
+        "debit_minor": 0,
+        "credit_minor": 27097,
+        "currency": "KZT",
+        "entity_id": "entity-0f2755249abf",
+        "invoice_id": "inv-1b9605afe56c",
+        "payment_id": "pay-87a3819e3119"
+      },
+      {
+        "row_id": "row-0a687f989b34",
+        "timestamp": "2026-10-08T18:16:00+05:00",
+        "account": "receivable",
+        "debit_minor": 4802000,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-0825f507119f",
+        "invoice_id": "inv-7b2edfca401d",
+        "payment_id": null
+      },
+      {
+        "row_id": "row-42cc78cdf916",
+        "timestamp": "2026-10-08T18:16:00+05:00",
+        "account": "revenue",
+        "debit_minor": 0,
+        "credit_minor": 4802000,
+        "currency": "KZT",
+        "entity_id": "entity-0825f507119f",
+        "invoice_id": "inv-7b2edfca401d",
+        "payment_id": null
+      },
+      {
+        "row_id": "row-2d4e59b71d6a",
+        "timestamp": "2026-10-08T18:16:00+05:00",
+        "account": "bank",
+        "debit_minor": 4802000,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-0825f507119f",
+        "invoice_id": "inv-7b2edfca401d",
+        "payment_id": "pay-e1f93a3c24da"
+      },
+      {
+        "row_id": "row-13b6383ed725",
+        "timestamp": "2026-10-08T18:16:00+05:00",
+        "account": "receivable",
+        "debit_minor": 0,
+        "credit_minor": 4802000,
+        "currency": "KZT",
+        "entity_id": "entity-0825f507119f",
+        "invoice_id": "inv-7b2edfca401d",
+        "payment_id": "pay-e1f93a3c24da"
+      },
+      {
+        "row_id": "row-1677c85d16a5",
+        "timestamp": "2026-10-16T11:21:00+05:00",
+        "account": "receivable",
+        "debit_minor": -18141760,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-d529833c0028",
+        "invoice_id": "inv-9393944ea4df",
+        "payment_id": null
+      },
+      {
+        "row_id": "row-008dc3941144",
+        "timestamp": "2026-10-16T11:21:00+05:00",
+        "account": "revenue",
+        "debit_minor": 0,
+        "credit_minor": -18141760,
+        "currency": "KZT",
+        "entity_id": "entity-d529833c0028",
+        "invoice_id": "inv-9393944ea4df",
+        "payment_id": null
+      },
+      {
+        "row_id": "row-ba5d94f2130f",
+        "timestamp": "2026-10-21T11:21:00+05:00",
+        "account": "bank",
+        "debit_minor": -18141760,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-d529833c0028",
+        "invoice_id": "inv-9393944ea4df",
+        "payment_id": "pay-dc5fed59efaa"
+      },
+      {
+        "row_id": "row-53525cbc5d69",
+        "timestamp": "2026-10-21T11:21:00+05:00",
+        "account": "receivable",
+        "debit_minor": 0,
+        "credit_minor": -18141760,
+        "currency": "KZT",
+        "entity_id": "entity-d529833c0028",
+        "invoice_id": "inv-9393944ea4df",
+        "payment_id": "pay-dc5fed59efaa"
+      },
+      {
+        "row_id": "row-cc4f6e36e784",
+        "timestamp": "2026-10-10T05:45:00+05:00",
+        "account": "receivable",
+        "debit_minor": 15284360,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-ef480348e7ec",
+        "invoice_id": "inv-7445aa1bb50d",
+        "payment_id": null
+      },
+      {
+        "row_id": "row-09b678a66564",
+        "timestamp": "2026-10-10T05:45:00+05:00",
+        "account": "revenue",
+        "debit_minor": 0,
+        "credit_minor": 15284360,
+        "currency": "KZT",
+        "entity_id": "entity-ef480348e7ec",
+        "invoice_id": "inv-7445aa1bb50d",
+        "payment_id": null
+      },
+      {
+        "row_id": "row-2f20029a02b8",
+        "timestamp": "2026-10-13T05:45:00+05:00",
+        "account": "bank",
+        "debit_minor": 14385280,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-ef480348e7ec",
+        "invoice_id": "inv-7445aa1bb50d",
+        "payment_id": "pay-901695ed527b"
+      },
+      {
+        "row_id": "row-4df4052b1f83",
+        "timestamp": "2026-10-13T05:45:00+05:00",
+        "account": "receivable",
+        "debit_minor": 0,
+        "credit_minor": 14385280,
+        "currency": "KZT",
+        "entity_id": "entity-ef480348e7ec",
+        "invoice_id": "inv-7445aa1bb50d",
+        "payment_id": "pay-901695ed527b"
+      },
+      {
+        "row_id": "row-b9d53a15bb1a",
+        "timestamp": "2026-10-13T05:45:00+05:00",
+        "account": "receivable",
+        "debit_minor": -899080,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-ef480348e7ec",
+        "invoice_id": "inv-7445aa1bb50d",
+        "payment_id": "pay-901695ed527b"
+      },
+      {
+        "row_id": "row-b0a6a6ccc4f0",
+        "timestamp": "2026-10-13T05:45:00+05:00",
+        "account": "fx_revaluation",
+        "debit_minor": 0,
+        "credit_minor": -899080,
+        "currency": "KZT",
+        "entity_id": "entity-ef480348e7ec",
+        "invoice_id": "inv-7445aa1bb50d",
+        "payment_id": "pay-901695ed527b"
+      },
+      {
+        "row_id": "row-20c3d55882e1",
+        "timestamp": "2026-10-23T08:18:00+05:00",
+        "account": "receivable",
+        "debit_minor": 3745748,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-40c87ee43b1e",
+        "invoice_id": "inv-ab3c5cf7e176",
+        "payment_id": null
+      },
+      {
+        "row_id": "row-1f57f1a2d195",
+        "timestamp": "2026-10-23T08:18:00+05:00",
+        "account": "revenue",
+        "debit_minor": 0,
+        "credit_minor": 3745748,
+        "currency": "KZT",
+        "entity_id": "entity-40c87ee43b1e",
+        "invoice_id": "inv-ab3c5cf7e176",
+        "payment_id": null
+      },
+      {
+        "row_id": "row-578a9296639f",
+        "timestamp": "2026-10-24T08:18:00+05:00",
+        "account": "bank",
+        "debit_minor": 3745990,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-40c87ee43b1e",
+        "invoice_id": "inv-ab3c5cf7e176",
+        "payment_id": "pay-bc342db940bb"
+      },
+      {
+        "row_id": "row-3d8fc1eeeb4e",
+        "timestamp": "2026-10-24T08:18:00+05:00",
+        "account": "receivable",
+        "debit_minor": 0,
+        "credit_minor": 3745990,
+        "currency": "KZT",
+        "entity_id": "entity-40c87ee43b1e",
+        "invoice_id": "inv-ab3c5cf7e176",
+        "payment_id": "pay-bc342db940bb"
+      },
+      {
+        "row_id": "row-8620ff65b437",
+        "timestamp": "2026-10-24T08:18:00+05:00",
+        "account": "receivable",
+        "debit_minor": 242,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-40c87ee43b1e",
+        "invoice_id": "inv-ab3c5cf7e176",
+        "payment_id": "pay-bc342db940bb"
+      },
+      {
+        "row_id": "row-193bb9e1c50b",
+        "timestamp": "2026-10-24T08:18:00+05:00",
+        "account": "fx_revaluation",
+        "debit_minor": 0,
+        "credit_minor": 242,
+        "currency": "KZT",
+        "entity_id": "entity-40c87ee43b1e",
+        "invoice_id": "inv-ab3c5cf7e176",
+        "payment_id": "pay-bc342db940bb"
+      },
+      {
+        "row_id": "row-47dbd1a869a2",
+        "timestamp": "2026-10-09T13:27:00+05:00",
+        "account": "receivable",
+        "debit_minor": 60591,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-d8288a79b377",
+        "invoice_id": "inv-474f044469d8",
+        "payment_id": null
+      },
+      {
+        "row_id": "row-4a1a56abeb00",
+        "timestamp": "2026-10-09T13:27:00+05:00",
+        "account": "revenue",
+        "debit_minor": 0,
+        "credit_minor": 60591,
+        "currency": "KZT",
+        "entity_id": "entity-d8288a79b377",
+        "invoice_id": "inv-474f044469d8",
+        "payment_id": null
+      },
+      {
+        "row_id": "row-b0d03791503e",
+        "timestamp": "2026-10-11T13:27:00+05:00",
+        "account": "bank",
+        "debit_minor": 30295,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-d8288a79b377",
+        "invoice_id": "inv-474f044469d8",
+        "payment_id": "pay-8f0cfda4ba33"
+      },
+      {
+        "row_id": "row-e2b28c25a5c3",
+        "timestamp": "2026-10-11T13:27:00+05:00",
+        "account": "receivable",
+        "debit_minor": 0,
+        "credit_minor": 30295,
+        "currency": "KZT",
+        "entity_id": "entity-d8288a79b377",
+        "invoice_id": "inv-474f044469d8",
+        "payment_id": "pay-8f0cfda4ba33"
+      },
+      {
+        "row_id": "row-fc02e26c7e1f",
+        "timestamp": "2026-10-12T13:27:00+05:00",
+        "account": "bank",
+        "debit_minor": 30296,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-d8288a79b377",
+        "invoice_id": "inv-474f044469d8",
+        "payment_id": "pay-08724c9d7e61"
+      },
+      {
+        "row_id": "row-6d26a8fa547c",
+        "timestamp": "2026-10-12T13:27:00+05:00",
+        "account": "receivable",
+        "debit_minor": 0,
+        "credit_minor": 30296,
+        "currency": "KZT",
+        "entity_id": "entity-d8288a79b377",
+        "invoice_id": "inv-474f044469d8",
+        "payment_id": "pay-08724c9d7e61"
+      },
+      {
+        "row_id": "row-c9c1ab35e842",
+        "timestamp": "2026-10-28T05:55:00+05:00",
+        "account": "receivable",
+        "debit_minor": 31217802,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-742df51a418f",
+        "invoice_id": "inv-73b6d482cee7",
+        "payment_id": null
+      },
+      {
+        "row_id": "row-874dc4b7cb61",
+        "timestamp": "2026-10-28T05:55:00+05:00",
+        "account": "revenue",
+        "debit_minor": 0,
+        "credit_minor": 31217802,
+        "currency": "KZT",
+        "entity_id": "entity-742df51a418f",
+        "invoice_id": "inv-73b6d482cee7",
+        "payment_id": null
+      },
+      {
+        "row_id": "row-2cfeb4dacce6",
+        "timestamp": "2026-10-29T05:55:00+05:00",
+        "account": "bank",
+        "debit_minor": 31224303,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-742df51a418f",
+        "invoice_id": "inv-73b6d482cee7",
+        "payment_id": "pay-0afa18183956"
+      },
+      {
+        "row_id": "row-61b9d3737ca6",
+        "timestamp": "2026-10-29T05:55:00+05:00",
+        "account": "receivable",
+        "debit_minor": 0,
+        "credit_minor": 31224303,
+        "currency": "KZT",
+        "entity_id": "entity-742df51a418f",
+        "invoice_id": "inv-73b6d482cee7",
+        "payment_id": "pay-0afa18183956"
+      },
+      {
+        "row_id": "row-b1db7c4cce00",
+        "timestamp": "2026-10-29T05:55:00+05:00",
+        "account": "receivable",
+        "debit_minor": 6501,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-742df51a418f",
+        "invoice_id": "inv-73b6d482cee7",
+        "payment_id": "pay-0afa18183956"
+      },
+      {
+        "row_id": "row-8049b95bfece",
+        "timestamp": "2026-10-29T05:55:00+05:00",
+        "account": "fx_revaluation",
+        "debit_minor": 0,
+        "credit_minor": 6501,
+        "currency": "KZT",
+        "entity_id": "entity-742df51a418f",
+        "invoice_id": "inv-73b6d482cee7",
+        "payment_id": "pay-0afa18183956"
+      },
+      {
+        "row_id": "row-e3e4fcc260a2",
+        "timestamp": "2026-10-09T13:39:00+05:00",
+        "account": "receivable",
+        "debit_minor": 37641104,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-a664faeec874",
+        "invoice_id": "inv-da3d637b911e",
+        "payment_id": null
+      },
+      {
+        "row_id": "row-9c02d07abb6f",
+        "timestamp": "2026-10-09T13:39:00+05:00",
+        "account": "revenue",
+        "debit_minor": 0,
+        "credit_minor": 37641104,
+        "currency": "KZT",
+        "entity_id": "entity-a664faeec874",
+        "invoice_id": "inv-da3d637b911e",
+        "payment_id": null
+      },
+      {
+        "row_id": "row-04c1f75115cc",
+        "timestamp": "2026-10-09T13:39:00+05:00",
+        "account": "bank",
+        "debit_minor": 37641104,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-a664faeec874",
+        "invoice_id": "inv-da3d637b911e",
+        "payment_id": "pay-3b7eff396eec"
+      },
+      {
+        "row_id": "row-d441ed172dae",
+        "timestamp": "2026-10-09T13:39:00+05:00",
+        "account": "receivable",
+        "debit_minor": 0,
+        "credit_minor": 37641104,
+        "currency": "KZT",
+        "entity_id": "entity-a664faeec874",
+        "invoice_id": "inv-da3d637b911e",
+        "payment_id": "pay-3b7eff396eec"
+      },
+      {
+        "row_id": "row-9a7d665085f5",
+        "timestamp": "2026-10-17T16:57:00+05:00",
+        "account": "receivable",
+        "debit_minor": 3100000,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-f0588950c9f8",
+        "invoice_id": "inv-a5ba0ec906f6",
+        "payment_id": null
+      },
+      {
+        "row_id": "row-c36f70bc4994",
+        "timestamp": "2026-10-17T16:57:00+05:00",
+        "account": "revenue",
+        "debit_minor": 0,
+        "credit_minor": 3100000,
+        "currency": "KZT",
+        "entity_id": "entity-f0588950c9f8",
+        "invoice_id": "inv-a5ba0ec906f6",
+        "payment_id": null
+      },
+      {
+        "row_id": "row-668359de96d0",
+        "timestamp": "2026-10-20T16:57:00+05:00",
+        "account": "bank",
+        "debit_minor": 3400000,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-f0588950c9f8",
+        "invoice_id": "inv-a5ba0ec906f6",
+        "payment_id": "pay-1ec381c39f96"
+      },
+      {
+        "row_id": "row-fec0ec41f441",
+        "timestamp": "2026-10-20T16:57:00+05:00",
+        "account": "receivable",
+        "debit_minor": 0,
+        "credit_minor": 3400000,
+        "currency": "KZT",
+        "entity_id": "entity-f0588950c9f8",
+        "invoice_id": "inv-a5ba0ec906f6",
+        "payment_id": "pay-1ec381c39f96"
+      },
+      {
+        "row_id": "row-cbd83f9fc59b",
+        "timestamp": "2026-10-20T16:57:00+05:00",
+        "account": "receivable",
+        "debit_minor": 300000,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-f0588950c9f8",
+        "invoice_id": "inv-a5ba0ec906f6",
+        "payment_id": "pay-1ec381c39f96"
+      },
+      {
+        "row_id": "row-d8631d6a5f90",
+        "timestamp": "2026-10-20T16:57:00+05:00",
+        "account": "fx_revaluation",
+        "debit_minor": 0,
+        "credit_minor": 300000,
+        "currency": "KZT",
+        "entity_id": "entity-f0588950c9f8",
+        "invoice_id": "inv-a5ba0ec906f6",
+        "payment_id": "pay-1ec381c39f96"
+      },
+      {
+        "row_id": "row-9bad1601fd41",
+        "timestamp": "2026-10-15T01:49:00+05:00",
+        "account": "receivable",
+        "debit_minor": 4898024,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-0424bed20f4f",
+        "invoice_id": "inv-1d9a4b6a9e21",
+        "payment_id": null
+      },
+      {
+        "row_id": "row-34d1ee751717",
+        "timestamp": "2026-10-15T01:49:00+05:00",
+        "account": "revenue",
+        "debit_minor": 0,
+        "credit_minor": 4898024,
+        "currency": "KZT",
+        "entity_id": "entity-0424bed20f4f",
+        "invoice_id": "inv-1d9a4b6a9e21",
+        "payment_id": null
+      },
+      {
+        "row_id": "row-e46c1cccd15d",
+        "timestamp": "2026-10-20T01:49:00+05:00",
+        "account": "bank",
+        "debit_minor": 4898024,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-0424bed20f4f",
+        "invoice_id": "inv-1d9a4b6a9e21",
+        "payment_id": "pay-1740c867ab4e"
+      },
+      {
+        "row_id": "row-87c0d0b8ea08",
+        "timestamp": "2026-10-20T01:49:00+05:00",
+        "account": "receivable",
+        "debit_minor": 0,
+        "credit_minor": 4898024,
+        "currency": "KZT",
+        "entity_id": "entity-0424bed20f4f",
+        "invoice_id": "inv-1d9a4b6a9e21",
+        "payment_id": "pay-1740c867ab4e"
+      },
+      {
+        "row_id": "row-f8a129051ece",
+        "timestamp": "2026-10-24T10:07:00+05:00",
+        "account": "receivable",
+        "debit_minor": 10028,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-986545e27822",
+        "invoice_id": "inv-e22dd73bf58b",
+        "payment_id": null
+      },
+      {
+        "row_id": "row-3ba398b73ed5",
+        "timestamp": "2026-10-24T10:07:00+05:00",
+        "account": "revenue",
+        "debit_minor": 0,
+        "credit_minor": 10028,
+        "currency": "KZT",
+        "entity_id": "entity-986545e27822",
+        "invoice_id": "inv-e22dd73bf58b",
+        "payment_id": null
+      },
+      {
+        "row_id": "row-03d791ad33a3",
+        "timestamp": "2026-10-28T10:07:00+05:00",
+        "account": "bank",
+        "debit_minor": 5014,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-986545e27822",
+        "invoice_id": "inv-e22dd73bf58b",
+        "payment_id": "pay-03d5c11b7669"
+      },
+      {
+        "row_id": "row-ea82fca55acf",
+        "timestamp": "2026-10-28T10:07:00+05:00",
+        "account": "receivable",
+        "debit_minor": 0,
+        "credit_minor": 5014,
+        "currency": "KZT",
+        "entity_id": "entity-986545e27822",
+        "invoice_id": "inv-e22dd73bf58b",
+        "payment_id": "pay-03d5c11b7669"
+      },
+      {
+        "row_id": "row-84cb58536b93",
+        "timestamp": "2026-10-25T10:07:00+05:00",
+        "account": "bank",
+        "debit_minor": 5014,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-986545e27822",
+        "invoice_id": "inv-e22dd73bf58b",
+        "payment_id": "pay-f971dd2f74ff"
+      },
+      {
+        "row_id": "row-51014bd0b657",
+        "timestamp": "2026-10-25T10:07:00+05:00",
+        "account": "receivable",
+        "debit_minor": 0,
+        "credit_minor": 5014,
+        "currency": "KZT",
+        "entity_id": "entity-986545e27822",
+        "invoice_id": "inv-e22dd73bf58b",
+        "payment_id": "pay-f971dd2f74ff"
+      },
+      {
+        "row_id": "row-3c55d785ae25",
+        "timestamp": "2026-10-10T18:28:00+05:00",
+        "account": "receivable",
+        "debit_minor": 1431592,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-aba196400021",
+        "invoice_id": "inv-053edb19128d",
+        "payment_id": null
+      },
+      {
+        "row_id": "row-38433e593501",
+        "timestamp": "2026-10-10T18:28:00+05:00",
+        "account": "revenue",
+        "debit_minor": 0,
+        "credit_minor": 1431592,
+        "currency": "KZT",
+        "entity_id": "entity-aba196400021",
+        "invoice_id": "inv-053edb19128d",
+        "payment_id": null
+      },
+      {
+        "row_id": "row-5a94e6313043",
+        "timestamp": "2026-10-14T18:28:00+05:00",
+        "account": "bank",
+        "debit_minor": 1431294,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-aba196400021",
+        "invoice_id": "inv-053edb19128d",
+        "payment_id": "pay-1fa9e79a09cd"
+      },
+      {
+        "row_id": "row-8058ecfdadd8",
+        "timestamp": "2026-10-14T18:28:00+05:00",
+        "account": "receivable",
+        "debit_minor": 0,
+        "credit_minor": 1431294,
+        "currency": "KZT",
+        "entity_id": "entity-aba196400021",
+        "invoice_id": "inv-053edb19128d",
+        "payment_id": "pay-1fa9e79a09cd"
+      },
+      {
+        "row_id": "row-797fe2d5b161",
+        "timestamp": "2026-10-14T18:28:00+05:00",
+        "account": "receivable",
+        "debit_minor": -298,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-aba196400021",
+        "invoice_id": "inv-053edb19128d",
+        "payment_id": "pay-1fa9e79a09cd"
+      },
+      {
+        "row_id": "row-b412111e1e85",
+        "timestamp": "2026-10-14T18:28:00+05:00",
+        "account": "fx_revaluation",
+        "debit_minor": 0,
+        "credit_minor": -298,
+        "currency": "KZT",
+        "entity_id": "entity-aba196400021",
+        "invoice_id": "inv-053edb19128d",
+        "payment_id": "pay-1fa9e79a09cd"
+      },
+      {
+        "row_id": "row-2336f21956e1",
+        "timestamp": "2026-10-27T15:38:00+05:00",
+        "account": "receivable",
+        "debit_minor": 40167323,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-45be2ba13e73",
+        "invoice_id": "inv-43f017e77406",
+        "payment_id": null
+      },
+      {
+        "row_id": "row-6c75978bcc98",
+        "timestamp": "2026-10-27T15:38:00+05:00",
+        "account": "revenue",
+        "debit_minor": 0,
+        "credit_minor": 40167323,
+        "currency": "KZT",
+        "entity_id": "entity-45be2ba13e73",
+        "invoice_id": "inv-43f017e77406",
+        "payment_id": null
+      },
+      {
+        "row_id": "row-ed9e395d3cb1",
+        "timestamp": "2026-10-27T15:38:00+05:00",
+        "account": "bank",
+        "debit_minor": 40167323,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-45be2ba13e73",
+        "invoice_id": "inv-43f017e77406",
+        "payment_id": "pay-7f0c6eb2f3e0"
+      },
+      {
+        "row_id": "row-8a3b9112a4bf",
+        "timestamp": "2026-10-27T15:38:00+05:00",
+        "account": "receivable",
+        "debit_minor": 0,
+        "credit_minor": 40167323,
+        "currency": "KZT",
+        "entity_id": "entity-45be2ba13e73",
+        "invoice_id": "inv-43f017e77406",
+        "payment_id": "pay-7f0c6eb2f3e0"
+      },
+      {
+        "row_id": "row-21a7d750da79",
+        "timestamp": "2026-10-28T11:01:00+05:00",
+        "account": "receivable",
+        "debit_minor": -15033920,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-06c7b6e4ddd2",
+        "invoice_id": "inv-c871d0e48609",
+        "payment_id": null
+      },
+      {
+        "row_id": "row-0970af92a698",
+        "timestamp": "2026-10-28T11:01:00+05:00",
+        "account": "revenue",
+        "debit_minor": 0,
+        "credit_minor": -15033920,
+        "currency": "KZT",
+        "entity_id": "entity-06c7b6e4ddd2",
+        "invoice_id": "inv-c871d0e48609",
+        "payment_id": null
+      },
+      {
+        "row_id": "row-b0d86852e9fc",
+        "timestamp": "2026-10-30T11:01:00+05:00",
+        "account": "bank",
+        "debit_minor": -15973540,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-06c7b6e4ddd2",
+        "invoice_id": "inv-c871d0e48609",
+        "payment_id": "pay-e594d31f0918"
+      },
+      {
+        "row_id": "row-e4270a9ff784",
+        "timestamp": "2026-10-30T11:01:00+05:00",
+        "account": "receivable",
+        "debit_minor": 0,
+        "credit_minor": -15973540,
+        "currency": "KZT",
+        "entity_id": "entity-06c7b6e4ddd2",
+        "invoice_id": "inv-c871d0e48609",
+        "payment_id": "pay-e594d31f0918"
+      },
+      {
+        "row_id": "row-0833bf997a46",
+        "timestamp": "2026-10-30T11:01:00+05:00",
+        "account": "receivable",
+        "debit_minor": -939620,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-06c7b6e4ddd2",
+        "invoice_id": "inv-c871d0e48609",
+        "payment_id": "pay-e594d31f0918"
+      },
+      {
+        "row_id": "row-fa12cef11016",
+        "timestamp": "2026-10-30T11:01:00+05:00",
+        "account": "fx_revaluation",
+        "debit_minor": 0,
+        "credit_minor": -939620,
+        "currency": "KZT",
+        "entity_id": "entity-06c7b6e4ddd2",
+        "invoice_id": "inv-c871d0e48609",
+        "payment_id": "pay-e594d31f0918"
+      },
+      {
+        "row_id": "row-5f43b6b8989e",
+        "timestamp": "2026-10-08T16:29:00+05:00",
+        "account": "receivable",
+        "debit_minor": 670617,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-e7f457d0c798",
+        "invoice_id": "inv-e0371c5fcc90",
+        "payment_id": null
+      },
+      {
+        "row_id": "row-66ad753c5644",
+        "timestamp": "2026-10-08T16:29:00+05:00",
+        "account": "revenue",
+        "debit_minor": 0,
+        "credit_minor": 670617,
+        "currency": "KZT",
+        "entity_id": "entity-e7f457d0c798",
+        "invoice_id": "inv-e0371c5fcc90",
+        "payment_id": null
+      },
+      {
+        "row_id": "row-82a8316413be",
+        "timestamp": "2026-10-08T16:29:00+05:00",
+        "account": "bank",
+        "debit_minor": 670617,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-e7f457d0c798",
+        "invoice_id": "inv-e0371c5fcc90",
+        "payment_id": "pay-25572ddae449"
+      },
+      {
+        "row_id": "row-0a40208e5abf",
+        "timestamp": "2026-10-08T16:29:00+05:00",
+        "account": "receivable",
+        "debit_minor": 0,
+        "credit_minor": 670617,
+        "currency": "KZT",
+        "entity_id": "entity-e7f457d0c798",
+        "invoice_id": "inv-e0371c5fcc90",
+        "payment_id": "pay-25572ddae449"
+      },
+      {
+        "row_id": "row-354211b1735a",
+        "timestamp": "2026-10-14T01:25:00+05:00",
+        "account": "receivable",
+        "debit_minor": 10000,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-ae3d63d463f0",
+        "invoice_id": "inv-acab1a9cf9e5",
+        "payment_id": null
+      },
+      {
+        "row_id": "row-db49e8abd91f",
+        "timestamp": "2026-10-14T01:25:00+05:00",
+        "account": "revenue",
+        "debit_minor": 0,
+        "credit_minor": 10000,
+        "currency": "KZT",
+        "entity_id": "entity-ae3d63d463f0",
+        "invoice_id": "inv-acab1a9cf9e5",
+        "payment_id": null
+      },
+      {
+        "row_id": "row-abf7c59e1176",
+        "timestamp": "2026-10-19T01:25:00+05:00",
+        "account": "bank",
+        "debit_minor": 5000,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-ae3d63d463f0",
+        "invoice_id": "inv-acab1a9cf9e5",
+        "payment_id": "pay-dc64f1caa558"
+      },
+      {
+        "row_id": "row-91a4d7faed04",
+        "timestamp": "2026-10-19T01:25:00+05:00",
+        "account": "receivable",
+        "debit_minor": 0,
+        "credit_minor": 5000,
+        "currency": "KZT",
+        "entity_id": "entity-ae3d63d463f0",
+        "invoice_id": "inv-acab1a9cf9e5",
+        "payment_id": "pay-dc64f1caa558"
+      },
+      {
+        "row_id": "row-4f536a881e96",
+        "timestamp": "2026-10-19T01:25:00+05:00",
+        "account": "bank",
+        "debit_minor": 5000,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-ae3d63d463f0",
+        "invoice_id": "inv-acab1a9cf9e5",
+        "payment_id": "pay-995bc1e4ef8a"
+      },
+      {
+        "row_id": "row-de946ac664a6",
+        "timestamp": "2026-10-19T01:25:00+05:00",
+        "account": "receivable",
+        "debit_minor": 0,
+        "credit_minor": 5000,
+        "currency": "KZT",
+        "entity_id": "entity-ae3d63d463f0",
+        "invoice_id": "inv-acab1a9cf9e5",
+        "payment_id": "pay-995bc1e4ef8a"
+      },
+      {
+        "row_id": "row-537da2453aac",
+        "timestamp": "2026-10-02T10:45:00+05:00",
+        "account": "receivable",
+        "debit_minor": 14091895,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-b0ec97b93763",
+        "invoice_id": "inv-fcc15f5a916b",
+        "payment_id": null
+      },
+      {
+        "row_id": "row-e2075b018b58",
+        "timestamp": "2026-10-02T10:45:00+05:00",
+        "account": "revenue",
+        "debit_minor": 0,
+        "credit_minor": 14091895,
+        "currency": "KZT",
+        "entity_id": "entity-b0ec97b93763",
+        "invoice_id": "inv-fcc15f5a916b",
+        "payment_id": null
+      },
+      {
+        "row_id": "row-166fdeea0a13",
+        "timestamp": "2026-10-06T10:45:00+05:00",
+        "account": "bank",
+        "debit_minor": 14088960,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-b0ec97b93763",
+        "invoice_id": "inv-fcc15f5a916b",
+        "payment_id": "pay-113253734019"
+      },
+      {
+        "row_id": "row-fc29cb1636f8",
+        "timestamp": "2026-10-06T10:45:00+05:00",
+        "account": "receivable",
+        "debit_minor": 0,
+        "credit_minor": 14088960,
+        "currency": "KZT",
+        "entity_id": "entity-b0ec97b93763",
+        "invoice_id": "inv-fcc15f5a916b",
+        "payment_id": "pay-113253734019"
+      },
+      {
+        "row_id": "row-ba4e9df27c6c",
+        "timestamp": "2026-10-06T10:45:00+05:00",
+        "account": "receivable",
+        "debit_minor": -2935,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-b0ec97b93763",
+        "invoice_id": "inv-fcc15f5a916b",
+        "payment_id": "pay-113253734019"
+      },
+      {
+        "row_id": "row-d4a887a90e9f",
+        "timestamp": "2026-10-06T10:45:00+05:00",
+        "account": "fx_revaluation",
+        "debit_minor": 0,
+        "credit_minor": -2935,
+        "currency": "KZT",
+        "entity_id": "entity-b0ec97b93763",
+        "invoice_id": "inv-fcc15f5a916b",
+        "payment_id": "pay-113253734019"
+      },
+      {
+        "row_id": "row-5f90ad35afd5",
+        "timestamp": "2026-10-28T08:05:00+05:00",
+        "account": "receivable",
+        "debit_minor": 13666694,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-5fdcf0ec8084",
+        "invoice_id": "inv-cc5cc9c4598b",
+        "payment_id": null
+      },
+      {
+        "row_id": "row-62c185a7e918",
+        "timestamp": "2026-10-28T08:05:00+05:00",
+        "account": "revenue",
+        "debit_minor": 0,
+        "credit_minor": 13666694,
+        "currency": "KZT",
+        "entity_id": "entity-5fdcf0ec8084",
+        "invoice_id": "inv-cc5cc9c4598b",
+        "payment_id": null
+      },
+      {
+        "row_id": "row-6003556ea9ce",
+        "timestamp": "2026-10-28T08:05:00+05:00",
+        "account": "bank",
+        "debit_minor": 13666694,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-5fdcf0ec8084",
+        "invoice_id": "inv-cc5cc9c4598b",
+        "payment_id": "pay-b9c75fb8d131"
+      },
+      {
+        "row_id": "row-3ec3a4facc98",
+        "timestamp": "2026-10-28T08:05:00+05:00",
+        "account": "receivable",
+        "debit_minor": 0,
+        "credit_minor": 13666694,
+        "currency": "KZT",
+        "entity_id": "entity-5fdcf0ec8084",
+        "invoice_id": "inv-cc5cc9c4598b",
+        "payment_id": "pay-b9c75fb8d131"
+      },
+      {
+        "row_id": "row-4fc161ba2414",
+        "timestamp": "2026-10-17T11:42:00+05:00",
+        "account": "receivable",
+        "debit_minor": 15319580,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-deb254b96c9a",
+        "invoice_id": "inv-40e985dadb9c",
+        "payment_id": null
+      },
+      {
+        "row_id": "row-0e195b94b269",
+        "timestamp": "2026-10-17T11:42:00+05:00",
+        "account": "revenue",
+        "debit_minor": 0,
+        "credit_minor": 15319580,
+        "currency": "KZT",
+        "entity_id": "entity-deb254b96c9a",
+        "invoice_id": "inv-40e985dadb9c",
+        "payment_id": null
+      },
+      {
+        "row_id": "row-c09814817038",
+        "timestamp": "2026-10-21T11:42:00+05:00",
+        "account": "bank",
+        "debit_minor": 14825400,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-deb254b96c9a",
+        "invoice_id": "inv-40e985dadb9c",
+        "payment_id": "pay-a51ff11fe817"
+      },
+      {
+        "row_id": "row-602bee2245b4",
+        "timestamp": "2026-10-21T11:42:00+05:00",
+        "account": "receivable",
+        "debit_minor": 0,
+        "credit_minor": 14825400,
+        "currency": "KZT",
+        "entity_id": "entity-deb254b96c9a",
+        "invoice_id": "inv-40e985dadb9c",
+        "payment_id": "pay-a51ff11fe817"
+      },
+      {
+        "row_id": "row-60674876dfa2",
+        "timestamp": "2026-10-21T11:42:00+05:00",
+        "account": "receivable",
+        "debit_minor": -494180,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-deb254b96c9a",
+        "invoice_id": "inv-40e985dadb9c",
+        "payment_id": "pay-a51ff11fe817"
+      },
+      {
+        "row_id": "row-2c8bfc08ff3e",
+        "timestamp": "2026-10-21T11:42:00+05:00",
+        "account": "fx_revaluation",
+        "debit_minor": 0,
+        "credit_minor": -494180,
+        "currency": "KZT",
+        "entity_id": "entity-deb254b96c9a",
+        "invoice_id": "inv-40e985dadb9c",
+        "payment_id": "pay-a51ff11fe817"
+      },
+      {
+        "row_id": "row-c1a43fa26e63",
+        "timestamp": "2026-10-06T12:25:00+05:00",
+        "account": "receivable",
+        "debit_minor": 9422295,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-32cb522246f6",
+        "invoice_id": "inv-51b496e6ff9f",
+        "payment_id": null
+      },
+      {
+        "row_id": "row-7d4bf11b25ba",
+        "timestamp": "2026-10-06T12:25:00+05:00",
+        "account": "revenue",
+        "debit_minor": 0,
+        "credit_minor": 9422295,
+        "currency": "KZT",
+        "entity_id": "entity-32cb522246f6",
+        "invoice_id": "inv-51b496e6ff9f",
+        "payment_id": null
+      },
+      {
+        "row_id": "row-2baaaa235633",
+        "timestamp": "2026-10-07T12:25:00+05:00",
+        "account": "bank",
+        "debit_minor": 9422903,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-32cb522246f6",
+        "invoice_id": "inv-51b496e6ff9f",
+        "payment_id": "pay-1539e2a66b7c"
+      },
+      {
+        "row_id": "row-8e0b3a137c3b",
+        "timestamp": "2026-10-07T12:25:00+05:00",
+        "account": "receivable",
+        "debit_minor": 0,
+        "credit_minor": 9422903,
+        "currency": "KZT",
+        "entity_id": "entity-32cb522246f6",
+        "invoice_id": "inv-51b496e6ff9f",
+        "payment_id": "pay-1539e2a66b7c"
+      },
+      {
+        "row_id": "row-0b00b212e5cc",
+        "timestamp": "2026-10-07T12:25:00+05:00",
+        "account": "receivable",
+        "debit_minor": 608,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-32cb522246f6",
+        "invoice_id": "inv-51b496e6ff9f",
+        "payment_id": "pay-1539e2a66b7c"
+      },
+      {
+        "row_id": "row-775b0f3f9acf",
+        "timestamp": "2026-10-07T12:25:00+05:00",
+        "account": "fx_revaluation",
+        "debit_minor": 0,
+        "credit_minor": 608,
+        "currency": "KZT",
+        "entity_id": "entity-32cb522246f6",
+        "invoice_id": "inv-51b496e6ff9f",
+        "payment_id": "pay-1539e2a66b7c"
+      },
+      {
+        "row_id": "row-874ae6dac887",
+        "timestamp": "2026-10-02T06:29:00+05:00",
+        "account": "receivable",
+        "debit_minor": 29931,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-a7a537af28b9",
+        "invoice_id": "inv-1391f26aacf6",
+        "payment_id": null
+      },
+      {
+        "row_id": "row-440518bf0091",
+        "timestamp": "2026-10-02T06:29:00+05:00",
+        "account": "revenue",
+        "debit_minor": 0,
+        "credit_minor": 29931,
+        "currency": "KZT",
+        "entity_id": "entity-a7a537af28b9",
+        "invoice_id": "inv-1391f26aacf6",
+        "payment_id": null
+      },
+      {
+        "row_id": "row-f2f06df8530b",
+        "timestamp": "2026-10-05T06:29:00+05:00",
+        "account": "bank",
+        "debit_minor": 14965,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-a7a537af28b9",
+        "invoice_id": "inv-1391f26aacf6",
+        "payment_id": "pay-f70d93c0ca28"
+      },
+      {
+        "row_id": "row-71a993a007aa",
+        "timestamp": "2026-10-05T06:29:00+05:00",
+        "account": "receivable",
+        "debit_minor": 0,
+        "credit_minor": 14965,
+        "currency": "KZT",
+        "entity_id": "entity-a7a537af28b9",
+        "invoice_id": "inv-1391f26aacf6",
+        "payment_id": "pay-f70d93c0ca28"
+      },
+      {
+        "row_id": "row-ab6b762392c1",
+        "timestamp": "2026-10-07T06:29:00+05:00",
+        "account": "bank",
+        "debit_minor": 14966,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-a7a537af28b9",
+        "invoice_id": "inv-1391f26aacf6",
+        "payment_id": "pay-a4e37762acc2"
+      },
+      {
+        "row_id": "row-1f4ce8f5beb1",
+        "timestamp": "2026-10-07T06:29:00+05:00",
+        "account": "receivable",
+        "debit_minor": 0,
+        "credit_minor": 14966,
+        "currency": "KZT",
+        "entity_id": "entity-a7a537af28b9",
+        "invoice_id": "inv-1391f26aacf6",
+        "payment_id": "pay-a4e37762acc2"
+      },
+      {
+        "row_id": "row-644a5b7bf3ae",
+        "timestamp": "2026-10-01T09:03:00+05:00",
+        "account": "receivable",
+        "debit_minor": 5359200,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-f5078ca712f9",
+        "invoice_id": "inv-bb435c13ed60",
+        "payment_id": null
+      },
+      {
+        "row_id": "row-701bb6743a17",
+        "timestamp": "2026-10-01T09:03:00+05:00",
+        "account": "revenue",
+        "debit_minor": 0,
+        "credit_minor": 5359200,
+        "currency": "KZT",
+        "entity_id": "entity-f5078ca712f9",
+        "invoice_id": "inv-bb435c13ed60",
+        "payment_id": null
+      },
+      {
+        "row_id": "row-69ed42ae50fc",
+        "timestamp": "2026-10-05T09:03:00+05:00",
+        "account": "bank",
+        "debit_minor": 5363666,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-f5078ca712f9",
+        "invoice_id": "inv-bb435c13ed60",
+        "payment_id": "pay-a9310aaa2f19"
+      },
+      {
+        "row_id": "row-97bf88a4eb76",
+        "timestamp": "2026-10-05T09:03:00+05:00",
+        "account": "receivable",
+        "debit_minor": 0,
+        "credit_minor": 5363666,
+        "currency": "KZT",
+        "entity_id": "entity-f5078ca712f9",
+        "invoice_id": "inv-bb435c13ed60",
+        "payment_id": "pay-a9310aaa2f19"
+      },
+      {
+        "row_id": "row-f5291ea3332f",
+        "timestamp": "2026-10-05T09:03:00+05:00",
+        "account": "receivable",
+        "debit_minor": 4466,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-f5078ca712f9",
+        "invoice_id": "inv-bb435c13ed60",
+        "payment_id": "pay-a9310aaa2f19"
+      },
+      {
+        "row_id": "row-482a32b0a62e",
+        "timestamp": "2026-10-05T09:03:00+05:00",
+        "account": "fx_revaluation",
+        "debit_minor": 0,
+        "credit_minor": 4466,
+        "currency": "KZT",
+        "entity_id": "entity-f5078ca712f9",
+        "invoice_id": "inv-bb435c13ed60",
+        "payment_id": "pay-a9310aaa2f19"
+      },
+      {
+        "row_id": "row-32a6689bb4be",
+        "timestamp": "2026-10-02T04:59:00+05:00",
+        "account": "receivable",
+        "debit_minor": 5201000,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-c39fca2ac335",
+        "invoice_id": "inv-608965e274b0",
+        "payment_id": null
+      },
+      {
+        "row_id": "row-0919859f76cc",
+        "timestamp": "2026-10-02T04:59:00+05:00",
+        "account": "revenue",
+        "debit_minor": 0,
+        "credit_minor": 5201000,
+        "currency": "KZT",
+        "entity_id": "entity-c39fca2ac335",
+        "invoice_id": "inv-608965e274b0",
+        "payment_id": null
+      },
+      {
+        "row_id": "row-2248cea54173",
+        "timestamp": "2026-10-04T04:59:00+05:00",
+        "account": "bank",
+        "debit_minor": 5203000,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-c39fca2ac335",
+        "invoice_id": "inv-608965e274b0",
+        "payment_id": "pay-1ddf68e3f05e"
+      },
+      {
+        "row_id": "row-b512a53db9d6",
+        "timestamp": "2026-10-04T04:59:00+05:00",
+        "account": "receivable",
+        "debit_minor": 0,
+        "credit_minor": 5203000,
+        "currency": "KZT",
+        "entity_id": "entity-c39fca2ac335",
+        "invoice_id": "inv-608965e274b0",
+        "payment_id": "pay-1ddf68e3f05e"
+      },
+      {
+        "row_id": "row-40a5fcaad15f",
+        "timestamp": "2026-10-04T04:59:00+05:00",
+        "account": "receivable",
+        "debit_minor": 2000,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-c39fca2ac335",
+        "invoice_id": "inv-608965e274b0",
+        "payment_id": "pay-1ddf68e3f05e"
+      },
+      {
+        "row_id": "row-0f4621722410",
+        "timestamp": "2026-10-04T04:59:00+05:00",
+        "account": "fx_revaluation",
+        "debit_minor": 0,
+        "credit_minor": 2000,
+        "currency": "KZT",
+        "entity_id": "entity-c39fca2ac335",
+        "invoice_id": "inv-608965e274b0",
+        "payment_id": "pay-1ddf68e3f05e"
+      },
+      {
+        "row_id": "row-5dce3edaea97",
+        "timestamp": "2026-10-08T01:30:00+05:00",
+        "account": "receivable",
+        "debit_minor": 5910400,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-a82bbd3801bf",
+        "invoice_id": "inv-3cab48d5e978",
+        "payment_id": null
+      },
+      {
+        "row_id": "row-000a5fcc22aa",
+        "timestamp": "2026-10-08T01:30:00+05:00",
+        "account": "revenue",
+        "debit_minor": 0,
+        "credit_minor": 5910400,
+        "currency": "KZT",
+        "entity_id": "entity-a82bbd3801bf",
+        "invoice_id": "inv-3cab48d5e978",
+        "payment_id": null
+      },
+      {
+        "row_id": "row-70cdfbc470a9",
+        "timestamp": "2026-10-08T01:30:00+05:00",
+        "account": "bank",
+        "debit_minor": 5910400,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-a82bbd3801bf",
+        "invoice_id": "inv-3cab48d5e978",
+        "payment_id": "pay-4bbfd7e9a329"
+      },
+      {
+        "row_id": "row-55c7addf136c",
+        "timestamp": "2026-10-08T01:30:00+05:00",
+        "account": "receivable",
+        "debit_minor": 0,
+        "credit_minor": 5910400,
+        "currency": "KZT",
+        "entity_id": "entity-a82bbd3801bf",
+        "invoice_id": "inv-3cab48d5e978",
+        "payment_id": "pay-4bbfd7e9a329"
+      },
+      {
+        "row_id": "row-409a9e24fb91",
+        "timestamp": "2026-10-24T09:15:00+05:00",
+        "account": "receivable",
+        "debit_minor": -1686726,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-580e1b01f211",
+        "invoice_id": "inv-98611c81293e",
+        "payment_id": null
+      },
+      {
+        "row_id": "row-eb76f712958c",
+        "timestamp": "2026-10-24T09:15:00+05:00",
+        "account": "revenue",
+        "debit_minor": 0,
+        "credit_minor": -1686726,
+        "currency": "KZT",
+        "entity_id": "entity-580e1b01f211",
+        "invoice_id": "inv-98611c81293e",
+        "payment_id": null
+      },
+      {
+        "row_id": "row-c9cba04d9553",
+        "timestamp": "2026-10-24T09:15:00+05:00",
+        "account": "bank",
+        "debit_minor": -1686726,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-580e1b01f211",
+        "invoice_id": "inv-98611c81293e",
+        "payment_id": "pay-d7bbf48ccaa1"
+      },
+      {
+        "row_id": "row-e7b1fb3186cf",
+        "timestamp": "2026-10-24T09:15:00+05:00",
+        "account": "receivable",
+        "debit_minor": 0,
+        "credit_minor": -1686726,
+        "currency": "KZT",
+        "entity_id": "entity-580e1b01f211",
+        "invoice_id": "inv-98611c81293e",
+        "payment_id": "pay-d7bbf48ccaa1"
+      },
+      {
+        "row_id": "row-37b76e33600c",
+        "timestamp": "2026-10-28T10:26:00+05:00",
+        "account": "receivable",
+        "debit_minor": 32297,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-225e87540a29",
+        "invoice_id": "inv-73412577214d",
+        "payment_id": null
+      },
+      {
+        "row_id": "row-e0c954d3339f",
+        "timestamp": "2026-10-28T10:26:00+05:00",
+        "account": "revenue",
+        "debit_minor": 0,
+        "credit_minor": 32297,
+        "currency": "KZT",
+        "entity_id": "entity-225e87540a29",
+        "invoice_id": "inv-73412577214d",
+        "payment_id": null
+      },
+      {
+        "row_id": "row-e931bd418a20",
+        "timestamp": "2026-10-29T10:26:00+05:00",
+        "account": "bank",
+        "debit_minor": 16148,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-225e87540a29",
+        "invoice_id": "inv-73412577214d",
+        "payment_id": "pay-8be95818f930"
+      },
+      {
+        "row_id": "row-7262ad3bbbf8",
+        "timestamp": "2026-10-29T10:26:00+05:00",
+        "account": "receivable",
+        "debit_minor": 0,
+        "credit_minor": 16148,
+        "currency": "KZT",
+        "entity_id": "entity-225e87540a29",
+        "invoice_id": "inv-73412577214d",
+        "payment_id": "pay-8be95818f930"
+      },
+      {
+        "row_id": "row-34d3959a420e",
+        "timestamp": "2026-10-30T10:26:00+05:00",
+        "account": "bank",
+        "debit_minor": 16149,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-225e87540a29",
+        "invoice_id": "inv-73412577214d",
+        "payment_id": "pay-db62302efda5"
+      },
+      {
+        "row_id": "row-596a352b1485",
+        "timestamp": "2026-10-30T10:26:00+05:00",
+        "account": "receivable",
+        "debit_minor": 0,
+        "credit_minor": 16149,
+        "currency": "KZT",
+        "entity_id": "entity-225e87540a29",
+        "invoice_id": "inv-73412577214d",
+        "payment_id": "pay-db62302efda5"
+      },
+      {
+        "row_id": "row-441feda865e4",
+        "timestamp": "2026-10-14T10:29:00+05:00",
+        "account": "receivable",
+        "debit_minor": 6064268,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-693c8301d6f6",
+        "invoice_id": "inv-f70384027a52",
+        "payment_id": null
+      },
+      {
+        "row_id": "row-c16763de7d2e",
+        "timestamp": "2026-10-14T10:29:00+05:00",
+        "account": "revenue",
+        "debit_minor": 0,
+        "credit_minor": 6064268,
+        "currency": "KZT",
+        "entity_id": "entity-693c8301d6f6",
+        "invoice_id": "inv-f70384027a52",
+        "payment_id": null
+      },
+      {
+        "row_id": "row-34b275bbffff",
+        "timestamp": "2026-10-14T10:29:00+05:00",
+        "account": "bank",
+        "debit_minor": 6064268,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-693c8301d6f6",
+        "invoice_id": "inv-f70384027a52",
+        "payment_id": "pay-ebe5c8afaaca"
+      },
+      {
+        "row_id": "row-73e5159baac8",
+        "timestamp": "2026-10-14T10:29:00+05:00",
+        "account": "receivable",
+        "debit_minor": 0,
+        "credit_minor": 6064268,
+        "currency": "KZT",
+        "entity_id": "entity-693c8301d6f6",
+        "invoice_id": "inv-f70384027a52",
+        "payment_id": "pay-ebe5c8afaaca"
+      },
+      {
+        "row_id": "row-dbf06d757735",
+        "timestamp": "2026-10-06T12:20:00+05:00",
+        "account": "receivable",
+        "debit_minor": 38695800,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-c41a5aa21149",
+        "invoice_id": "inv-943eb4109f0e",
+        "payment_id": null
+      },
+      {
+        "row_id": "row-68da8c92e825",
+        "timestamp": "2026-10-06T12:20:00+05:00",
+        "account": "revenue",
+        "debit_minor": 0,
+        "credit_minor": 38695800,
+        "currency": "KZT",
+        "entity_id": "entity-c41a5aa21149",
+        "invoice_id": "inv-943eb4109f0e",
+        "payment_id": null
+      },
+      {
+        "row_id": "row-1668d8b47757",
+        "timestamp": "2026-10-09T12:20:00+05:00",
+        "account": "bank",
+        "debit_minor": 38718124,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-c41a5aa21149",
+        "invoice_id": "inv-943eb4109f0e",
+        "payment_id": "pay-652053eaf444"
+      },
+      {
+        "row_id": "row-d55a5f53b1ed",
+        "timestamp": "2026-10-09T12:20:00+05:00",
+        "account": "receivable",
+        "debit_minor": 0,
+        "credit_minor": 38718124,
+        "currency": "KZT",
+        "entity_id": "entity-c41a5aa21149",
+        "invoice_id": "inv-943eb4109f0e",
+        "payment_id": "pay-652053eaf444"
+      },
+      {
+        "row_id": "row-dd4ff8bdb541",
+        "timestamp": "2026-10-09T12:20:00+05:00",
+        "account": "receivable",
+        "debit_minor": 22324,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-c41a5aa21149",
+        "invoice_id": "inv-943eb4109f0e",
+        "payment_id": "pay-652053eaf444"
+      },
+      {
+        "row_id": "row-dce81eece205",
+        "timestamp": "2026-10-09T12:20:00+05:00",
+        "account": "fx_revaluation",
+        "debit_minor": 0,
+        "credit_minor": 22324,
+        "currency": "KZT",
+        "entity_id": "entity-c41a5aa21149",
+        "invoice_id": "inv-943eb4109f0e",
+        "payment_id": "pay-652053eaf444"
+      },
+      {
+        "row_id": "row-817b50dc0b5c",
+        "timestamp": "2026-10-08T00:04:00+05:00",
+        "account": "receivable",
+        "debit_minor": 11562880,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-d3afd7852aa4",
+        "invoice_id": "inv-41dfbaa67fa2",
+        "payment_id": null
+      },
+      {
+        "row_id": "row-0fcc31b8b71d",
+        "timestamp": "2026-10-08T00:04:00+05:00",
+        "account": "revenue",
+        "debit_minor": 0,
+        "credit_minor": 11562880,
+        "currency": "KZT",
+        "entity_id": "entity-d3afd7852aa4",
+        "invoice_id": "inv-41dfbaa67fa2",
+        "payment_id": null
+      },
+      {
+        "row_id": "row-9abd35b4367d",
+        "timestamp": "2026-10-12T00:04:00+05:00",
+        "account": "bank",
+        "debit_minor": 11201540,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-d3afd7852aa4",
+        "invoice_id": "inv-41dfbaa67fa2",
+        "payment_id": "pay-f983685bb5c0"
+      },
+      {
+        "row_id": "row-67b3c751b2b9",
+        "timestamp": "2026-10-12T00:04:00+05:00",
+        "account": "receivable",
+        "debit_minor": 0,
+        "credit_minor": 11201540,
+        "currency": "KZT",
+        "entity_id": "entity-d3afd7852aa4",
+        "invoice_id": "inv-41dfbaa67fa2",
+        "payment_id": "pay-f983685bb5c0"
+      },
+      {
+        "row_id": "row-404c190ad9bc",
+        "timestamp": "2026-10-12T00:04:00+05:00",
+        "account": "receivable",
+        "debit_minor": -361340,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-d3afd7852aa4",
+        "invoice_id": "inv-41dfbaa67fa2",
+        "payment_id": "pay-f983685bb5c0"
+      },
+      {
+        "row_id": "row-8b1893de01f7",
+        "timestamp": "2026-10-12T00:04:00+05:00",
+        "account": "fx_revaluation",
+        "debit_minor": 0,
+        "credit_minor": -361340,
+        "currency": "KZT",
+        "entity_id": "entity-d3afd7852aa4",
+        "invoice_id": "inv-41dfbaa67fa2",
+        "payment_id": "pay-f983685bb5c0"
+      },
+      {
+        "row_id": "row-7952895f937c",
+        "timestamp": "2026-10-13T12:37:00+05:00",
+        "account": "receivable",
+        "debit_minor": 1550200,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-c9fff7588558",
+        "invoice_id": "inv-c257326bf1b1",
+        "payment_id": null
+      },
+      {
+        "row_id": "row-3fd3060198a0",
+        "timestamp": "2026-10-13T12:37:00+05:00",
+        "account": "revenue",
+        "debit_minor": 0,
+        "credit_minor": 1550200,
+        "currency": "KZT",
+        "entity_id": "entity-c9fff7588558",
+        "invoice_id": "inv-c257326bf1b1",
+        "payment_id": null
+      },
+      {
+        "row_id": "row-e84c62aa7d6d",
+        "timestamp": "2026-10-17T12:37:00+05:00",
+        "account": "bank",
+        "debit_minor": 1550100,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-c9fff7588558",
+        "invoice_id": "inv-c257326bf1b1",
+        "payment_id": "pay-c6b95bfef589"
+      },
+      {
+        "row_id": "row-05051a108937",
+        "timestamp": "2026-10-17T12:37:00+05:00",
+        "account": "receivable",
+        "debit_minor": 0,
+        "credit_minor": 1550100,
+        "currency": "KZT",
+        "entity_id": "entity-c9fff7588558",
+        "invoice_id": "inv-c257326bf1b1",
+        "payment_id": "pay-c6b95bfef589"
+      },
+      {
+        "row_id": "row-c2d3a7bbaf12",
+        "timestamp": "2026-10-17T12:37:00+05:00",
+        "account": "receivable",
+        "debit_minor": -100,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": "entity-c9fff7588558",
+        "invoice_id": "inv-c257326bf1b1",
+        "payment_id": "pay-c6b95bfef589"
+      },
+      {
+        "row_id": "row-6f77b01af8ae",
+        "timestamp": "2026-10-17T12:37:00+05:00",
+        "account": "fx_revaluation",
+        "debit_minor": 0,
+        "credit_minor": -100,
+        "currency": "KZT",
+        "entity_id": "entity-c9fff7588558",
+        "invoice_id": "inv-c257326bf1b1",
+        "payment_id": "pay-c6b95bfef589"
+      },
+      {
+        "row_id": "row-a1d188a3b89f",
+        "timestamp": "2026-10-27T12:00:00+05:00",
+        "account": "bank",
+        "debit_minor": 17929,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": null,
+        "invoice_id": null,
+        "payment_id": "pay-121f40c1fef4"
+      },
+      {
+        "row_id": "row-fd11c00dedf7",
+        "timestamp": "2026-10-27T12:00:00+05:00",
+        "account": "unallocated",
+        "debit_minor": 0,
+        "credit_minor": 17929,
+        "currency": "KZT",
+        "entity_id": null,
+        "invoice_id": null,
+        "payment_id": "pay-121f40c1fef4"
+      },
+      {
+        "row_id": "row-c9eff7b9126f",
+        "timestamp": "2026-10-14T12:00:00+05:00",
+        "account": "bank",
+        "debit_minor": 48311,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": null,
+        "invoice_id": null,
+        "payment_id": "pay-44577cc6a75b"
+      },
+      {
+        "row_id": "row-c3bfd9067e93",
+        "timestamp": "2026-10-14T12:00:00+05:00",
+        "account": "unallocated",
+        "debit_minor": 0,
+        "credit_minor": 48311,
+        "currency": "KZT",
+        "entity_id": null,
+        "invoice_id": null,
+        "payment_id": "pay-44577cc6a75b"
+      },
+      {
+        "row_id": "row-e0c44f6083c4",
+        "timestamp": "2026-10-11T12:00:00+05:00",
+        "account": "bank",
+        "debit_minor": 15577,
+        "credit_minor": 0,
+        "currency": "KZT",
+        "entity_id": null,
+        "invoice_id": null,
+        "payment_id": "pay-00ade7a6fb22"
+      },
+      {
+        "row_id": "row-fc1a800ee5b3",
+        "timestamp": "2026-10-11T12:00:00+05:00",
+        "account": "unallocated",
+        "debit_minor": 0,
+        "credit_minor": 15577,
+        "currency": "KZT",
+        "entity_id": null,
+        "invoice_id": null,
+        "payment_id": "pay-00ade7a6fb22"
+      }
+    ],
+    "invoices": [
+      {
+        "doc_id": "doc-8412ccc2addc",
+        "invoice_id": "inv-36ce8a380c8a",
+        "entity_id": "entity-5fa275977e2e",
+        "supplier_name": "Turan Synthetic Ltd",
+        "issued_at": "2026-10-31T23:42:00+05:00",
+        "service_at": "2026-10-31T23:42:00+05:00",
+        "due_at": "2026-11-10T23:42:00+05:00",
+        "currency": "KZT",
+        "total_minor": -10000,
+        "line_items": [
+          {
+            "description": "Synthetic services / credit note",
+            "total_minor": -10000
+          }
+        ]
+      },
+      {
+        "doc_id": "doc-d105a5198798",
+        "invoice_id": "inv-0f450871a0fd",
+        "entity_id": "entity-43b7dc5b5943",
+        "supplier_name": "Orion Synthetic Ltd",
+        "issued_at": "2026-10-31T23:51:00+05:00",
+        "service_at": "2026-10-31T23:51:00+05:00",
+        "due_at": "2026-11-10T23:51:00+05:00",
+        "currency": "USD",
+        "total_minor": 77871,
+        "line_items": [
+          {
+            "description": "Synthetic services / credit note",
+            "total_minor": 77871
+          }
+        ]
+      },
+      {
+        "doc_id": "doc-7e7ca310d282",
+        "invoice_id": "inv-6fb1a2ca647d",
+        "entity_id": "entity-5c12a006bb67",
+        "supplier_name": "Orion Synthetic Ltd",
+        "issued_at": "2026-10-31T23:04:00+05:00",
+        "service_at": "2026-10-31T23:04:00+05:00",
+        "due_at": "2026-11-10T23:04:00+05:00",
+        "currency": "EUR",
+        "total_minor": 33662,
+        "line_items": [
+          {
+            "description": "Synthetic services / credit note",
+            "total_minor": 33662
+          }
+        ]
+      },
+      {
+        "doc_id": "doc-6f4d23b55ce3",
+        "invoice_id": "inv-81fbe37855d2",
+        "entity_id": "entity-fdf100265875",
+        "supplier_name": "Turan Synthetic Ltd",
+        "issued_at": "2026-10-31T23:34:00+05:00",
+        "service_at": "2026-10-31T23:34:00+05:00",
+        "due_at": "2026-11-10T23:34:00+05:00",
+        "currency": "JPY",
+        "total_minor": 18064,
+        "line_items": [
+          {
+            "description": "Synthetic services / credit note",
+            "total_minor": 18064
+          }
+        ]
+      },
+      {
+        "doc_id": "doc-bd167cdc7cf2",
+        "invoice_id": "inv-5a2b07abd515",
+        "entity_id": "entity-0e347ce1f5ec",
+        "supplier_name": "Orion Synthetic Ltd",
+        "issued_at": "2026-10-31T23:21:00+05:00",
+        "service_at": "2026-10-31T23:21:00+05:00",
+        "due_at": "2026-11-10T23:21:00+05:00",
+        "currency": "KWD",
+        "total_minor": 60353,
+        "line_items": [
+          {
+            "description": "Synthetic services / credit note",
+            "total_minor": 60353
+          }
+        ]
+      },
+      {
+        "doc_id": "doc-1854c3a2c652",
+        "invoice_id": "inv-b02992f7eb1f",
+        "entity_id": "entity-55e15f522e58",
+        "supplier_name": "Orion Synthetic Ltd",
+        "issued_at": "2026-10-31T23:40:00+05:00",
+        "service_at": "2026-10-31T23:40:00+05:00",
+        "due_at": "2026-11-10T23:40:00+05:00",
+        "currency": "KZT",
+        "total_minor": 50295,
+        "line_items": [
+          {
+            "description": "Synthetic services / credit note",
+            "total_minor": 50295
+          }
+        ]
+      },
+      {
+        "doc_id": "doc-0cb4e7f07673",
+        "invoice_id": "inv-213c9fe04f15",
+        "entity_id": "entity-803e5030c3c9",
+        "supplier_name": "Orion Synthetic Ltd",
+        "issued_at": "2026-10-31T23:08:00+05:00",
+        "service_at": "2026-10-31T23:08:00+05:00",
+        "due_at": "2026-11-10T23:08:00+05:00",
+        "currency": "USD",
+        "total_minor": 51341,
+        "line_items": [
+          {
+            "description": "Synthetic services / credit note",
+            "total_minor": 51341
+          }
+        ]
+      },
+      {
+        "doc_id": "doc-84b07a2a079f",
+        "invoice_id": "inv-569b0e99d0d9",
+        "entity_id": "entity-2ad32e9c5bb0",
+        "supplier_name": "Orion Synthetic Ltd",
+        "issued_at": "2026-10-31T23:10:00+05:00",
+        "service_at": "2026-10-31T23:10:00+05:00",
+        "due_at": "2026-11-10T23:10:00+05:00",
+        "currency": "EUR",
+        "total_minor": 10000,
+        "line_items": [
+          {
+            "description": "Synthetic services / credit note",
+            "total_minor": 10000
+          }
+        ]
+      },
+      {
+        "doc_id": "doc-5baedb5c0d97",
+        "invoice_id": "inv-c7d4449c9422",
+        "entity_id": "entity-3404975e0325",
+        "supplier_name": "Turan Synthetic Ltd",
+        "issued_at": "2026-10-31T23:17:00+05:00",
+        "service_at": "2026-10-31T23:17:00+05:00",
+        "due_at": "2026-11-10T23:17:00+05:00",
+        "currency": "JPY",
+        "total_minor": 81819,
+        "line_items": [
+          {
+            "description": "Synthetic services / credit note",
+            "total_minor": 81819
+          }
+        ]
+      },
+      {
+        "doc_id": "doc-cb7b84c6418b",
+        "invoice_id": "inv-31d4f69984fd",
+        "entity_id": "entity-9f50c2d4e63f",
+        "supplier_name": "Steppe Synthetic Ltd",
+        "issued_at": "2026-10-31T23:38:00+05:00",
+        "service_at": "2026-10-31T23:38:00+05:00",
+        "due_at": "2026-11-10T23:38:00+05:00",
+        "currency": "KWD",
+        "total_minor": 50224,
+        "line_items": [
+          {
+            "description": "Synthetic services / credit note",
+            "total_minor": 50224
+          }
+        ]
+      },
+      {
+        "doc_id": "doc-18f8b9c15f14",
+        "invoice_id": "inv-5655a26b4dc8",
+        "entity_id": "entity-31f9d50fc8fb",
+        "supplier_name": "Steppe Synthetic Ltd",
+        "issued_at": "2026-10-31T23:50:00+05:00",
+        "service_at": "2026-10-31T23:50:00+05:00",
+        "due_at": "2026-11-10T23:50:00+05:00",
+        "currency": "KZT",
+        "total_minor": 81969,
+        "line_items": [
+          {
+            "description": "Synthetic services / credit note",
+            "total_minor": 81969
+          }
+        ]
+      },
+      {
+        "doc_id": "doc-d11dc9b0885b",
+        "invoice_id": "inv-187632cccdf5",
+        "entity_id": "entity-1d3d57009c5b",
+        "supplier_name": "Orion Synthetic Ltd",
+        "issued_at": "2026-10-31T23:48:00+05:00",
+        "service_at": "2026-10-31T23:48:00+05:00",
+        "due_at": "2026-11-10T23:48:00+05:00",
+        "currency": "USD",
+        "total_minor": -41086,
+        "line_items": [
+          {
+            "description": "Synthetic services / credit note",
+            "total_minor": -41086
+          }
+        ]
+      },
+      {
+        "doc_id": "doc-3774fc26b6e0",
+        "invoice_id": "inv-a0c00bb8064c",
+        "entity_id": "entity-2a4d6cc323c0",
+        "supplier_name": "Alma Synthetic Ltd",
+        "issued_at": "2026-10-18T02:08:00+05:00",
+        "service_at": "2026-10-18T02:08:00+05:00",
+        "due_at": "2026-10-28T02:08:00+05:00",
+        "currency": "EUR",
+        "total_minor": 62411,
+        "line_items": [
+          {
+            "description": "Synthetic services / credit note",
+            "total_minor": 62411
+          }
+        ]
+      },
+      {
+        "doc_id": "doc-63f6012d628b",
+        "invoice_id": "inv-7dee5541931f",
+        "entity_id": "entity-797a4b78a443",
+        "supplier_name": "Orion Synthetic Ltd",
+        "issued_at": "2026-10-01T14:32:00+05:00",
+        "service_at": "2026-10-01T14:32:00+05:00",
+        "due_at": "2026-10-11T14:32:00+05:00",
+        "currency": "JPY",
+        "total_minor": 7358,
+        "line_items": [
+          {
+            "description": "Synthetic services / credit note",
+            "total_minor": 7358
+          }
+        ]
+      },
+      {
+        "doc_id": "doc-b2600f3e25e4",
+        "invoice_id": "inv-6bc1c0866f98",
+        "entity_id": "entity-31136f6fc1e5",
+        "supplier_name": "Turan Synthetic Ltd",
+        "issued_at": "2026-10-21T15:10:00+05:00",
+        "service_at": "2026-10-21T15:10:00+05:00",
+        "due_at": "2026-10-31T15:10:00+05:00",
+        "currency": "KWD",
+        "total_minor": 10000,
+        "line_items": [
+          {
+            "description": "Synthetic services / credit note",
+            "total_minor": 10000
+          }
+        ]
+      },
+      {
+        "doc_id": "doc-b88e44c94e40",
+        "invoice_id": "inv-abfd11f729ff",
+        "entity_id": "entity-02d075ca53f7",
+        "supplier_name": "Turan Synthetic Ltd",
+        "issued_at": "2026-10-05T07:36:00+05:00",
+        "service_at": "2026-10-05T07:36:00+05:00",
+        "due_at": "2026-10-15T07:36:00+05:00",
+        "currency": "KZT",
+        "total_minor": 42657,
+        "line_items": [
+          {
+            "description": "Synthetic services / credit note",
+            "total_minor": 42657
+          }
+        ]
+      },
+      {
+        "doc_id": "doc-4f781c357cb2",
+        "invoice_id": "inv-34965d31a40d",
+        "entity_id": "entity-75f6151aeb36",
+        "supplier_name": "Alma Synthetic Ltd",
+        "issued_at": "2026-10-18T02:06:00+05:00",
+        "service_at": "2026-10-18T02:06:00+05:00",
+        "due_at": "2026-10-28T02:06:00+05:00",
+        "currency": "USD",
+        "total_minor": 8252,
+        "line_items": [
+          {
+            "description": "Synthetic services / credit note",
+            "total_minor": 8252
+          }
+        ]
+      },
+      {
+        "doc_id": "doc-5cbb03af121f",
+        "invoice_id": "inv-aad1ad7ccf01",
+        "entity_id": "entity-c910e9cbf2d9",
+        "supplier_name": "Steppe Synthetic Ltd",
+        "issued_at": "2026-10-05T02:17:00+05:00",
+        "service_at": "2026-10-05T02:17:00+05:00",
+        "due_at": "2026-10-15T02:17:00+05:00",
+        "currency": "EUR",
+        "total_minor": 74405,
+        "line_items": [
+          {
+            "description": "Synthetic services / credit note",
+            "total_minor": 74405
+          }
+        ]
+      },
+      {
+        "doc_id": "doc-1afacce4d093",
+        "invoice_id": "inv-29ea3b4f7930",
+        "entity_id": "entity-68b7f3ff820d",
+        "supplier_name": "Steppe Synthetic Ltd",
+        "issued_at": "2026-10-05T16:57:00+05:00",
+        "service_at": "2026-10-05T16:57:00+05:00",
+        "due_at": "2026-10-15T16:57:00+05:00",
+        "currency": "JPY",
+        "total_minor": 53418,
+        "line_items": [
+          {
+            "description": "Synthetic services / credit note",
+            "total_minor": 53418
+          }
+        ]
+      },
+      {
+        "doc_id": "doc-c8f96a581992",
+        "invoice_id": "inv-aea17cce6400",
+        "entity_id": "entity-7ad8842dd30b",
+        "supplier_name": "Steppe Synthetic Ltd",
+        "issued_at": "2026-10-01T00:58:00+05:00",
+        "service_at": "2026-10-01T00:58:00+05:00",
+        "due_at": "2026-10-11T00:58:00+05:00",
+        "currency": "KWD",
+        "total_minor": 46257,
+        "line_items": [
+          {
+            "description": "Synthetic services / credit note",
+            "total_minor": 46257
+          }
+        ]
+      },
+      {
+        "doc_id": "doc-068dc78d1688",
+        "invoice_id": "inv-1b9605afe56c",
+        "entity_id": "entity-0f2755249abf",
+        "supplier_name": "Orion Synthetic Ltd",
+        "issued_at": "2026-10-28T14:38:00+05:00",
+        "service_at": "2026-10-28T14:38:00+05:00",
+        "due_at": "2026-11-07T14:38:00+05:00",
+        "currency": "KZT",
+        "total_minor": 54193,
+        "line_items": [
+          {
+            "description": "Synthetic services / credit note",
+            "total_minor": 54193
+          }
+        ]
+      },
+      {
+        "doc_id": "doc-72c717a520c0",
+        "invoice_id": "inv-7b2edfca401d",
+        "entity_id": "entity-0825f507119f",
+        "supplier_name": "Steppe Synthetic Ltd",
+        "issued_at": "2026-10-08T18:16:00+05:00",
+        "service_at": "2026-10-08T18:16:00+05:00",
+        "due_at": "2026-10-18T18:16:00+05:00",
+        "currency": "USD",
+        "total_minor": 10000,
+        "line_items": [
+          {
+            "description": "Synthetic services / credit note",
+            "total_minor": 10000
+          }
+        ]
+      },
+      {
+        "doc_id": "doc-461d991748bc",
+        "invoice_id": "inv-9393944ea4df",
+        "entity_id": "entity-d529833c0028",
+        "supplier_name": "Steppe Synthetic Ltd",
+        "issued_at": "2026-10-16T11:21:00+05:00",
+        "service_at": "2026-10-16T11:21:00+05:00",
+        "due_at": "2026-10-26T11:21:00+05:00",
+        "currency": "EUR",
+        "total_minor": -34888,
+        "line_items": [
+          {
+            "description": "Synthetic services / credit note",
+            "total_minor": -34888
+          }
+        ]
+      },
+      {
+        "doc_id": "doc-6def7d56b962",
+        "invoice_id": "inv-7445aa1bb50d",
+        "entity_id": "entity-ef480348e7ec",
+        "supplier_name": "Steppe Synthetic Ltd",
+        "issued_at": "2026-10-10T05:45:00+05:00",
+        "service_at": "2026-10-10T05:45:00+05:00",
+        "due_at": "2026-10-20T05:45:00+05:00",
+        "currency": "JPY",
+        "total_minor": 44954,
+        "line_items": [
+          {
+            "description": "Synthetic services / credit note",
+            "total_minor": 44954
+          }
+        ]
+      },
+      {
+        "doc_id": "doc-0a8a8748b380",
+        "invoice_id": "inv-ab3c5cf7e176",
+        "entity_id": "entity-40c87ee43b1e",
+        "supplier_name": "Orion Synthetic Ltd",
+        "issued_at": "2026-10-23T08:18:00+05:00",
+        "service_at": "2026-10-23T08:18:00+05:00",
+        "due_at": "2026-11-02T08:18:00+05:00",
+        "currency": "KWD",
+        "total_minor": 24163,
+        "line_items": [
+          {
+            "description": "Synthetic services / credit note",
+            "total_minor": 24163
+          }
+        ]
+      },
+      {
+        "doc_id": "doc-4eb18f12395f",
+        "invoice_id": "inv-474f044469d8",
+        "entity_id": "entity-d8288a79b377",
+        "supplier_name": "Steppe Synthetic Ltd",
+        "issued_at": "2026-10-09T13:27:00+05:00",
+        "service_at": "2026-10-09T13:27:00+05:00",
+        "due_at": "2026-10-19T13:27:00+05:00",
+        "currency": "KZT",
+        "total_minor": 60591,
+        "line_items": [
+          {
+            "description": "Synthetic services / credit note",
+            "total_minor": 60591
+          }
+        ]
+      },
+      {
+        "doc_id": "doc-b85550fd9315",
+        "invoice_id": "inv-73b6d482cee7",
+        "entity_id": "entity-742df51a418f",
+        "supplier_name": "Orion Synthetic Ltd",
+        "issued_at": "2026-10-28T05:55:00+05:00",
+        "service_at": "2026-10-28T05:55:00+05:00",
+        "due_at": "2026-11-07T05:55:00+05:00",
+        "currency": "USD",
+        "total_minor": 65010,
+        "line_items": [
+          {
+            "description": "Synthetic services / credit note",
+            "total_minor": 65010
+          }
+        ]
+      },
+      {
+        "doc_id": "doc-f06dc94325dd",
+        "invoice_id": "inv-da3d637b911e",
+        "entity_id": "entity-a664faeec874",
+        "supplier_name": "Alma Synthetic Ltd",
+        "issued_at": "2026-10-09T13:39:00+05:00",
+        "service_at": "2026-10-09T13:39:00+05:00",
+        "due_at": "2026-10-19T13:39:00+05:00",
+        "currency": "EUR",
+        "total_minor": 72345,
+        "line_items": [
+          {
+            "description": "Synthetic services / credit note",
+            "total_minor": 72345
+          }
+        ]
+      },
+      {
+        "doc_id": "doc-2e7589291611",
+        "invoice_id": "inv-a5ba0ec906f6",
+        "entity_id": "entity-f0588950c9f8",
+        "supplier_name": "Turan Synthetic Ltd",
+        "issued_at": "2026-10-17T16:57:00+05:00",
+        "service_at": "2026-10-17T16:57:00+05:00",
+        "due_at": "2026-10-27T16:57:00+05:00",
+        "currency": "JPY",
+        "total_minor": 10000,
+        "line_items": [
+          {
+            "description": "Synthetic services / credit note",
+            "total_minor": 10000
+          }
+        ]
+      },
+      {
+        "doc_id": "doc-5cb8feb626ca",
+        "invoice_id": "inv-1d9a4b6a9e21",
+        "entity_id": "entity-0424bed20f4f",
+        "supplier_name": "Turan Synthetic Ltd",
+        "issued_at": "2026-10-15T01:49:00+05:00",
+        "service_at": "2026-10-15T01:49:00+05:00",
+        "due_at": "2026-10-25T01:49:00+05:00",
+        "currency": "KWD",
+        "total_minor": 31592,
+        "line_items": [
+          {
+            "description": "Synthetic services / credit note",
+            "total_minor": 31592
+          }
+        ]
+      },
+      {
+        "doc_id": "doc-ba4ab4b64749",
+        "invoice_id": "inv-e22dd73bf58b",
+        "entity_id": "entity-986545e27822",
+        "supplier_name": "Turan Synthetic Ltd",
+        "issued_at": "2026-10-24T10:07:00+05:00",
+        "service_at": "2026-10-24T10:07:00+05:00",
+        "due_at": "2026-11-03T10:07:00+05:00",
+        "currency": "KZT",
+        "total_minor": 10028,
+        "line_items": [
+          {
+            "description": "Synthetic services / credit note",
+            "total_minor": 10028
+          }
+        ]
+      },
+      {
+        "doc_id": "doc-6af3f1338573",
+        "invoice_id": "inv-053edb19128d",
+        "entity_id": "entity-aba196400021",
+        "supplier_name": "Turan Synthetic Ltd",
+        "issued_at": "2026-10-10T18:28:00+05:00",
+        "service_at": "2026-10-10T18:28:00+05:00",
+        "due_at": "2026-10-20T18:28:00+05:00",
+        "currency": "USD",
+        "total_minor": 2980,
+        "line_items": [
+          {
+            "description": "Synthetic services / credit note",
+            "total_minor": 2980
+          }
+        ]
+      },
+      {
+        "doc_id": "doc-6c3f137dfe5e",
+        "invoice_id": "inv-43f017e77406",
+        "entity_id": "entity-45be2ba13e73",
+        "supplier_name": "Turan Synthetic Ltd",
+        "issued_at": "2026-10-27T15:38:00+05:00",
+        "service_at": "2026-10-27T15:38:00+05:00",
+        "due_at": "2026-11-06T15:38:00+05:00",
+        "currency": "EUR",
+        "total_minor": 77230,
+        "line_items": [
+          {
+            "description": "Synthetic services / credit note",
+            "total_minor": 77230
+          }
+        ]
+      },
+      {
+        "doc_id": "doc-7d2f351c3ce4",
+        "invoice_id": "inv-c871d0e48609",
+        "entity_id": "entity-06c7b6e4ddd2",
+        "supplier_name": "Turan Synthetic Ltd",
+        "issued_at": "2026-10-28T11:01:00+05:00",
+        "service_at": "2026-10-28T11:01:00+05:00",
+        "due_at": "2026-11-07T11:01:00+05:00",
+        "currency": "JPY",
+        "total_minor": -46981,
+        "line_items": [
+          {
+            "description": "Synthetic services / credit note",
+            "total_minor": -46981
+          }
+        ]
+      },
+      {
+        "doc_id": "doc-7544dcfbd47c",
+        "invoice_id": "inv-e0371c5fcc90",
+        "entity_id": "entity-e7f457d0c798",
+        "supplier_name": "Alma Synthetic Ltd",
+        "issued_at": "2026-10-08T16:29:00+05:00",
+        "service_at": "2026-10-08T16:29:00+05:00",
+        "due_at": "2026-10-18T16:29:00+05:00",
+        "currency": "KWD",
+        "total_minor": 4326,
+        "line_items": [
+          {
+            "description": "Synthetic services / credit note",
+            "total_minor": 4326
+          }
+        ]
+      },
+      {
+        "doc_id": "doc-ec74de9e5dd8",
+        "invoice_id": "inv-acab1a9cf9e5",
+        "entity_id": "entity-ae3d63d463f0",
+        "supplier_name": "Turan Synthetic Ltd",
+        "issued_at": "2026-10-14T01:25:00+05:00",
+        "service_at": "2026-10-14T01:25:00+05:00",
+        "due_at": "2026-10-24T01:25:00+05:00",
+        "currency": "KZT",
+        "total_minor": 10000,
+        "line_items": [
+          {
+            "description": "Synthetic services / credit note",
+            "total_minor": 10000
+          }
+        ]
+      },
+      {
+        "doc_id": "doc-99e4ba904a5d",
+        "invoice_id": "inv-fcc15f5a916b",
+        "entity_id": "entity-b0ec97b93763",
+        "supplier_name": "Orion Synthetic Ltd",
+        "issued_at": "2026-10-02T10:45:00+05:00",
+        "service_at": "2026-10-02T10:45:00+05:00",
+        "due_at": "2026-10-12T10:45:00+05:00",
+        "currency": "USD",
+        "total_minor": 29352,
+        "line_items": [
+          {
+            "description": "Synthetic services / credit note",
+            "total_minor": 29352
+          }
+        ]
+      },
+      {
+        "doc_id": "doc-0d79be5fbe0a",
+        "invoice_id": "inv-cc5cc9c4598b",
+        "entity_id": "entity-5fdcf0ec8084",
+        "supplier_name": "Orion Synthetic Ltd",
+        "issued_at": "2026-10-28T08:05:00+05:00",
+        "service_at": "2026-10-28T08:05:00+05:00",
+        "due_at": "2026-11-07T08:05:00+05:00",
+        "currency": "EUR",
+        "total_minor": 26272,
+        "line_items": [
+          {
+            "description": "Synthetic services / credit note",
+            "total_minor": 26272
+          }
+        ]
+      },
+      {
+        "doc_id": "doc-a7e82888c2b1",
+        "invoice_id": "inv-40e985dadb9c",
+        "entity_id": "entity-deb254b96c9a",
+        "supplier_name": "Steppe Synthetic Ltd",
+        "issued_at": "2026-10-17T11:42:00+05:00",
+        "service_at": "2026-10-17T11:42:00+05:00",
+        "due_at": "2026-10-27T11:42:00+05:00",
+        "currency": "JPY",
+        "total_minor": 49418,
+        "line_items": [
+          {
+            "description": "Synthetic services / credit note",
+            "total_minor": 49418
+          }
+        ]
+      },
+      {
+        "doc_id": "doc-472592f26a81",
+        "invoice_id": "inv-51b496e6ff9f",
+        "entity_id": "entity-32cb522246f6",
+        "supplier_name": "Orion Synthetic Ltd",
+        "issued_at": "2026-10-06T12:25:00+05:00",
+        "service_at": "2026-10-06T12:25:00+05:00",
+        "due_at": "2026-10-16T12:25:00+05:00",
+        "currency": "KWD",
+        "total_minor": 60789,
+        "line_items": [
+          {
+            "description": "Synthetic services / credit note",
+            "total_minor": 60789
+          }
+        ]
+      },
+      {
+        "doc_id": "doc-66eb50d11fe9",
+        "invoice_id": "inv-1391f26aacf6",
+        "entity_id": "entity-a7a537af28b9",
+        "supplier_name": "Turan Synthetic Ltd",
+        "issued_at": "2026-10-02T06:29:00+05:00",
+        "service_at": "2026-10-02T06:29:00+05:00",
+        "due_at": "2026-10-12T06:29:00+05:00",
+        "currency": "KZT",
+        "total_minor": 29931,
+        "line_items": [
+          {
+            "description": "Synthetic services / credit note",
+            "total_minor": 29931
+          }
+        ]
+      },
+      {
+        "doc_id": "doc-d7c8c7179905",
+        "invoice_id": "inv-bb435c13ed60",
+        "entity_id": "entity-f5078ca712f9",
+        "supplier_name": "Steppe Synthetic Ltd",
+        "issued_at": "2026-10-01T09:03:00+05:00",
+        "service_at": "2026-10-01T09:03:00+05:00",
+        "due_at": "2026-10-11T09:03:00+05:00",
+        "currency": "USD",
+        "total_minor": 11165,
+        "line_items": [
+          {
+            "description": "Synthetic services / credit note",
+            "total_minor": 11165
+          }
+        ]
+      },
+      {
+        "doc_id": "doc-94a02fa753ff",
+        "invoice_id": "inv-608965e274b0",
+        "entity_id": "entity-c39fca2ac335",
+        "supplier_name": "Alma Synthetic Ltd",
+        "issued_at": "2026-10-02T04:59:00+05:00",
+        "service_at": "2026-10-02T04:59:00+05:00",
+        "due_at": "2026-10-12T04:59:00+05:00",
+        "currency": "EUR",
+        "total_minor": 10000,
+        "line_items": [
+          {
+            "description": "Synthetic services / credit note",
+            "total_minor": 10000
+          }
+        ]
+      },
+      {
+        "doc_id": "doc-205ce57fef0d",
+        "invoice_id": "inv-3cab48d5e978",
+        "entity_id": "entity-a82bbd3801bf",
+        "supplier_name": "Alma Synthetic Ltd",
+        "issued_at": "2026-10-08T01:30:00+05:00",
+        "service_at": "2026-10-08T01:30:00+05:00",
+        "due_at": "2026-10-18T01:30:00+05:00",
+        "currency": "JPY",
+        "total_minor": 18470,
+        "line_items": [
+          {
+            "description": "Synthetic services / credit note",
+            "total_minor": 18470
+          }
+        ]
+      },
+      {
+        "doc_id": "doc-c31e92efefe1",
+        "invoice_id": "inv-98611c81293e",
+        "entity_id": "entity-580e1b01f211",
+        "supplier_name": "Alma Synthetic Ltd",
+        "issued_at": "2026-10-24T09:15:00+05:00",
+        "service_at": "2026-10-24T09:15:00+05:00",
+        "due_at": "2026-11-03T09:15:00+05:00",
+        "currency": "KWD",
+        "total_minor": -10880,
+        "line_items": [
+          {
+            "description": "Synthetic services / credit note",
+            "total_minor": -10880
+          }
+        ]
+      },
+      {
+        "doc_id": "doc-510545bd1b0c",
+        "invoice_id": "inv-73412577214d",
+        "entity_id": "entity-225e87540a29",
+        "supplier_name": "Alma Synthetic Ltd",
+        "issued_at": "2026-10-28T10:26:00+05:00",
+        "service_at": "2026-10-28T10:26:00+05:00",
+        "due_at": "2026-11-07T10:26:00+05:00",
+        "currency": "KZT",
+        "total_minor": 32297,
+        "line_items": [
+          {
+            "description": "Synthetic services / credit note",
+            "total_minor": 32297
+          }
+        ]
+      },
+      {
+        "doc_id": "doc-35b16600514a",
+        "invoice_id": "inv-f70384027a52",
+        "entity_id": "entity-693c8301d6f6",
+        "supplier_name": "Turan Synthetic Ltd",
+        "issued_at": "2026-10-14T10:29:00+05:00",
+        "service_at": "2026-10-14T10:29:00+05:00",
+        "due_at": "2026-10-24T10:29:00+05:00",
+        "currency": "USD",
+        "total_minor": 12626,
+        "line_items": [
+          {
+            "description": "Synthetic services / credit note",
+            "total_minor": 12626
+          }
+        ]
+      },
+      {
+        "doc_id": "doc-4db8aec97e56",
+        "invoice_id": "inv-943eb4109f0e",
+        "entity_id": "entity-c41a5aa21149",
+        "supplier_name": "Turan Synthetic Ltd",
+        "issued_at": "2026-10-06T12:20:00+05:00",
+        "service_at": "2026-10-06T12:20:00+05:00",
+        "due_at": "2026-10-16T12:20:00+05:00",
+        "currency": "EUR",
+        "total_minor": 74415,
+        "line_items": [
+          {
+            "description": "Synthetic services / credit note",
+            "total_minor": 74415
+          }
+        ]
+      },
+      {
+        "doc_id": "doc-48b6d91c3902",
+        "invoice_id": "inv-41dfbaa67fa2",
+        "entity_id": "entity-d3afd7852aa4",
+        "supplier_name": "Orion Synthetic Ltd",
+        "issued_at": "2026-10-08T00:04:00+05:00",
+        "service_at": "2026-10-08T00:04:00+05:00",
+        "due_at": "2026-10-18T00:04:00+05:00",
+        "currency": "JPY",
+        "total_minor": 36134,
+        "line_items": [
+          {
+            "description": "Synthetic services / credit note",
+            "total_minor": 36134
+          }
+        ]
+      },
+      {
+        "doc_id": "doc-95e8b243c8b8",
+        "invoice_id": "inv-c257326bf1b1",
+        "entity_id": "entity-c9fff7588558",
+        "supplier_name": "Alma Synthetic Ltd",
+        "issued_at": "2026-10-13T12:37:00+05:00",
+        "service_at": "2026-10-13T12:37:00+05:00",
+        "due_at": "2026-10-23T12:37:00+05:00",
+        "currency": "KWD",
+        "total_minor": 10000,
+        "line_items": [
+          {
+            "description": "Synthetic services / credit note",
+            "total_minor": 10000
+          }
+        ]
+      }
+    ],
+    "payments": [
+      {
+        "doc_id": "doc-b23e760db967",
+        "payment_id": "pay-bdbc00b90bde",
+        "timestamp": "2026-11-03T23:42:00+05:00",
+        "currency": "KZT",
+        "amount_minor": -5000,
+        "invoice_refs": [
+          {
+            "invoice_id": "inv-36ce8a380c8a",
+            "amount_minor": -5000
+          }
+        ]
+      },
+      {
+        "doc_id": "doc-493b72ae65dd",
+        "payment_id": "pay-3edb3065ea08",
+        "timestamp": "2026-11-02T23:42:00+05:00",
+        "currency": "KZT",
+        "amount_minor": -5000,
+        "invoice_refs": [
+          {
+            "invoice_id": "inv-36ce8a380c8a",
+            "amount_minor": -5000
+          }
+        ]
+      },
+      {
+        "doc_id": "doc-fa1875af49d5",
+        "payment_id": "pay-8025a6ad522a",
+        "timestamp": "2026-11-01T23:51:00+05:00",
+        "currency": "USD",
+        "amount_minor": 77871,
+        "invoice_refs": [
+          {
+            "invoice_id": "inv-0f450871a0fd",
+            "amount_minor": 77871
+          }
+        ]
+      },
+      {
+        "doc_id": "doc-6cd133c2d6b4",
+        "payment_id": "pay-6a6674844128",
+        "timestamp": "2026-11-01T23:04:00+05:00",
+        "currency": "EUR",
+        "amount_minor": 33662,
+        "invoice_refs": [
+          {
+            "invoice_id": "inv-6fb1a2ca647d",
+            "amount_minor": 33662
+          }
+        ]
+      },
+      {
+        "doc_id": "doc-e84fa20ce979",
+        "payment_id": "pay-67b31ded9672",
+        "timestamp": "2026-11-02T23:34:00+05:00",
+        "currency": "JPY",
+        "amount_minor": 18064,
+        "invoice_refs": [
+          {
+            "invoice_id": "inv-81fbe37855d2",
+            "amount_minor": 18064
+          }
+        ]
+      },
+      {
+        "doc_id": "doc-8a03842255f2",
+        "payment_id": "pay-e448b7243d3c",
+        "timestamp": "2026-11-01T23:21:00+05:00",
+        "currency": "KWD",
+        "amount_minor": 60353,
+        "invoice_refs": [
+          {
+            "invoice_id": "inv-5a2b07abd515",
+            "amount_minor": 60353
+          }
+        ]
+      },
+      {
+        "doc_id": "doc-6f75d0f1f68c",
+        "payment_id": "pay-8f99eee1cdf0",
+        "timestamp": "2026-11-04T23:40:00+05:00",
+        "currency": "KZT",
+        "amount_minor": 25147,
+        "invoice_refs": [
+          {
+            "invoice_id": "inv-b02992f7eb1f",
+            "amount_minor": 25147
+          }
+        ]
+      },
+      {
+        "doc_id": "doc-990efc530213",
+        "payment_id": "pay-903f5838a63a",
+        "timestamp": "2026-11-04T23:40:00+05:00",
+        "currency": "KZT",
+        "amount_minor": 25148,
+        "invoice_refs": [
+          {
+            "invoice_id": "inv-b02992f7eb1f",
+            "amount_minor": 25148
+          }
+        ]
+      },
+      {
+        "doc_id": "doc-36f75bb5dbdd",
+        "payment_id": "pay-b867a73f44e6",
+        "timestamp": "2026-11-03T23:08:00+05:00",
+        "currency": "USD",
+        "amount_minor": 51341,
+        "invoice_refs": [
+          {
+            "invoice_id": "inv-213c9fe04f15",
+            "amount_minor": 51341
+          }
+        ]
+      },
+      {
+        "doc_id": "doc-c8efc431cf4a",
+        "payment_id": "pay-3ac1d0228462",
+        "timestamp": "2026-11-05T23:10:00+05:00",
+        "currency": "EUR",
+        "amount_minor": 10000,
+        "invoice_refs": [
+          {
+            "invoice_id": "inv-569b0e99d0d9",
+            "amount_minor": 10000
+          }
+        ]
+      },
+      {
+        "doc_id": "doc-bcf4c9fc19dd",
+        "payment_id": "pay-25145ef537e7",
+        "timestamp": "2026-11-05T23:17:00+05:00",
+        "currency": "JPY",
+        "amount_minor": 81819,
+        "invoice_refs": [
+          {
+            "invoice_id": "inv-c7d4449c9422",
+            "amount_minor": 81819
+          }
+        ]
+      },
+      {
+        "doc_id": "doc-995ce706e99d",
+        "payment_id": "pay-50d3da48bc31",
+        "timestamp": "2026-11-04T23:38:00+05:00",
+        "currency": "KWD",
+        "amount_minor": 50224,
+        "invoice_refs": [
+          {
+            "invoice_id": "inv-31d4f69984fd",
+            "amount_minor": 50224
+          }
+        ]
+      },
+      {
+        "doc_id": "doc-83567be3c433",
+        "payment_id": "pay-553093b49f47",
+        "timestamp": "2026-11-01T23:50:00+05:00",
+        "currency": "KZT",
+        "amount_minor": 40984,
+        "invoice_refs": [
+          {
+            "invoice_id": "inv-5655a26b4dc8",
+            "amount_minor": 40984
+          }
+        ]
+      },
+      {
+        "doc_id": "doc-83eaccbe9315",
+        "payment_id": "pay-2e9fd0cac12b",
+        "timestamp": "2026-11-04T23:50:00+05:00",
+        "currency": "KZT",
+        "amount_minor": 40985,
+        "invoice_refs": [
+          {
+            "invoice_id": "inv-5655a26b4dc8",
+            "amount_minor": 40985
+          }
+        ]
+      },
+      {
+        "doc_id": "doc-9fe966a558dc",
+        "payment_id": "pay-05864ca9db0d",
+        "timestamp": "2026-11-05T23:48:00+05:00",
+        "currency": "USD",
+        "amount_minor": -41086,
+        "invoice_refs": [
+          {
+            "invoice_id": "inv-187632cccdf5",
+            "amount_minor": -41086
+          }
+        ]
+      },
+      {
+        "doc_id": "doc-6cdb393ca8f2",
+        "payment_id": "pay-80a4bb611fcc",
+        "timestamp": "2026-10-21T02:08:00+05:00",
+        "currency": "EUR",
+        "amount_minor": 62411,
+        "invoice_refs": [
+          {
+            "invoice_id": "inv-a0c00bb8064c",
+            "amount_minor": 62411
+          }
+        ]
+      },
+      {
+        "doc_id": "doc-892f24c4f43b",
+        "payment_id": "pay-3647a2a3e7c3",
+        "timestamp": "2026-10-01T14:32:00+05:00",
+        "currency": "JPY",
+        "amount_minor": 7358,
+        "invoice_refs": [
+          {
+            "invoice_id": "inv-7dee5541931f",
+            "amount_minor": 7358
+          }
+        ]
+      },
+      {
+        "doc_id": "doc-2b47eeb9195d",
+        "payment_id": "pay-351f91db2edf",
+        "timestamp": "2026-10-22T15:10:00+05:00",
+        "currency": "KWD",
+        "amount_minor": 10000,
+        "invoice_refs": [
+          {
+            "invoice_id": "inv-6bc1c0866f98",
+            "amount_minor": 10000
+          }
+        ]
+      },
+      {
+        "doc_id": "doc-2933aac124e4",
+        "payment_id": "pay-4b35add8b409",
+        "timestamp": "2026-10-08T07:36:00+05:00",
+        "currency": "KZT",
+        "amount_minor": 21328,
+        "invoice_refs": [
+          {
+            "invoice_id": "inv-abfd11f729ff",
+            "amount_minor": 21328
+          }
+        ]
+      },
+      {
+        "doc_id": "doc-eab878fe75c3",
+        "payment_id": "pay-0b52f378e7d0",
+        "timestamp": "2026-10-10T07:36:00+05:00",
+        "currency": "KZT",
+        "amount_minor": 21329,
+        "invoice_refs": [
+          {
+            "invoice_id": "inv-abfd11f729ff",
+            "amount_minor": 21329
+          }
+        ]
+      },
+      {
+        "doc_id": "doc-2e8036f734fb",
+        "payment_id": "pay-7cb7dbed74a2",
+        "timestamp": "2026-10-23T02:06:00+05:00",
+        "currency": "USD",
+        "amount_minor": 8252,
+        "invoice_refs": [
+          {
+            "invoice_id": "inv-34965d31a40d",
+            "amount_minor": 8252
+          }
+        ]
+      },
+      {
+        "doc_id": "doc-468282e7478d",
+        "payment_id": "pay-a7a9c0be3b8e",
+        "timestamp": "2026-10-07T02:17:00+05:00",
+        "currency": "EUR",
+        "amount_minor": 74405,
+        "invoice_refs": [
+          {
+            "invoice_id": "inv-aad1ad7ccf01",
+            "amount_minor": 74405
+          }
+        ]
+      },
+      {
+        "doc_id": "doc-7542b0121c2a",
+        "payment_id": "pay-66471e9df33f",
+        "timestamp": "2026-10-05T16:57:00+05:00",
+        "currency": "JPY",
+        "amount_minor": 53418,
+        "invoice_refs": [
+          {
+            "invoice_id": "inv-29ea3b4f7930",
+            "amount_minor": 53418
+          }
+        ]
+      },
+      {
+        "doc_id": "doc-b0cc1e3a0129",
+        "payment_id": "pay-390908351408",
+        "timestamp": "2026-10-03T00:58:00+05:00",
+        "currency": "KWD",
+        "amount_minor": 46257,
+        "invoice_refs": [
+          {
+            "invoice_id": "inv-aea17cce6400",
+            "amount_minor": 46257
+          }
+        ]
+      },
+      {
+        "doc_id": "doc-9f2efc3ef803",
+        "payment_id": "pay-8f13d423cd72",
+        "timestamp": "2026-10-29T14:38:00+05:00",
+        "currency": "KZT",
+        "amount_minor": 27096,
+        "invoice_refs": [
+          {
+            "invoice_id": "inv-1b9605afe56c",
+            "amount_minor": 27096
+          }
+        ]
+      },
+      {
+        "doc_id": "doc-b7da8d63a4eb",
+        "payment_id": "pay-87a3819e3119",
+        "timestamp": "2026-11-01T14:38:00+05:00",
+        "currency": "KZT",
+        "amount_minor": 27097,
+        "invoice_refs": [
+          {
+            "invoice_id": "inv-1b9605afe56c",
+            "amount_minor": 27097
+          }
+        ]
+      },
+      {
+        "doc_id": "doc-a25dd8c69337",
+        "payment_id": "pay-e1f93a3c24da",
+        "timestamp": "2026-10-08T18:16:00+05:00",
+        "currency": "USD",
+        "amount_minor": 10000,
+        "invoice_refs": [
+          {
+            "invoice_id": "inv-7b2edfca401d",
+            "amount_minor": 10000
+          }
+        ]
+      },
+      {
+        "doc_id": "doc-d8625980d1ea",
+        "payment_id": "pay-dc5fed59efaa",
+        "timestamp": "2026-10-21T11:21:00+05:00",
+        "currency": "EUR",
+        "amount_minor": -34888,
+        "invoice_refs": [
+          {
+            "invoice_id": "inv-9393944ea4df",
+            "amount_minor": -34888
+          }
+        ]
+      },
+      {
+        "doc_id": "doc-a1994e947865",
+        "payment_id": "pay-901695ed527b",
+        "timestamp": "2026-10-13T05:45:00+05:00",
+        "currency": "JPY",
+        "amount_minor": 44954,
+        "invoice_refs": [
+          {
+            "invoice_id": "inv-7445aa1bb50d",
+            "amount_minor": 44954
+          }
+        ]
+      },
+      {
+        "doc_id": "doc-5668f8a86092",
+        "payment_id": "pay-bc342db940bb",
+        "timestamp": "2026-10-24T08:18:00+05:00",
+        "currency": "KWD",
+        "amount_minor": 24163,
+        "invoice_refs": [
+          {
+            "invoice_id": "inv-ab3c5cf7e176",
+            "amount_minor": 24163
+          }
+        ]
+      },
+      {
+        "doc_id": "doc-6d903bd7435d",
+        "payment_id": "pay-8f0cfda4ba33",
+        "timestamp": "2026-10-11T13:27:00+05:00",
+        "currency": "KZT",
+        "amount_minor": 30295,
+        "invoice_refs": [
+          {
+            "invoice_id": "inv-474f044469d8",
+            "amount_minor": 30295
+          }
+        ]
+      },
+      {
+        "doc_id": "doc-bd635f90fe22",
+        "payment_id": "pay-08724c9d7e61",
+        "timestamp": "2026-10-12T13:27:00+05:00",
+        "currency": "KZT",
+        "amount_minor": 30296,
+        "invoice_refs": [
+          {
+            "invoice_id": "inv-474f044469d8",
+            "amount_minor": 30296
+          }
+        ]
+      },
+      {
+        "doc_id": "doc-40b23366b8dc",
+        "payment_id": "pay-0afa18183956",
+        "timestamp": "2026-10-29T05:55:00+05:00",
+        "currency": "USD",
+        "amount_minor": 65010,
+        "invoice_refs": [
+          {
+            "invoice_id": "inv-73b6d482cee7",
+            "amount_minor": 65010
+          }
+        ]
+      },
+      {
+        "doc_id": "doc-338da2d4b363",
+        "payment_id": "pay-3b7eff396eec",
+        "timestamp": "2026-10-09T13:39:00+05:00",
+        "currency": "EUR",
+        "amount_minor": 72345,
+        "invoice_refs": [
+          {
+            "invoice_id": "inv-da3d637b911e",
+            "amount_minor": 72345
+          }
+        ]
+      },
+      {
+        "doc_id": "doc-c611f58490a0",
+        "payment_id": "pay-1ec381c39f96",
+        "timestamp": "2026-10-20T16:57:00+05:00",
+        "currency": "JPY",
+        "amount_minor": 10000,
+        "invoice_refs": [
+          {
+            "invoice_id": "inv-a5ba0ec906f6",
+            "amount_minor": 10000
+          }
+        ]
+      },
+      {
+        "doc_id": "doc-7ffbf9a6b31b",
+        "payment_id": "pay-1740c867ab4e",
+        "timestamp": "2026-10-20T01:49:00+05:00",
+        "currency": "KWD",
+        "amount_minor": 31592,
+        "invoice_refs": [
+          {
+            "invoice_id": "inv-1d9a4b6a9e21",
+            "amount_minor": 31592
+          }
+        ]
+      },
+      {
+        "doc_id": "doc-eec8bcdb229d",
+        "payment_id": "pay-03d5c11b7669",
+        "timestamp": "2026-10-28T10:07:00+05:00",
+        "currency": "KZT",
+        "amount_minor": 5014,
+        "invoice_refs": [
+          {
+            "invoice_id": "inv-e22dd73bf58b",
+            "amount_minor": 5014
+          }
+        ]
+      },
+      {
+        "doc_id": "doc-715cc455a0fa",
+        "payment_id": "pay-f971dd2f74ff",
+        "timestamp": "2026-10-25T10:07:00+05:00",
+        "currency": "KZT",
+        "amount_minor": 5014,
+        "invoice_refs": [
+          {
+            "invoice_id": "inv-e22dd73bf58b",
+            "amount_minor": 5014
+          }
+        ]
+      },
+      {
+        "doc_id": "doc-1ed9293e55c7",
+        "payment_id": "pay-1fa9e79a09cd",
+        "timestamp": "2026-10-14T18:28:00+05:00",
+        "currency": "USD",
+        "amount_minor": 2980,
+        "invoice_refs": [
+          {
+            "invoice_id": "inv-053edb19128d",
+            "amount_minor": 2980
+          }
+        ]
+      },
+      {
+        "doc_id": "doc-9165382dd943",
+        "payment_id": "pay-7f0c6eb2f3e0",
+        "timestamp": "2026-10-27T15:38:00+05:00",
+        "currency": "EUR",
+        "amount_minor": 77230,
+        "invoice_refs": [
+          {
+            "invoice_id": "inv-43f017e77406",
+            "amount_minor": 77230
+          }
+        ]
+      },
+      {
+        "doc_id": "doc-b33580015a1e",
+        "payment_id": "pay-e594d31f0918",
+        "timestamp": "2026-10-30T11:01:00+05:00",
+        "currency": "JPY",
+        "amount_minor": -46981,
+        "invoice_refs": [
+          {
+            "invoice_id": "inv-c871d0e48609",
+            "amount_minor": -46981
+          }
+        ]
+      },
+      {
+        "doc_id": "doc-793501f40aa2",
+        "payment_id": "pay-25572ddae449",
+        "timestamp": "2026-10-08T16:29:00+05:00",
+        "currency": "KWD",
+        "amount_minor": 4326,
+        "invoice_refs": [
+          {
+            "invoice_id": "inv-e0371c5fcc90",
+            "amount_minor": 4326
+          }
+        ]
+      },
+      {
+        "doc_id": "doc-42ecae1368b8",
+        "payment_id": "pay-dc64f1caa558",
+        "timestamp": "2026-10-19T01:25:00+05:00",
+        "currency": "KZT",
+        "amount_minor": 5000,
+        "invoice_refs": [
+          {
+            "invoice_id": "inv-acab1a9cf9e5",
+            "amount_minor": 5000
+          }
+        ]
+      },
+      {
+        "doc_id": "doc-e9881734f5b9",
+        "payment_id": "pay-995bc1e4ef8a",
+        "timestamp": "2026-10-19T01:25:00+05:00",
+        "currency": "KZT",
+        "amount_minor": 5000,
+        "invoice_refs": [
+          {
+            "invoice_id": "inv-acab1a9cf9e5",
+            "amount_minor": 5000
+          }
+        ]
+      },
+      {
+        "doc_id": "doc-d63832e5610f",
+        "payment_id": "pay-113253734019",
+        "timestamp": "2026-10-06T10:45:00+05:00",
+        "currency": "USD",
+        "amount_minor": 29352,
+        "invoice_refs": [
+          {
+            "invoice_id": "inv-fcc15f5a916b",
+            "amount_minor": 29352
+          }
+        ]
+      },
+      {
+        "doc_id": "doc-e2a8b463bb4b",
+        "payment_id": "pay-b9c75fb8d131",
+        "timestamp": "2026-10-28T08:05:00+05:00",
+        "currency": "EUR",
+        "amount_minor": 26272,
+        "invoice_refs": [
+          {
+            "invoice_id": "inv-cc5cc9c4598b",
+            "amount_minor": 26272
+          }
+        ]
+      },
+      {
+        "doc_id": "doc-b1673846ab38",
+        "payment_id": "pay-a51ff11fe817",
+        "timestamp": "2026-10-21T11:42:00+05:00",
+        "currency": "JPY",
+        "amount_minor": 49418,
+        "invoice_refs": [
+          {
+            "invoice_id": "inv-40e985dadb9c",
+            "amount_minor": 49418
+          }
+        ]
+      },
+      {
+        "doc_id": "doc-7ace96888f89",
+        "payment_id": "pay-1539e2a66b7c",
+        "timestamp": "2026-10-07T12:25:00+05:00",
+        "currency": "KWD",
+        "amount_minor": 60789,
+        "invoice_refs": [
+          {
+            "invoice_id": "inv-51b496e6ff9f",
+            "amount_minor": 60789
+          }
+        ]
+      },
+      {
+        "doc_id": "doc-dab2426bf9c8",
+        "payment_id": "pay-f70d93c0ca28",
+        "timestamp": "2026-10-05T06:29:00+05:00",
+        "currency": "KZT",
+        "amount_minor": 14965,
+        "invoice_refs": [
+          {
+            "invoice_id": "inv-1391f26aacf6",
+            "amount_minor": 14965
+          }
+        ]
+      },
+      {
+        "doc_id": "doc-ff515eb6f5ca",
+        "payment_id": "pay-a4e37762acc2",
+        "timestamp": "2026-10-07T06:29:00+05:00",
+        "currency": "KZT",
+        "amount_minor": 14966,
+        "invoice_refs": [
+          {
+            "invoice_id": "inv-1391f26aacf6",
+            "amount_minor": 14966
+          }
+        ]
+      },
+      {
+        "doc_id": "doc-02fdd4bd401c",
+        "payment_id": "pay-a9310aaa2f19",
+        "timestamp": "2026-10-05T09:03:00+05:00",
+        "currency": "USD",
+        "amount_minor": 11165,
+        "invoice_refs": [
+          {
+            "invoice_id": "inv-bb435c13ed60",
+            "amount_minor": 11165
+          }
+        ]
+      },
+      {
+        "doc_id": "doc-69ae1249bc18",
+        "payment_id": "pay-1ddf68e3f05e",
+        "timestamp": "2026-10-04T04:59:00+05:00",
+        "currency": "EUR",
+        "amount_minor": 10000,
+        "invoice_refs": [
+          {
+            "invoice_id": "inv-608965e274b0",
+            "amount_minor": 10000
+          }
+        ]
+      },
+      {
+        "doc_id": "doc-d430c3ffc924",
+        "payment_id": "pay-4bbfd7e9a329",
+        "timestamp": "2026-10-08T01:30:00+05:00",
+        "currency": "JPY",
+        "amount_minor": 18470,
+        "invoice_refs": [
+          {
+            "invoice_id": "inv-3cab48d5e978",
+            "amount_minor": 18470
+          }
+        ]
+      },
+      {
+        "doc_id": "doc-3e34bf98f12c",
+        "payment_id": "pay-d7bbf48ccaa1",
+        "timestamp": "2026-10-24T09:15:00+05:00",
+        "currency": "KWD",
+        "amount_minor": -10880,
+        "invoice_refs": [
+          {
+            "invoice_id": "inv-98611c81293e",
+            "amount_minor": -10880
+          }
+        ]
+      },
+      {
+        "doc_id": "doc-a70ae5ad637e",
+        "payment_id": "pay-8be95818f930",
+        "timestamp": "2026-10-29T10:26:00+05:00",
+        "currency": "KZT",
+        "amount_minor": 16148,
+        "invoice_refs": [
+          {
+            "invoice_id": "inv-73412577214d",
+            "amount_minor": 16148
+          }
+        ]
+      },
+      {
+        "doc_id": "doc-8bbe542ff0df",
+        "payment_id": "pay-db62302efda5",
+        "timestamp": "2026-10-30T10:26:00+05:00",
+        "currency": "KZT",
+        "amount_minor": 16149,
+        "invoice_refs": [
+          {
+            "invoice_id": "inv-73412577214d",
+            "amount_minor": 16149
+          }
+        ]
+      },
+      {
+        "doc_id": "doc-912bc35b544c",
+        "payment_id": "pay-ebe5c8afaaca",
+        "timestamp": "2026-10-14T10:29:00+05:00",
+        "currency": "USD",
+        "amount_minor": 12626,
+        "invoice_refs": [
+          {
+            "invoice_id": "inv-f70384027a52",
+            "amount_minor": 12626
+          }
+        ]
+      },
+      {
+        "doc_id": "doc-2ed4976043e0",
+        "payment_id": "pay-652053eaf444",
+        "timestamp": "2026-10-09T12:20:00+05:00",
+        "currency": "EUR",
+        "amount_minor": 74415,
+        "invoice_refs": [
+          {
+            "invoice_id": "inv-943eb4109f0e",
+            "amount_minor": 74415
+          }
+        ]
+      },
+      {
+        "doc_id": "doc-bb7f0df83695",
+        "payment_id": "pay-f983685bb5c0",
+        "timestamp": "2026-10-12T00:04:00+05:00",
+        "currency": "JPY",
+        "amount_minor": 36134,
+        "invoice_refs": [
+          {
+            "invoice_id": "inv-41dfbaa67fa2",
+            "amount_minor": 36134
+          }
+        ]
+      },
+      {
+        "doc_id": "doc-b9bcc0936d1d",
+        "payment_id": "pay-c6b95bfef589",
+        "timestamp": "2026-10-17T12:37:00+05:00",
+        "currency": "KWD",
+        "amount_minor": 10000,
+        "invoice_refs": [
+          {
+            "invoice_id": "inv-c257326bf1b1",
+            "amount_minor": 10000
+          }
+        ]
+      },
+      {
+        "doc_id": "doc-fd904f1dd2c7",
+        "payment_id": "pay-121f40c1fef4",
+        "timestamp": "2026-10-27T12:00:00+05:00",
+        "currency": "KZT",
+        "amount_minor": 17929,
+        "invoice_refs": [
+          {
+            "invoice_id": null,
+            "amount_minor": 17929
+          }
+        ]
+      },
+      {
+        "doc_id": "doc-f0ad219e6dce",
+        "payment_id": "pay-44577cc6a75b",
+        "timestamp": "2026-10-14T12:00:00+05:00",
+        "currency": "KZT",
+        "amount_minor": 48311,
+        "invoice_refs": [
+          {
+            "invoice_id": null,
+            "amount_minor": 48311
+          }
+        ]
+      },
+      {
+        "doc_id": "doc-25b553bf2060",
+        "payment_id": "pay-00ade7a6fb22",
+        "timestamp": "2026-10-11T12:00:00+05:00",
+        "currency": "KZT",
+        "amount_minor": 15577,
+        "invoice_refs": [
+          {
+            "invoice_id": null,
+            "amount_minor": 15577
+          }
+        ]
+      }
+    ],
+    "fx": [
+      {
+        "row_id": "fx-6dd1c700d84c",
+        "date": "2026-10-01",
+        "source_currency": "USD",
+        "target_currency": "KZT",
+        "rate": "480"
+      },
+      {
+        "row_id": "fx-c2a7ab79b005",
+        "date": "2026-10-01",
+        "source_currency": "EUR",
+        "target_currency": "KZT",
+        "rate": "520"
+      },
+      {
+        "row_id": "fx-64c319613698",
+        "date": "2026-10-01",
+        "source_currency": "KZT",
+        "target_currency": "KZT",
+        "rate": "1"
+      },
+      {
+        "row_id": "fx-101c5a5c4689",
+        "date": "2026-10-01",
+        "source_currency": "JPY",
+        "target_currency": "KZT",
+        "rate": "3"
+      },
+      {
+        "row_id": "fx-2a6f77c8cd55",
+        "date": "2026-10-01",
+        "source_currency": "KWD",
+        "target_currency": "KZT",
+        "rate": "1550"
+      },
+      {
+        "row_id": "fx-fa9088e10883",
+        "date": "2026-10-02",
+        "source_currency": "USD",
+        "target_currency": "KZT",
+        "rate": "480.1"
+      },
+      {
+        "row_id": "fx-6ffefa72766d",
+        "date": "2026-10-02",
+        "source_currency": "EUR",
+        "target_currency": "KZT",
+        "rate": "520.1"
+      },
+      {
+        "row_id": "fx-38c9215c58da",
+        "date": "2026-10-02",
+        "source_currency": "KZT",
+        "target_currency": "KZT",
+        "rate": "1"
+      },
+      {
+        "row_id": "fx-3d9eabd69cb9",
+        "date": "2026-10-02",
+        "source_currency": "JPY",
+        "target_currency": "KZT",
+        "rate": "3.1"
+      },
+      {
+        "row_id": "fx-ade15d3e238b",
+        "date": "2026-10-02",
+        "source_currency": "KWD",
+        "target_currency": "KZT",
+        "rate": "1550.1"
+      },
+      {
+        "row_id": "fx-fb057d24563a",
+        "date": "2026-10-03",
+        "source_currency": "USD",
+        "target_currency": "KZT",
+        "rate": "480.2"
+      },
+      {
+        "row_id": "fx-ae5433f89baf",
+        "date": "2026-10-03",
+        "source_currency": "EUR",
+        "target_currency": "KZT",
+        "rate": "520.2"
+      },
+      {
+        "row_id": "fx-5dd1aa8bfa01",
+        "date": "2026-10-03",
+        "source_currency": "KZT",
+        "target_currency": "KZT",
+        "rate": "1"
+      },
+      {
+        "row_id": "fx-cc563a481fd2",
+        "date": "2026-10-03",
+        "source_currency": "JPY",
+        "target_currency": "KZT",
+        "rate": "3.2"
+      },
+      {
+        "row_id": "fx-2edc7543afab",
+        "date": "2026-10-03",
+        "source_currency": "KWD",
+        "target_currency": "KZT",
+        "rate": "1550.2"
+      },
+      {
+        "row_id": "fx-adb40a6cc878",
+        "date": "2026-10-04",
+        "source_currency": "USD",
+        "target_currency": "KZT",
+        "rate": "480.3"
+      },
+      {
+        "row_id": "fx-bfcbf96b0e5c",
+        "date": "2026-10-04",
+        "source_currency": "EUR",
+        "target_currency": "KZT",
+        "rate": "520.3"
+      },
+      {
+        "row_id": "fx-248a7ccb3b72",
+        "date": "2026-10-04",
+        "source_currency": "KZT",
+        "target_currency": "KZT",
+        "rate": "1"
+      },
+      {
+        "row_id": "fx-fd9f762c5366",
+        "date": "2026-10-04",
+        "source_currency": "JPY",
+        "target_currency": "KZT",
+        "rate": "3.3"
+      },
+      {
+        "row_id": "fx-b5d2b6d2590d",
+        "date": "2026-10-04",
+        "source_currency": "KWD",
+        "target_currency": "KZT",
+        "rate": "1550.3"
+      },
+      {
+        "row_id": "fx-b1086a6d28ec",
+        "date": "2026-10-05",
+        "source_currency": "USD",
+        "target_currency": "KZT",
+        "rate": "480.4"
+      },
+      {
+        "row_id": "fx-3375e354bbe7",
+        "date": "2026-10-05",
+        "source_currency": "EUR",
+        "target_currency": "KZT",
+        "rate": "520.4"
+      },
+      {
+        "row_id": "fx-c3d605f68f2f",
+        "date": "2026-10-05",
+        "source_currency": "KZT",
+        "target_currency": "KZT",
+        "rate": "1"
+      },
+      {
+        "row_id": "fx-892ad560aaa5",
+        "date": "2026-10-05",
+        "source_currency": "JPY",
+        "target_currency": "KZT",
+        "rate": "3.4"
+      },
+      {
+        "row_id": "fx-b77577ef456c",
+        "date": "2026-10-05",
+        "source_currency": "KWD",
+        "target_currency": "KZT",
+        "rate": "1550.4"
+      },
+      {
+        "row_id": "fx-c55fcfbd2409",
+        "date": "2026-10-06",
+        "source_currency": "USD",
+        "target_currency": "KZT",
+        "rate": "480"
+      },
+      {
+        "row_id": "fx-37d9f21248b3",
+        "date": "2026-10-06",
+        "source_currency": "EUR",
+        "target_currency": "KZT",
+        "rate": "520"
+      },
+      {
+        "row_id": "fx-8b65fbabae12",
+        "date": "2026-10-06",
+        "source_currency": "KZT",
+        "target_currency": "KZT",
+        "rate": "1"
+      },
+      {
+        "row_id": "fx-e6022d1a44aa",
+        "date": "2026-10-06",
+        "source_currency": "JPY",
+        "target_currency": "KZT",
+        "rate": "3"
+      },
+      {
+        "row_id": "fx-b456b2db1a99",
+        "date": "2026-10-06",
+        "source_currency": "KWD",
+        "target_currency": "KZT",
+        "rate": "1550"
+      },
+      {
+        "row_id": "fx-408e1bddf7cb",
+        "date": "2026-10-07",
+        "source_currency": "USD",
+        "target_currency": "KZT",
+        "rate": "480.1"
+      },
+      {
+        "row_id": "fx-493429070b45",
+        "date": "2026-10-07",
+        "source_currency": "EUR",
+        "target_currency": "KZT",
+        "rate": "520.1"
+      },
+      {
+        "row_id": "fx-004417c5b0ff",
+        "date": "2026-10-07",
+        "source_currency": "KZT",
+        "target_currency": "KZT",
+        "rate": "1"
+      },
+      {
+        "row_id": "fx-d06d50665f5a",
+        "date": "2026-10-07",
+        "source_currency": "JPY",
+        "target_currency": "KZT",
+        "rate": "3.1"
+      },
+      {
+        "row_id": "fx-a2d3043be119",
+        "date": "2026-10-07",
+        "source_currency": "KWD",
+        "target_currency": "KZT",
+        "rate": "1550.1"
+      },
+      {
+        "row_id": "fx-41b8daa2f6b6",
+        "date": "2026-10-08",
+        "source_currency": "USD",
+        "target_currency": "KZT",
+        "rate": "480.2"
+      },
+      {
+        "row_id": "fx-84c24a8006eb",
+        "date": "2026-10-08",
+        "source_currency": "EUR",
+        "target_currency": "KZT",
+        "rate": "520.2"
+      },
+      {
+        "row_id": "fx-c50fc7b132d0",
+        "date": "2026-10-08",
+        "source_currency": "KZT",
+        "target_currency": "KZT",
+        "rate": "1"
+      },
+      {
+        "row_id": "fx-1e7c8c500dae",
+        "date": "2026-10-08",
+        "source_currency": "JPY",
+        "target_currency": "KZT",
+        "rate": "3.2"
+      },
+      {
+        "row_id": "fx-e84731bfa7aa",
+        "date": "2026-10-08",
+        "source_currency": "KWD",
+        "target_currency": "KZT",
+        "rate": "1550.2"
+      },
+      {
+        "row_id": "fx-61904ac3053d",
+        "date": "2026-10-09",
+        "source_currency": "USD",
+        "target_currency": "KZT",
+        "rate": "480.3"
+      },
+      {
+        "row_id": "fx-fc6051c7a821",
+        "date": "2026-10-09",
+        "source_currency": "EUR",
+        "target_currency": "KZT",
+        "rate": "520.3"
+      },
+      {
+        "row_id": "fx-3a64a899e4b0",
+        "date": "2026-10-09",
+        "source_currency": "KZT",
+        "target_currency": "KZT",
+        "rate": "1"
+      },
+      {
+        "row_id": "fx-5b733b44f674",
+        "date": "2026-10-09",
+        "source_currency": "JPY",
+        "target_currency": "KZT",
+        "rate": "3.3"
+      },
+      {
+        "row_id": "fx-7c5c9e92fc89",
+        "date": "2026-10-09",
+        "source_currency": "KWD",
+        "target_currency": "KZT",
+        "rate": "1550.3"
+      },
+      {
+        "row_id": "fx-ff92e534e934",
+        "date": "2026-10-10",
+        "source_currency": "USD",
+        "target_currency": "KZT",
+        "rate": "480.4"
+      },
+      {
+        "row_id": "fx-1ea4de933d80",
+        "date": "2026-10-10",
+        "source_currency": "EUR",
+        "target_currency": "KZT",
+        "rate": "520.4"
+      },
+      {
+        "row_id": "fx-60454b36ee6e",
+        "date": "2026-10-10",
+        "source_currency": "KZT",
+        "target_currency": "KZT",
+        "rate": "1"
+      },
+      {
+        "row_id": "fx-5dc9754ce90f",
+        "date": "2026-10-10",
+        "source_currency": "JPY",
+        "target_currency": "KZT",
+        "rate": "3.4"
+      },
+      {
+        "row_id": "fx-989d7c27a2dc",
+        "date": "2026-10-10",
+        "source_currency": "KWD",
+        "target_currency": "KZT",
+        "rate": "1550.4"
+      },
+      {
+        "row_id": "fx-789f47c7868c",
+        "date": "2026-10-11",
+        "source_currency": "USD",
+        "target_currency": "KZT",
+        "rate": "480"
+      },
+      {
+        "row_id": "fx-f2f1543685b3",
+        "date": "2026-10-11",
+        "source_currency": "EUR",
+        "target_currency": "KZT",
+        "rate": "520"
+      },
+      {
+        "row_id": "fx-f43cfbf74fab",
+        "date": "2026-10-11",
+        "source_currency": "KZT",
+        "target_currency": "KZT",
+        "rate": "1"
+      },
+      {
+        "row_id": "fx-0dfe030ec567",
+        "date": "2026-10-11",
+        "source_currency": "JPY",
+        "target_currency": "KZT",
+        "rate": "3"
+      },
+      {
+        "row_id": "fx-732424952502",
+        "date": "2026-10-11",
+        "source_currency": "KWD",
+        "target_currency": "KZT",
+        "rate": "1550"
+      },
+      {
+        "row_id": "fx-b65fa6e7fa88",
+        "date": "2026-10-12",
+        "source_currency": "USD",
+        "target_currency": "KZT",
+        "rate": "480.1"
+      },
+      {
+        "row_id": "fx-3a5c1332c0c4",
+        "date": "2026-10-12",
+        "source_currency": "EUR",
+        "target_currency": "KZT",
+        "rate": "520.1"
+      },
+      {
+        "row_id": "fx-d13e4ac5ab72",
+        "date": "2026-10-12",
+        "source_currency": "KZT",
+        "target_currency": "KZT",
+        "rate": "1"
+      },
+      {
+        "row_id": "fx-0670cb1f142d",
+        "date": "2026-10-12",
+        "source_currency": "JPY",
+        "target_currency": "KZT",
+        "rate": "3.1"
+      },
+      {
+        "row_id": "fx-dc00e95e2a59",
+        "date": "2026-10-12",
+        "source_currency": "KWD",
+        "target_currency": "KZT",
+        "rate": "1550.1"
+      },
+      {
+        "row_id": "fx-205a5ed1fefa",
+        "date": "2026-10-13",
+        "source_currency": "USD",
+        "target_currency": "KZT",
+        "rate": "480.2"
+      },
+      {
+        "row_id": "fx-fbfa348d5feb",
+        "date": "2026-10-13",
+        "source_currency": "EUR",
+        "target_currency": "KZT",
+        "rate": "520.2"
+      },
+      {
+        "row_id": "fx-22e2e14d028a",
+        "date": "2026-10-13",
+        "source_currency": "KZT",
+        "target_currency": "KZT",
+        "rate": "1"
+      },
+      {
+        "row_id": "fx-bfbca1efdfe0",
+        "date": "2026-10-13",
+        "source_currency": "JPY",
+        "target_currency": "KZT",
+        "rate": "3.2"
+      },
+      {
+        "row_id": "fx-dbe980e65087",
+        "date": "2026-10-13",
+        "source_currency": "KWD",
+        "target_currency": "KZT",
+        "rate": "1550.2"
+      },
+      {
+        "row_id": "fx-e70954b229c6",
+        "date": "2026-10-14",
+        "source_currency": "USD",
+        "target_currency": "KZT",
+        "rate": "480.3"
+      },
+      {
+        "row_id": "fx-564f58ef37e4",
+        "date": "2026-10-14",
+        "source_currency": "EUR",
+        "target_currency": "KZT",
+        "rate": "520.3"
+      },
+      {
+        "row_id": "fx-c2274adb7c4d",
+        "date": "2026-10-14",
+        "source_currency": "KZT",
+        "target_currency": "KZT",
+        "rate": "1"
+      },
+      {
+        "row_id": "fx-b1e2c3f11606",
+        "date": "2026-10-14",
+        "source_currency": "JPY",
+        "target_currency": "KZT",
+        "rate": "3.3"
+      },
+      {
+        "row_id": "fx-afb07a7b4282",
+        "date": "2026-10-14",
+        "source_currency": "KWD",
+        "target_currency": "KZT",
+        "rate": "1550.3"
+      },
+      {
+        "row_id": "fx-e6d13397f360",
+        "date": "2026-10-15",
+        "source_currency": "USD",
+        "target_currency": "KZT",
+        "rate": "480.4"
+      },
+      {
+        "row_id": "fx-6627df1ebc2a",
+        "date": "2026-10-15",
+        "source_currency": "EUR",
+        "target_currency": "KZT",
+        "rate": "520.4"
+      },
+      {
+        "row_id": "fx-12dfc15361bd",
+        "date": "2026-10-15",
+        "source_currency": "KZT",
+        "target_currency": "KZT",
+        "rate": "1"
+      },
+      {
+        "row_id": "fx-39a8de184f95",
+        "date": "2026-10-15",
+        "source_currency": "JPY",
+        "target_currency": "KZT",
+        "rate": "3.4"
+      },
+      {
+        "row_id": "fx-d32eeeacc3e2",
+        "date": "2026-10-15",
+        "source_currency": "KWD",
+        "target_currency": "KZT",
+        "rate": "1550.4"
+      },
+      {
+        "row_id": "fx-4d2d3de0ebb6",
+        "date": "2026-10-16",
+        "source_currency": "USD",
+        "target_currency": "KZT",
+        "rate": "480"
+      },
+      {
+        "row_id": "fx-4cc3e477a285",
+        "date": "2026-10-16",
+        "source_currency": "EUR",
+        "target_currency": "KZT",
+        "rate": "520"
+      },
+      {
+        "row_id": "fx-ede9c415bca7",
+        "date": "2026-10-16",
+        "source_currency": "KZT",
+        "target_currency": "KZT",
+        "rate": "1"
+      },
+      {
+        "row_id": "fx-cd1a6a28a505",
+        "date": "2026-10-16",
+        "source_currency": "JPY",
+        "target_currency": "KZT",
+        "rate": "3"
+      },
+      {
+        "row_id": "fx-019d52dcdd00",
+        "date": "2026-10-16",
+        "source_currency": "KWD",
+        "target_currency": "KZT",
+        "rate": "1550"
+      },
+      {
+        "row_id": "fx-e1428fb1b338",
+        "date": "2026-10-17",
+        "source_currency": "USD",
+        "target_currency": "KZT",
+        "rate": "480.1"
+      },
+      {
+        "row_id": "fx-b4d4974106db",
+        "date": "2026-10-17",
+        "source_currency": "EUR",
+        "target_currency": "KZT",
+        "rate": "520.1"
+      },
+      {
+        "row_id": "fx-195f2a63a214",
+        "date": "2026-10-17",
+        "source_currency": "KZT",
+        "target_currency": "KZT",
+        "rate": "1"
+      },
+      {
+        "row_id": "fx-68717c776929",
+        "date": "2026-10-17",
+        "source_currency": "JPY",
+        "target_currency": "KZT",
+        "rate": "3.1"
+      },
+      {
+        "row_id": "fx-9dfff2f315e3",
+        "date": "2026-10-17",
+        "source_currency": "KWD",
+        "target_currency": "KZT",
+        "rate": "1550.1"
+      },
+      {
+        "row_id": "fx-602477db5f34",
+        "date": "2026-10-18",
+        "source_currency": "USD",
+        "target_currency": "KZT",
+        "rate": "480.2"
+      },
+      {
+        "row_id": "fx-84ee65898626",
+        "date": "2026-10-18",
+        "source_currency": "EUR",
+        "target_currency": "KZT",
+        "rate": "520.2"
+      },
+      {
+        "row_id": "fx-0640eb36e8c5",
+        "date": "2026-10-18",
+        "source_currency": "KZT",
+        "target_currency": "KZT",
+        "rate": "1"
+      },
+      {
+        "row_id": "fx-4c58fc58a54c",
+        "date": "2026-10-18",
+        "source_currency": "JPY",
+        "target_currency": "KZT",
+        "rate": "3.2"
+      },
+      {
+        "row_id": "fx-e558f06f7445",
+        "date": "2026-10-18",
+        "source_currency": "KWD",
+        "target_currency": "KZT",
+        "rate": "1550.2"
+      },
+      {
+        "row_id": "fx-0b380c31d139",
+        "date": "2026-10-19",
+        "source_currency": "USD",
+        "target_currency": "KZT",
+        "rate": "480.3"
+      },
+      {
+        "row_id": "fx-33a1dc41989f",
+        "date": "2026-10-19",
+        "source_currency": "EUR",
+        "target_currency": "KZT",
+        "rate": "520.3"
+      },
+      {
+        "row_id": "fx-1a783377bdba",
+        "date": "2026-10-19",
+        "source_currency": "KZT",
+        "target_currency": "KZT",
+        "rate": "1"
+      },
+      {
+        "row_id": "fx-333257f6c34a",
+        "date": "2026-10-19",
+        "source_currency": "JPY",
+        "target_currency": "KZT",
+        "rate": "3.3"
+      },
+      {
+        "row_id": "fx-2408e1eda9da",
+        "date": "2026-10-19",
+        "source_currency": "KWD",
+        "target_currency": "KZT",
+        "rate": "1550.3"
+      },
+      {
+        "row_id": "fx-130c1931b603",
+        "date": "2026-10-20",
+        "source_currency": "USD",
+        "target_currency": "KZT",
+        "rate": "480.4"
+      },
+      {
+        "row_id": "fx-8c82221d7a3c",
+        "date": "2026-10-20",
+        "source_currency": "EUR",
+        "target_currency": "KZT",
+        "rate": "520.4"
+      },
+      {
+        "row_id": "fx-fdae44874dc7",
+        "date": "2026-10-20",
+        "source_currency": "KZT",
+        "target_currency": "KZT",
+        "rate": "1"
+      },
+      {
+        "row_id": "fx-8e9f359587c6",
+        "date": "2026-10-20",
+        "source_currency": "JPY",
+        "target_currency": "KZT",
+        "rate": "3.4"
+      },
+      {
+        "row_id": "fx-1a315735e196",
+        "date": "2026-10-20",
+        "source_currency": "KWD",
+        "target_currency": "KZT",
+        "rate": "1550.4"
+      },
+      {
+        "row_id": "fx-35daba021818",
+        "date": "2026-10-21",
+        "source_currency": "USD",
+        "target_currency": "KZT",
+        "rate": "480"
+      },
+      {
+        "row_id": "fx-0d51a1bcc1fc",
+        "date": "2026-10-21",
+        "source_currency": "EUR",
+        "target_currency": "KZT",
+        "rate": "520"
+      },
+      {
+        "row_id": "fx-27af28a5d9ee",
+        "date": "2026-10-21",
+        "source_currency": "KZT",
+        "target_currency": "KZT",
+        "rate": "1"
+      },
+      {
+        "row_id": "fx-bf21c4269258",
+        "date": "2026-10-21",
+        "source_currency": "JPY",
+        "target_currency": "KZT",
+        "rate": "3"
+      },
+      {
+        "row_id": "fx-5db4ec83c904",
+        "date": "2026-10-21",
+        "source_currency": "KWD",
+        "target_currency": "KZT",
+        "rate": "1550"
+      },
+      {
+        "row_id": "fx-db909750ea7f",
+        "date": "2026-10-22",
+        "source_currency": "USD",
+        "target_currency": "KZT",
+        "rate": "480.1"
+      },
+      {
+        "row_id": "fx-15db2b2521e9",
+        "date": "2026-10-22",
+        "source_currency": "EUR",
+        "target_currency": "KZT",
+        "rate": "520.1"
+      },
+      {
+        "row_id": "fx-478c7d1a9627",
+        "date": "2026-10-22",
+        "source_currency": "KZT",
+        "target_currency": "KZT",
+        "rate": "1"
+      },
+      {
+        "row_id": "fx-398cb7e4c3fe",
+        "date": "2026-10-22",
+        "source_currency": "JPY",
+        "target_currency": "KZT",
+        "rate": "3.1"
+      },
+      {
+        "row_id": "fx-4578375814ae",
+        "date": "2026-10-22",
+        "source_currency": "KWD",
+        "target_currency": "KZT",
+        "rate": "1550.1"
+      },
+      {
+        "row_id": "fx-04219cb573a9",
+        "date": "2026-10-23",
+        "source_currency": "USD",
+        "target_currency": "KZT",
+        "rate": "480.2"
+      },
+      {
+        "row_id": "fx-05159ecea2cf",
+        "date": "2026-10-23",
+        "source_currency": "EUR",
+        "target_currency": "KZT",
+        "rate": "520.2"
+      },
+      {
+        "row_id": "fx-c06a3cce0e26",
+        "date": "2026-10-23",
+        "source_currency": "KZT",
+        "target_currency": "KZT",
+        "rate": "1"
+      },
+      {
+        "row_id": "fx-c35d24dc5fd3",
+        "date": "2026-10-23",
+        "source_currency": "JPY",
+        "target_currency": "KZT",
+        "rate": "3.2"
+      },
+      {
+        "row_id": "fx-9c60c5afcf78",
+        "date": "2026-10-23",
+        "source_currency": "KWD",
+        "target_currency": "KZT",
+        "rate": "1550.2"
+      },
+      {
+        "row_id": "fx-85ab87d3bba0",
+        "date": "2026-10-24",
+        "source_currency": "USD",
+        "target_currency": "KZT",
+        "rate": "480.3"
+      },
+      {
+        "row_id": "fx-3b84704e25a8",
+        "date": "2026-10-24",
+        "source_currency": "EUR",
+        "target_currency": "KZT",
+        "rate": "520.3"
+      },
+      {
+        "row_id": "fx-2af07a57a3a3",
+        "date": "2026-10-24",
+        "source_currency": "KZT",
+        "target_currency": "KZT",
+        "rate": "1"
+      },
+      {
+        "row_id": "fx-43acc8bb2066",
+        "date": "2026-10-24",
+        "source_currency": "JPY",
+        "target_currency": "KZT",
+        "rate": "3.3"
+      },
+      {
+        "row_id": "fx-84b9d63cadc0",
+        "date": "2026-10-24",
+        "source_currency": "KWD",
+        "target_currency": "KZT",
+        "rate": "1550.3"
+      },
+      {
+        "row_id": "fx-b4356800b569",
+        "date": "2026-10-25",
+        "source_currency": "USD",
+        "target_currency": "KZT",
+        "rate": "480.4"
+      },
+      {
+        "row_id": "fx-eea4c6310617",
+        "date": "2026-10-25",
+        "source_currency": "EUR",
+        "target_currency": "KZT",
+        "rate": "520.4"
+      },
+      {
+        "row_id": "fx-a73a00ccf33f",
+        "date": "2026-10-25",
+        "source_currency": "KZT",
+        "target_currency": "KZT",
+        "rate": "1"
+      },
+      {
+        "row_id": "fx-d946e065b46b",
+        "date": "2026-10-25",
+        "source_currency": "JPY",
+        "target_currency": "KZT",
+        "rate": "3.4"
+      },
+      {
+        "row_id": "fx-fe22081c23ba",
+        "date": "2026-10-25",
+        "source_currency": "KWD",
+        "target_currency": "KZT",
+        "rate": "1550.4"
+      },
+      {
+        "row_id": "fx-753bfb53db45",
+        "date": "2026-10-26",
+        "source_currency": "USD",
+        "target_currency": "KZT",
+        "rate": "480"
+      },
+      {
+        "row_id": "fx-bf67fec663ba",
+        "date": "2026-10-26",
+        "source_currency": "EUR",
+        "target_currency": "KZT",
+        "rate": "520"
+      },
+      {
+        "row_id": "fx-0fe79b24c9d5",
+        "date": "2026-10-26",
+        "source_currency": "KZT",
+        "target_currency": "KZT",
+        "rate": "1"
+      },
+      {
+        "row_id": "fx-ec46e3a5709e",
+        "date": "2026-10-26",
+        "source_currency": "JPY",
+        "target_currency": "KZT",
+        "rate": "3"
+      },
+      {
+        "row_id": "fx-6369ad245a17",
+        "date": "2026-10-26",
+        "source_currency": "KWD",
+        "target_currency": "KZT",
+        "rate": "1550"
+      },
+      {
+        "row_id": "fx-ff7e1192c751",
+        "date": "2026-10-27",
+        "source_currency": "USD",
+        "target_currency": "KZT",
+        "rate": "480.1"
+      },
+      {
+        "row_id": "fx-7bc5b3489ec1",
+        "date": "2026-10-27",
+        "source_currency": "EUR",
+        "target_currency": "KZT",
+        "rate": "520.1"
+      },
+      {
+        "row_id": "fx-473fffceaa75",
+        "date": "2026-10-27",
+        "source_currency": "KZT",
+        "target_currency": "KZT",
+        "rate": "1"
+      },
+      {
+        "row_id": "fx-a361b7cb067d",
+        "date": "2026-10-27",
+        "source_currency": "JPY",
+        "target_currency": "KZT",
+        "rate": "3.1"
+      },
+      {
+        "row_id": "fx-062837f6ec92",
+        "date": "2026-10-27",
+        "source_currency": "KWD",
+        "target_currency": "KZT",
+        "rate": "1550.1"
+      },
+      {
+        "row_id": "fx-1af86c0ef895",
+        "date": "2026-10-28",
+        "source_currency": "USD",
+        "target_currency": "KZT",
+        "rate": "480.2"
+      },
+      {
+        "row_id": "fx-e1e9ddc0069c",
+        "date": "2026-10-28",
+        "source_currency": "EUR",
+        "target_currency": "KZT",
+        "rate": "520.2"
+      },
+      {
+        "row_id": "fx-4aa7cb690f10",
+        "date": "2026-10-28",
+        "source_currency": "KZT",
+        "target_currency": "KZT",
+        "rate": "1"
+      },
+      {
+        "row_id": "fx-547136d0cb69",
+        "date": "2026-10-28",
+        "source_currency": "JPY",
+        "target_currency": "KZT",
+        "rate": "3.2"
+      },
+      {
+        "row_id": "fx-3af4d21666c5",
+        "date": "2026-10-28",
+        "source_currency": "KWD",
+        "target_currency": "KZT",
+        "rate": "1550.2"
+      },
+      {
+        "row_id": "fx-390056abe49c",
+        "date": "2026-10-29",
+        "source_currency": "USD",
+        "target_currency": "KZT",
+        "rate": "480.3"
+      },
+      {
+        "row_id": "fx-39290241c4ef",
+        "date": "2026-10-29",
+        "source_currency": "EUR",
+        "target_currency": "KZT",
+        "rate": "520.3"
+      },
+      {
+        "row_id": "fx-c3baef282575",
+        "date": "2026-10-29",
+        "source_currency": "KZT",
+        "target_currency": "KZT",
+        "rate": "1"
+      },
+      {
+        "row_id": "fx-c91f951cb00a",
+        "date": "2026-10-29",
+        "source_currency": "JPY",
+        "target_currency": "KZT",
+        "rate": "3.3"
+      },
+      {
+        "row_id": "fx-9ae2bdf12ab1",
+        "date": "2026-10-29",
+        "source_currency": "KWD",
+        "target_currency": "KZT",
+        "rate": "1550.3"
+      },
+      {
+        "row_id": "fx-09c723bb1d74",
+        "date": "2026-10-30",
+        "source_currency": "USD",
+        "target_currency": "KZT",
+        "rate": "480.4"
+      },
+      {
+        "row_id": "fx-7ff88b8e81c0",
+        "date": "2026-10-30",
+        "source_currency": "EUR",
+        "target_currency": "KZT",
+        "rate": "520.4"
+      },
+      {
+        "row_id": "fx-7932ec6f6655",
+        "date": "2026-10-30",
+        "source_currency": "KZT",
+        "target_currency": "KZT",
+        "rate": "1"
+      },
+      {
+        "row_id": "fx-dfc72685d24c",
+        "date": "2026-10-30",
+        "source_currency": "JPY",
+        "target_currency": "KZT",
+        "rate": "3.4"
+      },
+      {
+        "row_id": "fx-a609f8cef202",
+        "date": "2026-10-30",
+        "source_currency": "KWD",
+        "target_currency": "KZT",
+        "rate": "1550.4"
+      },
+      {
+        "row_id": "fx-27159eda1246",
+        "date": "2026-10-31",
+        "source_currency": "USD",
+        "target_currency": "KZT",
+        "rate": "480"
+      },
+      {
+        "row_id": "fx-b54fb9a4184a",
+        "date": "2026-10-31",
+        "source_currency": "EUR",
+        "target_currency": "KZT",
+        "rate": "520"
+      },
+      {
+        "row_id": "fx-60deb10d81f4",
+        "date": "2026-10-31",
+        "source_currency": "KZT",
+        "target_currency": "KZT",
+        "rate": "1"
+      },
+      {
+        "row_id": "fx-6cb5c39613c2",
+        "date": "2026-10-31",
+        "source_currency": "JPY",
+        "target_currency": "KZT",
+        "rate": "3"
+      },
+      {
+        "row_id": "fx-9a213233f02c",
+        "date": "2026-10-31",
+        "source_currency": "KWD",
+        "target_currency": "KZT",
+        "rate": "1550"
+      },
+      {
+        "row_id": "fx-db149a4e450c",
+        "date": "2026-11-01",
+        "source_currency": "USD",
+        "target_currency": "KZT",
+        "rate": "480.1"
+      },
+      {
+        "row_id": "fx-57d13c689ab1",
+        "date": "2026-11-01",
+        "source_currency": "EUR",
+        "target_currency": "KZT",
+        "rate": "520.1"
+      },
+      {
+        "row_id": "fx-412b1baf7539",
+        "date": "2026-11-01",
+        "source_currency": "KZT",
+        "target_currency": "KZT",
+        "rate": "1"
+      },
+      {
+        "row_id": "fx-66f45016f15f",
+        "date": "2026-11-01",
+        "source_currency": "JPY",
+        "target_currency": "KZT",
+        "rate": "3.1"
+      },
+      {
+        "row_id": "fx-523ee8f056b2",
+        "date": "2026-11-01",
+        "source_currency": "KWD",
+        "target_currency": "KZT",
+        "rate": "1550.1"
+      },
+      {
+        "row_id": "fx-c4caf0d5b7a2",
+        "date": "2026-11-02",
+        "source_currency": "USD",
+        "target_currency": "KZT",
+        "rate": "480.2"
+      },
+      {
+        "row_id": "fx-6f037c41282b",
+        "date": "2026-11-02",
+        "source_currency": "EUR",
+        "target_currency": "KZT",
+        "rate": "520.2"
+      },
+      {
+        "row_id": "fx-36f09dd2cb4a",
+        "date": "2026-11-02",
+        "source_currency": "KZT",
+        "target_currency": "KZT",
+        "rate": "1"
+      },
+      {
+        "row_id": "fx-24412e62843c",
+        "date": "2026-11-02",
+        "source_currency": "JPY",
+        "target_currency": "KZT",
+        "rate": "3.2"
+      },
+      {
+        "row_id": "fx-bc984a4ddd78",
+        "date": "2026-11-02",
+        "source_currency": "KWD",
+        "target_currency": "KZT",
+        "rate": "1550.2"
+      },
+      {
+        "row_id": "fx-6c6fa54ed10d",
+        "date": "2026-11-03",
+        "source_currency": "USD",
+        "target_currency": "KZT",
+        "rate": "480.3"
+      },
+      {
+        "row_id": "fx-1fe848f99229",
+        "date": "2026-11-03",
+        "source_currency": "EUR",
+        "target_currency": "KZT",
+        "rate": "520.3"
+      },
+      {
+        "row_id": "fx-42f7c3d8d69e",
+        "date": "2026-11-03",
+        "source_currency": "KZT",
+        "target_currency": "KZT",
+        "rate": "1"
+      },
+      {
+        "row_id": "fx-211ad31acfc7",
+        "date": "2026-11-03",
+        "source_currency": "JPY",
+        "target_currency": "KZT",
+        "rate": "3.3"
+      },
+      {
+        "row_id": "fx-a06873352006",
+        "date": "2026-11-03",
+        "source_currency": "KWD",
+        "target_currency": "KZT",
+        "rate": "1550.3"
+      },
+      {
+        "row_id": "fx-ec2267bda9cd",
+        "date": "2026-11-04",
+        "source_currency": "USD",
+        "target_currency": "KZT",
+        "rate": "480.4"
+      },
+      {
+        "row_id": "fx-7a1a2b6df467",
+        "date": "2026-11-04",
+        "source_currency": "EUR",
+        "target_currency": "KZT",
+        "rate": "520.4"
+      },
+      {
+        "row_id": "fx-437f39e20eb3",
+        "date": "2026-11-04",
+        "source_currency": "KZT",
+        "target_currency": "KZT",
+        "rate": "1"
+      },
+      {
+        "row_id": "fx-dbccd36896be",
+        "date": "2026-11-04",
+        "source_currency": "JPY",
+        "target_currency": "KZT",
+        "rate": "3.4"
+      },
+      {
+        "row_id": "fx-881a42a07953",
+        "date": "2026-11-04",
+        "source_currency": "KWD",
+        "target_currency": "KZT",
+        "rate": "1550.4"
+      },
+      {
+        "row_id": "fx-588a136608f6",
+        "date": "2026-11-05",
+        "source_currency": "USD",
+        "target_currency": "KZT",
+        "rate": "480"
+      },
+      {
+        "row_id": "fx-8aafbcd611ac",
+        "date": "2026-11-05",
+        "source_currency": "EUR",
+        "target_currency": "KZT",
+        "rate": "520"
+      },
+      {
+        "row_id": "fx-85e3ce1d0d4c",
+        "date": "2026-11-05",
+        "source_currency": "KZT",
+        "target_currency": "KZT",
+        "rate": "1"
+      },
+      {
+        "row_id": "fx-1781db431f71",
+        "date": "2026-11-05",
+        "source_currency": "JPY",
+        "target_currency": "KZT",
+        "rate": "3"
+      },
+      {
+        "row_id": "fx-2c79c14c93f5",
+        "date": "2026-11-05",
+        "source_currency": "KWD",
+        "target_currency": "KZT",
+        "rate": "1550"
+      },
+      {
+        "row_id": "fx-be8e25294228",
+        "date": "2026-11-06",
+        "source_currency": "USD",
+        "target_currency": "KZT",
+        "rate": "480.1"
+      },
+      {
+        "row_id": "fx-f7507a8d3d2d",
+        "date": "2026-11-06",
+        "source_currency": "EUR",
+        "target_currency": "KZT",
+        "rate": "520.1"
+      },
+      {
+        "row_id": "fx-b31870573815",
+        "date": "2026-11-06",
+        "source_currency": "KZT",
+        "target_currency": "KZT",
+        "rate": "1"
+      },
+      {
+        "row_id": "fx-b09b81f8c158",
+        "date": "2026-11-06",
+        "source_currency": "JPY",
+        "target_currency": "KZT",
+        "rate": "3.1"
+      },
+      {
+        "row_id": "fx-8abfb44865cf",
+        "date": "2026-11-06",
+        "source_currency": "KWD",
+        "target_currency": "KZT",
+        "rate": "1550.1"
+      },
+      {
+        "row_id": "fx-272cb0365fc0",
+        "date": "2026-11-07",
+        "source_currency": "USD",
+        "target_currency": "KZT",
+        "rate": "480.2"
+      },
+      {
+        "row_id": "fx-d492b4af9aac",
+        "date": "2026-11-07",
+        "source_currency": "EUR",
+        "target_currency": "KZT",
+        "rate": "520.2"
+      },
+      {
+        "row_id": "fx-31acf1cce2b6",
+        "date": "2026-11-07",
+        "source_currency": "KZT",
+        "target_currency": "KZT",
+        "rate": "1"
+      },
+      {
+        "row_id": "fx-201acdc74187",
+        "date": "2026-11-07",
+        "source_currency": "JPY",
+        "target_currency": "KZT",
+        "rate": "3.2"
+      },
+      {
+        "row_id": "fx-6c4fc62a0b02",
+        "date": "2026-11-07",
+        "source_currency": "KWD",
+        "target_currency": "KZT",
+        "rate": "1550.2"
+      },
+      {
+        "row_id": "fx-02916cb301a8",
+        "date": "2026-11-08",
+        "source_currency": "USD",
+        "target_currency": "KZT",
+        "rate": "480.3"
+      },
+      {
+        "row_id": "fx-4ff1d55ba4c6",
+        "date": "2026-11-08",
+        "source_currency": "EUR",
+        "target_currency": "KZT",
+        "rate": "520.3"
+      },
+      {
+        "row_id": "fx-b46ef76402ab",
+        "date": "2026-11-08",
+        "source_currency": "KZT",
+        "target_currency": "KZT",
+        "rate": "1"
+      },
+      {
+        "row_id": "fx-1397ae287a3f",
+        "date": "2026-11-08",
+        "source_currency": "JPY",
+        "target_currency": "KZT",
+        "rate": "3.3"
+      },
+      {
+        "row_id": "fx-67f916970914",
+        "date": "2026-11-08",
+        "source_currency": "KWD",
+        "target_currency": "KZT",
+        "rate": "1550.3"
+      }
+    ],
+    "policy": [
+      {
+        "doc_id": "policy",
+        "fx_date": "payment_local_date",
+        "period_rule": "service_at",
+        "period_interval": "[start,end)",
+        "rounding": "ROUND_HALF_EVEN",
+        "amount_tolerance_minor": 0,
+        "currency_exponents": {
+          "KZT": 2,
+          "USD": 2,
+          "EUR": 2,
+          "JPY": 0,
+          "KWD": 3
+        },
+        "settlement_rule": "remeasure receivable at payment-date FX before settling; final residual to fx_revaluation",
+        "allocation_rule": "sum signed invoice_refs per payment; no guessing null refs"
+      }
+    ]
+  },
+  "changes": []
+}

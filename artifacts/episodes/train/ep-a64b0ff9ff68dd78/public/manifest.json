@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.1.0",
+  "episode_id": "ep-a64b0ff9ff68dd78",
+  "company": "Synthetic Steppe",
+  "base_currency": "KZT",
+  "period_start": "2026-10-01T00:00:00+00:00",
+  "period_end": "2026-11-01T00:00:00+00:00",
+  "timezone": "+00:00",
+  "record_counts": {
+    "ledger": 379,
+    "invoices": 65,
+    "payments": 81,
+    "fx": 195,
+    "policy": 1
+  },
+  "document_count": 147,
+  "rounding": "ROUND_HALF_EVEN"
+}

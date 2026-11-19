@@ -22,6 +22,8 @@ class AuditEnv:
         return tuple(self._rpc({'op':'reset','args':dict(seed=seed,config=config,mode=mode,max_steps=max_steps,timeout=timeout)}))
     def step(self,action):return tuple(self._rpc({'op':'step','action':action}))
     def report(self):return self._rpc({'op':'report'})
+    def abort(self,reason='runner_abort'):
+        return tuple(self._rpc({'op':'abort','reason':reason}))
     def close(self):
         if self._proc.poll() is None:
             self._proc.stdin.close()

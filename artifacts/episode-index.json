@@ -1,0 +1,122 @@
+[
+  {
+    "split": "train",
+    "episode_id": "ep-0ac58b8cc7d9f59b",
+    "version": "1.1.0",
+    "path": "episodes/train/ep-0ac58b8cc7d9f59b"
+  },
+  {
+    "split": "train",
+    "episode_id": "ep-c1cb1f03dacbea00",
+    "version": "1.1.0",
+    "path": "episodes/train/ep-c1cb1f03dacbea00"
+  },
+  {
+    "split": "train",
+    "episode_id": "ep-b0b2be381595ada4",
+    "version": "1.1.0",
+    "path": "episodes/train/ep-b0b2be381595ada4"
+  },
+  {
+    "split": "train",
+    "episode_id": "ep-68ceb9c94ed1aced",
+    "version": "1.1.0",
+    "path": "episodes/train/ep-68ceb9c94ed1aced"
+  },
+  {
+    "split": "train",
+    "episode_id": "ep-33e0299a2d618221",
+    "version": "1.1.0",
+    "path": "episodes/train/ep-33e0299a2d618221"
+  },
+  {
+    "split": "train",
+    "episode_id": "ep-a64b0ff9ff68dd78",
+    "version": "1.1.0",
+    "path": "episodes/train/ep-a64b0ff9ff68dd78"
+  },
+  {
+    "split": "train",
+    "episode_id": "ep-1763910f2efdeabb",
+    "version": "1.1.0",
+    "path": "episodes/train/ep-1763910f2efdeabb"
+  },
+  {
+    "split": "train",
+    "episode_id": "ep-7a00e277a5428b19",
+    "version": "1.1.0",
+    "path": "episodes/train/ep-7a00e277a5428b19"
+  },
+  {
+    "split": "train",
+    "episode_id": "ep-255753944221adeb",
+    "version": "1.1.0",
+    "path": "episodes/train/ep-255753944221adeb"
+  },
+  {
+    "split": "train",
+    "episode_id": "ep-b558299273d70b4f",
+    "version": "1.1.0",
+    "path": "episodes/train/ep-b558299273d70b4f"
+  },
+  {
+    "split": "dev",
+    "episode_id": "ep-017f8971d0bfa904",
+    "version": "1.1.0",
+    "path": "episodes/dev/ep-017f8971d0bfa904"
+  },
+  {
+    "split": "dev",
+    "episode_id": "ep-6a82f14efd4a0d06",
+    "version": "1.1.0",
+    "path": "episodes/dev/ep-6a82f14efd4a0d06"
+  },
+  {
+    "split": "dev",
+    "episode_id": "ep-65a1aff7430f5c69",
+    "version": "1.1.0",
+    "path": "episodes/dev/ep-65a1aff7430f5c69"
+  },
+  {
+    "split": "dev",
+    "episode_id": "ep-9cce743c1c4ec7b8",
+    "version": "1.1.0",
+    "path": "episodes/dev/ep-9cce743c1c4ec7b8"
+  },
+  {
+    "split": "dev",
+    "episode_id": "ep-822a3adb86f01a1b",
+    "version": "1.1.0",
+    "path": "episodes/dev/ep-822a3adb86f01a1b"
+  },
+  {
+    "split": "dev",
+    "episode_id": "ep-80f288497e873d0e",
+    "version": "1.1.0",
+    "path": "episodes/dev/ep-80f288497e873d0e"
+  },
+  {
+    "split": "dev",
+    "episode_id": "ep-1b732d4d3fe94f23",
+    "version": "1.1.0",
+    "path": "episodes/dev/ep-1b732d4d3fe94f23"
+  },
+  {
+    "split": "dev",
+    "episode_id": "ep-ff8c9db4a4fca667",
+    "version": "1.1.0",
+    "path": "episodes/dev/ep-ff8c9db4a4fca667"
+  },
+  {
+    "split": "dev",
+    "episode_id": "ep-3cc44619feed89f6",
+    "version": "1.1.0",
+    "path": "episodes/dev/ep-3cc44619feed89f6"
+  },
+  {
+    "split": "dev",
+    "episode_id": "ep-2028758e562791a8",
+    "version": "1.1.0",
+    "path": "episodes/dev/ep-2028758e562791a8"
+  }
+]

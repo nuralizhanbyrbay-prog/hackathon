@@ -1,0 +1,1362 @@
+[
+  {
+    "episode_id": "ep-0ac58b8cc7d9f59b",
+    "policy": "random",
+    "transform": 5000,
+    "passed": true,
+    "metrics": {
+      "TP": 0,
+      "FP": 0,
+      "FN": 0,
+      "P": 0.0,
+      "R": 0.0,
+      "F1": 1.0,
+      "reward": 0.984,
+      "steps": 9,
+      "truncated": false
+    }
+  },
+  {
+    "episode_id": "ep-0ac58b8cc7d9f59b",
+    "policy": "reconcile",
+    "transform": 5000,
+    "passed": true,
+    "metrics": {
+      "TP": 0,
+      "FP": 0,
+      "FN": 0,
+      "P": 0.0,
+      "R": 0.0,
+      "F1": 1.0,
+      "reward": 0.972,
+      "steps": 15,
+      "truncated": false
+    }
+  },
+  {
+    "episode_id": "ep-0ac58b8cc7d9f59b",
+    "policy": "flag_all",
+    "transform": 5000,
+    "passed": true,
+    "metrics": {
+      "TP": 0,
+      "FP": 30,
+      "FN": 0,
+      "P": 0.0,
+      "R": 0.0,
+      "F1": 0.0,
+      "reward": -1.0,
+      "steps": 15,
+      "truncated": false
+    }
+  },
+  {
+    "episode_id": "ep-0ac58b8cc7d9f59b",
+    "policy": "oracle",
+    "transform": 5000,
+    "passed": true,
+    "metrics": {
+      "TP": 0,
+      "FP": 0,
+      "FN": 0,
+      "P": 0.0,
+      "R": 0.0,
+      "F1": 1.0,
+      "reward": 1.0,
+      "steps": 1,
+      "truncated": false
+    }
+  },
+  {
+    "episode_id": "ep-c1cb1f03dacbea00",
+    "policy": "random",
+    "transform": 5001,
+    "passed": true,
+    "metrics": {
+      "TP": 0,
+      "FP": 0,
+      "FN": 0,
+      "P": 0.0,
+      "R": 0.0,
+      "F1": 1.0,
+      "reward": 0.984,
+      "steps": 9,
+      "truncated": false
+    }
+  },
+  {
+    "episode_id": "ep-c1cb1f03dacbea00",
+    "policy": "reconcile",
+    "transform": 5001,
+    "passed": true,
+    "metrics": {
+      "TP": 0,
+      "FP": 0,
+      "FN": 0,
+      "P": 0.0,
+      "R": 0.0,
+      "F1": 1.0,
+      "reward": 0.97,
+      "steps": 16,
+      "truncated": false
+    }
+  },
+  {
+    "episode_id": "ep-c1cb1f03dacbea00",
+    "policy": "flag_all",
+    "transform": 5001,
+    "passed": true,
+    "metrics": {
+      "TP": 0,
+      "FP": 30,
+      "FN": 0,
+      "P": 0.0,
+      "R": 0.0,
+      "F1": 0.0,
+      "reward": -1.0,
+      "steps": 16,
+      "truncated": false
+    }
+  },
+  {
+    "episode_id": "ep-c1cb1f03dacbea00",
+    "policy": "oracle",
+    "transform": 5001,
+    "passed": true,
+    "metrics": {
+      "TP": 0,
+      "FP": 0,
+      "FN": 0,
+      "P": 0.0,
+      "R": 0.0,
+      "F1": 1.0,
+      "reward": 1.0,
+      "steps": 1,
+      "truncated": false
+    }
+  },
+  {
+    "episode_id": "ep-b0b2be381595ada4",
+    "policy": "random",
+    "transform": 5002,
+    "passed": true,
+    "metrics": {
+      "TP": 0,
+      "FP": 0,
+      "FN": 0,
+      "P": 0.0,
+      "R": 0.0,
+      "F1": 1.0,
+      "reward": 0.984,
+      "steps": 9,
+      "truncated": false
+    }
+  },
+  {
+    "episode_id": "ep-b0b2be381595ada4",
+    "policy": "reconcile",
+    "transform": 5002,
+    "passed": true,
+    "metrics": {
+      "TP": 0,
+      "FP": 0,
+      "FN": 0,
+      "P": 0.0,
+      "R": 0.0,
+      "F1": 1.0,
+      "reward": 0.968,
+      "steps": 17,
+      "truncated": false
+    }
+  },
+  {
+    "episode_id": "ep-b0b2be381595ada4",
+    "policy": "flag_all",
+    "transform": 5002,
+    "passed": true,
+    "metrics": {
+      "TP": 0,
+      "FP": 30,
+      "FN": 0,
+      "P": 0.0,
+      "R": 0.0,
+      "F1": 0.0,
+      "reward": -1.0,
+      "steps": 17,
+      "truncated": false
+    }
+  },
+  {
+    "episode_id": "ep-b0b2be381595ada4",
+    "policy": "oracle",
+    "transform": 5002,
+    "passed": true,
+    "metrics": {
+      "TP": 0,
+      "FP": 0,
+      "FN": 0,
+      "P": 0.0,
+      "R": 0.0,
+      "F1": 1.0,
+      "reward": 1.0,
+      "steps": 1,
+      "truncated": false
+    }
+  },
+  {
+    "episode_id": "ep-68ceb9c94ed1aced",
+    "policy": "random",
+    "transform": 5003,
+    "passed": true,
+    "metrics": {
+      "TP": 0,
+      "FP": 0,
+      "FN": 0,
+      "P": 0.0,
+      "R": 0.0,
+      "F1": 1.0,
+      "reward": 0.984,
+      "steps": 9,
+      "truncated": false
+    }
+  },
+  {
+    "episode_id": "ep-68ceb9c94ed1aced",
+    "policy": "reconcile",
+    "transform": 5003,
+    "passed": true,
+    "metrics": {
+      "TP": 0,
+      "FP": 0,
+      "FN": 0,
+      "P": 0.0,
+      "R": 0.0,
+      "F1": 1.0,
+      "reward": 0.968,
+      "steps": 17,
+      "truncated": false
+    }
+  },
+  {
+    "episode_id": "ep-68ceb9c94ed1aced",
+    "policy": "flag_all",
+    "transform": 5003,
+    "passed": true,
+    "metrics": {
+      "TP": 0,
+      "FP": 30,
+      "FN": 0,
+      "P": 0.0,
+      "R": 0.0,
+      "F1": 0.0,
+      "reward": -1.0,
+      "steps": 17,
+      "truncated": false
+    }
+  },
+  {
+    "episode_id": "ep-68ceb9c94ed1aced",
+    "policy": "oracle",
+    "transform": 5003,
+    "passed": true,
+    "metrics": {
+      "TP": 0,
+      "FP": 0,
+      "FN": 0,
+      "P": 0.0,
+      "R": 0.0,
+      "F1": 1.0,
+      "reward": 1.0,
+      "steps": 1,
+      "truncated": false
+    }
+  },
+  {
+    "episode_id": "ep-33e0299a2d618221",
+    "policy": "random",
+    "transform": 5004,
+    "passed": true,
+    "metrics": {
+      "TP": 0,
+      "FP": 0,
+      "FN": 0,
+      "P": 0.0,
+      "R": 0.0,
+      "F1": 1.0,
+      "reward": 0.984,
+      "steps": 9,
+      "truncated": false
+    }
+  },
+  {
+    "episode_id": "ep-33e0299a2d618221",
+    "policy": "reconcile",
+    "transform": 5004,
+    "passed": true,
+    "metrics": {
+      "TP": 0,
+      "FP": 0,
+      "FN": 0,
+      "P": 0.0,
+      "R": 0.0,
+      "F1": 1.0,
+      "reward": 0.968,
+      "steps": 17,
+      "truncated": false
+    }
+  },
+  {
+    "episode_id": "ep-33e0299a2d618221",
+    "policy": "flag_all",
+    "transform": 5004,
+    "passed": true,
+    "metrics": {
+      "TP": 0,
+      "FP": 30,
+      "FN": 0,
+      "P": 0.0,
+      "R": 0.0,
+      "F1": 0.0,
+      "reward": -1.0,
+      "steps": 17,
+      "truncated": false
+    }
+  },
+  {
+    "episode_id": "ep-33e0299a2d618221",
+    "policy": "oracle",
+    "transform": 5004,
+    "passed": true,
+    "metrics": {
+      "TP": 0,
+      "FP": 0,
+      "FN": 0,
+      "P": 0.0,
+      "R": 0.0,
+      "F1": 1.0,
+      "reward": 1.0,
+      "steps": 1,
+      "truncated": false
+    }
+  },
+  {
+    "episode_id": "ep-a64b0ff9ff68dd78",
+    "policy": "random",
+    "transform": 5005,
+    "passed": true,
+    "metrics": {
+      "TP": 0,
+      "FP": 0,
+      "FN": 6,
+      "P": 0.0,
+      "R": 0.0,
+      "F1": 0.0,
+      "reward": -1.0,
+      "steps": 9,
+      "truncated": false
+    }
+  },
+  {
+    "episode_id": "ep-a64b0ff9ff68dd78",
+    "policy": "reconcile",
+    "transform": 5005,
+    "passed": true,
+    "metrics": {
+      "TP": 6,
+      "FP": 0,
+      "FN": 0,
+      "P": 1.0,
+      "R": 1.0,
+      "F1": 1.0,
+      "reward": 0.966,
+      "steps": 18,
+      "truncated": false
+    }
+  },
+  {
+    "episode_id": "ep-a64b0ff9ff68dd78",
+    "policy": "flag_all",
+    "transform": 5005,
+    "passed": true,
+    "metrics": {
+      "TP": 0,
+      "FP": 30,
+      "FN": 6,
+      "P": 0.0,
+      "R": 0.0,
+      "F1": 0.0,
+      "reward": -1.0,
+      "steps": 18,
+      "truncated": false
+    }
+  },
+  {
+    "episode_id": "ep-a64b0ff9ff68dd78",
+    "policy": "oracle",
+    "transform": 5005,
+    "passed": true,
+    "metrics": {
+      "TP": 6,
+      "FP": 0,
+      "FN": 0,
+      "P": 1.0,
+      "R": 1.0,
+      "F1": 1.0,
+      "reward": 1.0,
+      "steps": 1,
+      "truncated": false
+    }
+  },
+  {
+    "episode_id": "ep-1763910f2efdeabb",
+    "policy": "random",
+    "transform": 5006,
+    "passed": true,
+    "metrics": {
+      "TP": 0,
+      "FP": 0,
+      "FN": 6,
+      "P": 0.0,
+      "R": 0.0,
+      "F1": 0.0,
+      "reward": -1.0,
+      "steps": 9,
+      "truncated": false
+    }
+  },
+  {
+    "episode_id": "ep-1763910f2efdeabb",
+    "policy": "reconcile",
+    "transform": 5006,
+    "passed": true,
+    "metrics": {
+      "TP": 6,
+      "FP": 0,
+      "FN": 0,
+      "P": 1.0,
+      "R": 1.0,
+      "F1": 1.0,
+      "reward": 0.966,
+      "steps": 18,
+      "truncated": false
+    }
+  },
+  {
+    "episode_id": "ep-1763910f2efdeabb",
+    "policy": "flag_all",
+    "transform": 5006,
+    "passed": true,
+    "metrics": {
+      "TP": 0,
+      "FP": 30,
+      "FN": 6,
+      "P": 0.0,
+      "R": 0.0,
+      "F1": 0.0,
+      "reward": -1.0,
+      "steps": 18,
+      "truncated": false
+    }
+  },
+  {
+    "episode_id": "ep-1763910f2efdeabb",
+    "policy": "oracle",
+    "transform": 5006,
+    "passed": true,
+    "metrics": {
+      "TP": 6,
+      "FP": 0,
+      "FN": 0,
+      "P": 1.0,
+      "R": 1.0,
+      "F1": 1.0,
+      "reward": 1.0,
+      "steps": 1,
+      "truncated": false
+    }
+  },
+  {
+    "episode_id": "ep-7a00e277a5428b19",
+    "policy": "random",
+    "transform": 5007,
+    "passed": true,
+    "metrics": {
+      "TP": 0,
+      "FP": 0,
+      "FN": 6,
+      "P": 0.0,
+      "R": 0.0,
+      "F1": 0.0,
+      "reward": -1.0,
+      "steps": 9,
+      "truncated": false
+    }
+  },
+  {
+    "episode_id": "ep-7a00e277a5428b19",
+    "policy": "reconcile",
+    "transform": 5007,
+    "passed": true,
+    "metrics": {
+      "TP": 6,
+      "FP": 0,
+      "FN": 0,
+      "P": 1.0,
+      "R": 1.0,
+      "F1": 1.0,
+      "reward": 0.964,
+      "steps": 19,
+      "truncated": false
+    }
+  },
+  {
+    "episode_id": "ep-7a00e277a5428b19",
+    "policy": "flag_all",
+    "transform": 5007,
+    "passed": true,
+    "metrics": {
+      "TP": 0,
+      "FP": 30,
+      "FN": 6,
+      "P": 0.0,
+      "R": 0.0,
+      "F1": 0.0,
+      "reward": -1.0,
+      "steps": 19,
+      "truncated": false
+    }
+  },
+  {
+    "episode_id": "ep-7a00e277a5428b19",
+    "policy": "oracle",
+    "transform": 5007,
+    "passed": true,
+    "metrics": {
+      "TP": 6,
+      "FP": 0,
+      "FN": 0,
+      "P": 1.0,
+      "R": 1.0,
+      "F1": 1.0,
+      "reward": 1.0,
+      "steps": 1,
+      "truncated": false
+    }
+  },
+  {
+    "episode_id": "ep-255753944221adeb",
+    "policy": "random",
+    "transform": 5008,
+    "passed": true,
+    "metrics": {
+      "TP": 0,
+      "FP": 0,
+      "FN": 6,
+      "P": 0.0,
+      "R": 0.0,
+      "F1": 0.0,
+      "reward": -1.0,
+      "steps": 9,
+      "truncated": false
+    }
+  },
+  {
+    "episode_id": "ep-255753944221adeb",
+    "policy": "reconcile",
+    "transform": 5008,
+    "passed": true,
+    "metrics": {
+      "TP": 6,
+      "FP": 0,
+      "FN": 0,
+      "P": 1.0,
+      "R": 1.0,
+      "F1": 1.0,
+      "reward": 0.964,
+      "steps": 19,
+      "truncated": false
+    }
+  },
+  {
+    "episode_id": "ep-255753944221adeb",
+    "policy": "flag_all",
+    "transform": 5008,
+    "passed": true,
+    "metrics": {
+      "TP": 0,
+      "FP": 30,
+      "FN": 6,
+      "P": 0.0,
+      "R": 0.0,
+      "F1": 0.0,
+      "reward": -1.0,
+      "steps": 19,
+      "truncated": false
+    }
+  },
+  {
+    "episode_id": "ep-255753944221adeb",
+    "policy": "oracle",
+    "transform": 5008,
+    "passed": true,
+    "metrics": {
+      "TP": 6,
+      "FP": 0,
+      "FN": 0,
+      "P": 1.0,
+      "R": 1.0,
+      "F1": 1.0,
+      "reward": 1.0,
+      "steps": 1,
+      "truncated": false
+    }
+  },
+  {
+    "episode_id": "ep-b558299273d70b4f",
+    "policy": "random",
+    "transform": 5009,
+    "passed": true,
+    "metrics": {
+      "TP": 0,
+      "FP": 0,
+      "FN": 6,
+      "P": 0.0,
+      "R": 0.0,
+      "F1": 0.0,
+      "reward": -1.0,
+      "steps": 9,
+      "truncated": false
+    }
+  },
+  {
+    "episode_id": "ep-b558299273d70b4f",
+    "policy": "reconcile",
+    "transform": 5009,
+    "passed": true,
+    "metrics": {
+      "TP": 6,
+      "FP": 0,
+      "FN": 0,
+      "P": 1.0,
+      "R": 1.0,
+      "F1": 1.0,
+      "reward": 0.964,
+      "steps": 19,
+      "truncated": false
+    }
+  },
+  {
+    "episode_id": "ep-b558299273d70b4f",
+    "policy": "flag_all",
+    "transform": 5009,
+    "passed": true,
+    "metrics": {
+      "TP": 0,
+      "FP": 30,
+      "FN": 6,
+      "P": 0.0,
+      "R": 0.0,
+      "F1": 0.0,
+      "reward": -1.0,
+      "steps": 19,
+      "truncated": false
+    }
+  },
+  {
+    "episode_id": "ep-b558299273d70b4f",
+    "policy": "oracle",
+    "transform": 5009,
+    "passed": true,
+    "metrics": {
+      "TP": 6,
+      "FP": 0,
+      "FN": 0,
+      "P": 1.0,
+      "R": 1.0,
+      "F1": 1.0,
+      "reward": 1.0,
+      "steps": 1,
+      "truncated": false
+    }
+  },
+  {
+    "episode_id": "ep-017f8971d0bfa904",
+    "policy": "random",
+    "transform": 5010,
+    "passed": true,
+    "metrics": {
+      "TP": 0,
+      "FP": 0,
+      "FN": 4,
+      "P": 0.0,
+      "R": 0.0,
+      "F1": 0.0,
+      "reward": -1.0,
+      "steps": 9,
+      "truncated": false
+    }
+  },
+  {
+    "episode_id": "ep-017f8971d0bfa904",
+    "policy": "reconcile",
+    "transform": 5010,
+    "passed": true,
+    "metrics": {
+      "TP": 4,
+      "FP": 0,
+      "FN": 0,
+      "P": 1.0,
+      "R": 1.0,
+      "F1": 1.0,
+      "reward": 0.964,
+      "steps": 19,
+      "truncated": false
+    }
+  },
+  {
+    "episode_id": "ep-017f8971d0bfa904",
+    "policy": "flag_all",
+    "transform": 5010,
+    "passed": true,
+    "metrics": {
+      "TP": 0,
+      "FP": 30,
+      "FN": 4,
+      "P": 0.0,
+      "R": 0.0,
+      "F1": 0.0,
+      "reward": -1.0,
+      "steps": 19,
+      "truncated": false
+    }
+  },
+  {
+    "episode_id": "ep-017f8971d0bfa904",
+    "policy": "oracle",
+    "transform": 5010,
+    "passed": true,
+    "metrics": {
+      "TP": 4,
+      "FP": 0,
+      "FN": 0,
+      "P": 1.0,
+      "R": 1.0,
+      "F1": 1.0,
+      "reward": 1.0,
+      "steps": 1,
+      "truncated": false
+    }
+  },
+  {
+    "episode_id": "ep-6a82f14efd4a0d06",
+    "policy": "random",
+    "transform": 5011,
+    "passed": true,
+    "metrics": {
+      "TP": 0,
+      "FP": 0,
+      "FN": 4,
+      "P": 0.0,
+      "R": 0.0,
+      "F1": 0.0,
+      "reward": -1.0,
+      "steps": 9,
+      "truncated": false
+    }
+  },
+  {
+    "episode_id": "ep-6a82f14efd4a0d06",
+    "policy": "reconcile",
+    "transform": 5011,
+    "passed": true,
+    "metrics": {
+      "TP": 4,
+      "FP": 0,
+      "FN": 0,
+      "P": 1.0,
+      "R": 1.0,
+      "F1": 1.0,
+      "reward": 0.96,
+      "steps": 21,
+      "truncated": false
+    }
+  },
+  {
+    "episode_id": "ep-6a82f14efd4a0d06",
+    "policy": "flag_all",
+    "transform": 5011,
+    "passed": true,
+    "metrics": {
+      "TP": 0,
+      "FP": 30,
+      "FN": 4,
+      "P": 0.0,
+      "R": 0.0,
+      "F1": 0.0,
+      "reward": -1.0,
+      "steps": 21,
+      "truncated": false
+    }
+  },
+  {
+    "episode_id": "ep-6a82f14efd4a0d06",
+    "policy": "oracle",
+    "transform": 5011,
+    "passed": true,
+    "metrics": {
+      "TP": 4,
+      "FP": 0,
+      "FN": 0,
+      "P": 1.0,
+      "R": 1.0,
+      "F1": 1.0,
+      "reward": 1.0,
+      "steps": 1,
+      "truncated": false
+    }
+  },
+  {
+    "episode_id": "ep-65a1aff7430f5c69",
+    "policy": "random",
+    "transform": 5012,
+    "passed": true,
+    "metrics": {
+      "TP": 0,
+      "FP": 0,
+      "FN": 4,
+      "P": 0.0,
+      "R": 0.0,
+      "F1": 0.0,
+      "reward": -1.0,
+      "steps": 9,
+      "truncated": false
+    }
+  },
+  {
+    "episode_id": "ep-65a1aff7430f5c69",
+    "policy": "reconcile",
+    "transform": 5012,
+    "passed": true,
+    "metrics": {
+      "TP": 4,
+      "FP": 0,
+      "FN": 0,
+      "P": 1.0,
+      "R": 1.0,
+      "F1": 1.0,
+      "reward": 0.96,
+      "steps": 21,
+      "truncated": false
+    }
+  },
+  {
+    "episode_id": "ep-65a1aff7430f5c69",
+    "policy": "flag_all",
+    "transform": 5012,
+    "passed": true,
+    "metrics": {
+      "TP": 0,
+      "FP": 30,
+      "FN": 4,
+      "P": 0.0,
+      "R": 0.0,
+      "F1": 0.0,
+      "reward": -1.0,
+      "steps": 21,
+      "truncated": false
+    }
+  },
+  {
+    "episode_id": "ep-65a1aff7430f5c69",
+    "policy": "oracle",
+    "transform": 5012,
+    "passed": true,
+    "metrics": {
+      "TP": 4,
+      "FP": 0,
+      "FN": 0,
+      "P": 1.0,
+      "R": 1.0,
+      "F1": 1.0,
+      "reward": 1.0,
+      "steps": 1,
+      "truncated": false
+    }
+  },
+  {
+    "episode_id": "ep-9cce743c1c4ec7b8",
+    "policy": "random",
+    "transform": 5013,
+    "passed": true,
+    "metrics": {
+      "TP": 0,
+      "FP": 0,
+      "FN": 4,
+      "P": 0.0,
+      "R": 0.0,
+      "F1": 0.0,
+      "reward": -1.0,
+      "steps": 9,
+      "truncated": false
+    }
+  },
+  {
+    "episode_id": "ep-9cce743c1c4ec7b8",
+    "policy": "reconcile",
+    "transform": 5013,
+    "passed": true,
+    "metrics": {
+      "TP": 4,
+      "FP": 0,
+      "FN": 0,
+      "P": 1.0,
+      "R": 1.0,
+      "F1": 1.0,
+      "reward": 0.96,
+      "steps": 21,
+      "truncated": false
+    }
+  },
+  {
+    "episode_id": "ep-9cce743c1c4ec7b8",
+    "policy": "flag_all",
+    "transform": 5013,
+    "passed": true,
+    "metrics": {
+      "TP": 0,
+      "FP": 30,
+      "FN": 4,
+      "P": 0.0,
+      "R": 0.0,
+      "F1": 0.0,
+      "reward": -1.0,
+      "steps": 21,
+      "truncated": false
+    }
+  },
+  {
+    "episode_id": "ep-9cce743c1c4ec7b8",
+    "policy": "oracle",
+    "transform": 5013,
+    "passed": true,
+    "metrics": {
+      "TP": 4,
+      "FP": 0,
+      "FN": 0,
+      "P": 1.0,
+      "R": 1.0,
+      "F1": 1.0,
+      "reward": 1.0,
+      "steps": 1,
+      "truncated": false
+    }
+  },
+  {
+    "episode_id": "ep-822a3adb86f01a1b",
+    "policy": "random",
+    "transform": 5014,
+    "passed": true,
+    "metrics": {
+      "TP": 0,
+      "FP": 0,
+      "FN": 4,
+      "P": 0.0,
+      "R": 0.0,
+      "F1": 0.0,
+      "reward": -1.0,
+      "steps": 9,
+      "truncated": false
+    }
+  },
+  {
+    "episode_id": "ep-822a3adb86f01a1b",
+    "policy": "reconcile",
+    "transform": 5014,
+    "passed": true,
+    "metrics": {
+      "TP": 4,
+      "FP": 0,
+      "FN": 0,
+      "P": 1.0,
+      "R": 1.0,
+      "F1": 1.0,
+      "reward": 0.958,
+      "steps": 22,
+      "truncated": false
+    }
+  },
+  {
+    "episode_id": "ep-822a3adb86f01a1b",
+    "policy": "flag_all",
+    "transform": 5014,
+    "passed": true,
+    "metrics": {
+      "TP": 0,
+      "FP": 30,
+      "FN": 4,
+      "P": 0.0,
+      "R": 0.0,
+      "F1": 0.0,
+      "reward": -1.0,
+      "steps": 22,
+      "truncated": false
+    }
+  },
+  {
+    "episode_id": "ep-822a3adb86f01a1b",
+    "policy": "oracle",
+    "transform": 5014,
+    "passed": true,
+    "metrics": {
+      "TP": 4,
+      "FP": 0,
+      "FN": 0,
+      "P": 1.0,
+      "R": 1.0,
+      "F1": 1.0,
+      "reward": 1.0,
+      "steps": 1,
+      "truncated": false
+    }
+  },
+  {
+    "episode_id": "ep-80f288497e873d0e",
+    "policy": "random",
+    "transform": 5015,
+    "passed": true,
+    "metrics": {
+      "TP": 0,
+      "FP": 0,
+      "FN": 4,
+      "P": 0.0,
+      "R": 0.0,
+      "F1": 0.0,
+      "reward": -1.0,
+      "steps": 9,
+      "truncated": false
+    }
+  },
+  {
+    "episode_id": "ep-80f288497e873d0e",
+    "policy": "reconcile",
+    "transform": 5015,
+    "passed": true,
+    "metrics": {
+      "TP": 4,
+      "FP": 0,
+      "FN": 0,
+      "P": 1.0,
+      "R": 1.0,
+      "F1": 1.0,
+      "reward": 0.958,
+      "steps": 22,
+      "truncated": false
+    }
+  },
+  {
+    "episode_id": "ep-80f288497e873d0e",
+    "policy": "flag_all",
+    "transform": 5015,
+    "passed": true,
+    "metrics": {
+      "TP": 0,
+      "FP": 30,
+      "FN": 4,
+      "P": 0.0,
+      "R": 0.0,
+      "F1": 0.0,
+      "reward": -1.0,
+      "steps": 22,
+      "truncated": false
+    }
+  },
+  {
+    "episode_id": "ep-80f288497e873d0e",
+    "policy": "oracle",
+    "transform": 5015,
+    "passed": true,
+    "metrics": {
+      "TP": 4,
+      "FP": 0,
+      "FN": 0,
+      "P": 1.0,
+      "R": 1.0,
+      "F1": 1.0,
+      "reward": 1.0,
+      "steps": 1,
+      "truncated": false
+    }
+  },
+  {
+    "episode_id": "ep-1b732d4d3fe94f23",
+    "policy": "random",
+    "transform": 5016,
+    "passed": true,
+    "metrics": {
+      "TP": 0,
+      "FP": 0,
+      "FN": 4,
+      "P": 0.0,
+      "R": 0.0,
+      "F1": 0.0,
+      "reward": -1.0,
+      "steps": 9,
+      "truncated": false
+    }
+  },
+  {
+    "episode_id": "ep-1b732d4d3fe94f23",
+    "policy": "reconcile",
+    "transform": 5016,
+    "passed": true,
+    "metrics": {
+      "TP": 4,
+      "FP": 0,
+      "FN": 0,
+      "P": 1.0,
+      "R": 1.0,
+      "F1": 1.0,
+      "reward": 0.956,
+      "steps": 23,
+      "truncated": false
+    }
+  },
+  {
+    "episode_id": "ep-1b732d4d3fe94f23",
+    "policy": "flag_all",
+    "transform": 5016,
+    "passed": true,
+    "metrics": {
+      "TP": 0,
+      "FP": 30,
+      "FN": 4,
+      "P": 0.0,
+      "R": 0.0,
+      "F1": 0.0,
+      "reward": -1.0,
+      "steps": 23,
+      "truncated": false
+    }
+  },
+  {
+    "episode_id": "ep-1b732d4d3fe94f23",
+    "policy": "oracle",
+    "transform": 5016,
+    "passed": true,
+    "metrics": {
+      "TP": 4,
+      "FP": 0,
+      "FN": 0,
+      "P": 1.0,
+      "R": 1.0,
+      "F1": 1.0,
+      "reward": 1.0,
+      "steps": 1,
+      "truncated": false
+    }
+  },
+  {
+    "episode_id": "ep-ff8c9db4a4fca667",
+    "policy": "random",
+    "transform": 5017,
+    "passed": true,
+    "metrics": {
+      "TP": 0,
+      "FP": 0,
+      "FN": 4,
+      "P": 0.0,
+      "R": 0.0,
+      "F1": 0.0,
+      "reward": -1.0,
+      "steps": 9,
+      "truncated": false
+    }
+  },
+  {
+    "episode_id": "ep-ff8c9db4a4fca667",
+    "policy": "reconcile",
+    "transform": 5017,
+    "passed": true,
+    "metrics": {
+      "TP": 4,
+      "FP": 0,
+      "FN": 0,
+      "P": 1.0,
+      "R": 1.0,
+      "F1": 1.0,
+      "reward": 0.954,
+      "steps": 24,
+      "truncated": false
+    }
+  },
+  {
+    "episode_id": "ep-ff8c9db4a4fca667",
+    "policy": "flag_all",
+    "transform": 5017,
+    "passed": true,
+    "metrics": {
+      "TP": 0,
+      "FP": 30,
+      "FN": 4,
+      "P": 0.0,
+      "R": 0.0,
+      "F1": 0.0,
+      "reward": -1.0,
+      "steps": 24,
+      "truncated": false
+    }
+  },
+  {
+    "episode_id": "ep-ff8c9db4a4fca667",
+    "policy": "oracle",
+    "transform": 5017,
+    "passed": true,
+    "metrics": {
+      "TP": 4,
+      "FP": 0,
+      "FN": 0,
+      "P": 1.0,
+      "R": 1.0,
+      "F1": 1.0,
+      "reward": 1.0,
+      "steps": 1,
+      "truncated": false
+    }
+  },
+  {
+    "episode_id": "ep-3cc44619feed89f6",
+    "policy": "random",
+    "transform": 5018,
+    "passed": true,
+    "metrics": {
+      "TP": 0,
+      "FP": 0,
+      "FN": 4,
+      "P": 0.0,
+      "R": 0.0,
+      "F1": 0.0,
+      "reward": -1.0,
+      "steps": 9,
+      "truncated": false
+    }
+  },
+  {
+    "episode_id": "ep-3cc44619feed89f6",
+    "policy": "reconcile",
+    "transform": 5018,
+    "passed": true,
+    "metrics": {
+      "TP": 4,
+      "FP": 0,
+      "FN": 0,
+      "P": 1.0,
+      "R": 1.0,
+      "F1": 1.0,
+      "reward": 0.954,
+      "steps": 24,
+      "truncated": false
+    }
+  },
+  {
+    "episode_id": "ep-3cc44619feed89f6",
+    "policy": "flag_all",
+    "transform": 5018,
+    "passed": true,
+    "metrics": {
+      "TP": 0,
+      "FP": 30,
+      "FN": 4,
+      "P": 0.0,
+      "R": 0.0,
+      "F1": 0.0,
+      "reward": -1.0,
+      "steps": 24,
+      "truncated": false
+    }
+  },
+  {
+    "episode_id": "ep-3cc44619feed89f6",
+    "policy": "oracle",
+    "transform": 5018,
+    "passed": true,
+    "metrics": {
+      "TP": 4,
+      "FP": 0,
+      "FN": 0,
+      "P": 1.0,
+      "R": 1.0,
+      "F1": 1.0,
+      "reward": 1.0,
+      "steps": 1,
+      "truncated": false
+    }
+  },
+  {
+    "episode_id": "ep-2028758e562791a8",
+    "policy": "random",
+    "transform": 5019,
+    "passed": true,
+    "metrics": {
+      "TP": 0,
+      "FP": 0,
+      "FN": 4,
+      "P": 0.0,
+      "R": 0.0,
+      "F1": 0.0,
+      "reward": -1.0,
+      "steps": 9,
+      "truncated": false
+    }
+  },
+  {
+    "episode_id": "ep-2028758e562791a8",
+    "policy": "reconcile",
+    "transform": 5019,
+    "passed": true,
+    "metrics": {
+      "TP": 4,
+      "FP": 0,
+      "FN": 0,
+      "P": 1.0,
+      "R": 1.0,
+      "F1": 1.0,
+      "reward": 0.954,
+      "steps": 24,
+      "truncated": false
+    }
+  },
+  {
+    "episode_id": "ep-2028758e562791a8",
+    "policy": "flag_all",
+    "transform": 5019,
+    "passed": true,
+    "metrics": {
+      "TP": 0,
+      "FP": 30,
+      "FN": 4,
+      "P": 0.0,
+      "R": 0.0,
+      "F1": 0.0,
+      "reward": -1.0,
+      "steps": 24,
+      "truncated": false
+    }
+  },
+  {
+    "episode_id": "ep-2028758e562791a8",
+    "policy": "oracle",
+    "transform": 5019,
+    "passed": true,
+    "metrics": {
+      "TP": 4,
+      "FP": 0,
+      "FN": 0,
+      "P": 1.0,
+      "R": 1.0,
+      "F1": 1.0,
+      "reward": 1.0,
+      "steps": 1,
+      "truncated": false
+    }
+  }
+]

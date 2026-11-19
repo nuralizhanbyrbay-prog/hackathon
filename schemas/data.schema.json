@@ -1,17 +1,17 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "AuditLab v1.0.0 public record definitions",
+  "title": "AuditLab v1.1.0 public record definitions",
   "$defs": {
     "id": {"type":"string","minLength":1},
     "nullable_id": {"type":["string","null"]},
     "timestamp": {"type":"string","format":"date-time"},
     "money": {"type":"integer","description":"Signed minor units; credit notes and reversals may be negative."},
-    "currency": {"enum":["KZT","USD","EUR"]},
+    "currency": {"enum":["KZT","USD","EUR","JPY","KWD"]},
     "ledger": {
       "type":"object","required":["row_id","timestamp","account","debit_minor","credit_minor","currency","entity_id","invoice_id","payment_id"],
       "properties": {
         "row_id":{"$ref":"#/$defs/id"},"timestamp":{"$ref":"#/$defs/timestamp"},
-        "account":{"enum":["receivable","revenue","bank","unallocated","fx_adjustment"]},
+        "account":{"enum":["receivable","revenue","bank","unallocated","fx_adjustment","fx_revaluation"]},
         "debit_minor":{"$ref":"#/$defs/money"},"credit_minor":{"$ref":"#/$defs/money"},
         "currency":{"$ref":"#/$defs/currency"},"entity_id":{"$ref":"#/$defs/nullable_id"},
         "invoice_id":{"$ref":"#/$defs/nullable_id"},"payment_id":{"$ref":"#/$defs/nullable_id"}
@@ -40,7 +40,7 @@
     },
     "manifest": {
       "type":"object","required":["schema_version","episode_id","base_currency","period_start","period_end","timezone","record_counts","document_count","rounding"],
-      "properties":{"schema_version":{"const":"1.0.0"},"episode_id":{"$ref":"#/$defs/id"},"base_currency":{"const":"KZT"},"period_start":{"$ref":"#/$defs/timestamp"},"period_end":{"$ref":"#/$defs/timestamp"},"timezone":{"type":"string"},"record_counts":{"type":"object","additionalProperties":{"type":"integer","minimum":0}},"document_count":{"type":"integer","minimum":0},"rounding":{"const":"ROUND_HALF_EVEN"}}
+      "properties":{"schema_version":{"const":"1.1.0"},"episode_id":{"$ref":"#/$defs/id"},"base_currency":{"const":"KZT"},"period_start":{"$ref":"#/$defs/timestamp"},"period_end":{"$ref":"#/$defs/timestamp"},"timezone":{"type":"string"},"record_counts":{"type":"object","additionalProperties":{"type":"integer","minimum":0}},"document_count":{"type":"integer","minimum":0},"rounding":{"const":"ROUND_HALF_EVEN"}}
     }
   }
 }

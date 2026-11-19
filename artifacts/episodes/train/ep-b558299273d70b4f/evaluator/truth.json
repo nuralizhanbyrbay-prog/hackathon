@@ -1,0 +1,107 @@
+[
+  {
+    "issue_id": "issue-d299d04fac09",
+    "type": "duplicate_invoice",
+    "affected_ids": [
+      "inv-60bac0b6e4d2"
+    ],
+    "expected_amount_minor": 13817281,
+    "currency": "KZT",
+    "evidence_sets": [
+      [
+        "doc-2ead9c13fee7",
+        "row-5a3b00a55419",
+        "row-b4b72a9e5646",
+        "row-c69c8e36dfe8",
+        "row-f5f271e457a4"
+      ]
+    ]
+  },
+  {
+    "issue_id": "issue-c97169307719",
+    "type": "payment_allocation",
+    "affected_ids": [
+      "inv-986e23150aa5",
+      "pay-c3b41433ab45"
+    ],
+    "expected_amount_minor": 10564120,
+    "currency": "KZT",
+    "evidence_sets": [
+      [
+        "doc-35ef7f418f36",
+        "fx-ca775301ae91",
+        "policy",
+        "row-74d8cdcda43b",
+        "row-bf17afe3250a"
+      ]
+    ]
+  },
+  {
+    "issue_id": "issue-0aa31dfd6ef9",
+    "type": "payment_allocation",
+    "affected_ids": [
+      "inv-de814ab95b82",
+      "pay-98f69a9d4109"
+    ],
+    "expected_amount_minor": 7749280,
+    "currency": "KZT",
+    "evidence_sets": [
+      [
+        "doc-cbc90a533676",
+        "fx-f534bf67334e",
+        "policy",
+        "row-32a358e76dc9",
+        "row-5083263896ca"
+      ]
+    ]
+  },
+  {
+    "issue_id": "issue-fd1ba24187e5",
+    "type": "fx_conversion",
+    "affected_ids": [
+      "pay-bf8131ec8ab1"
+    ],
+    "expected_amount_minor": 5164,
+    "currency": "KZT",
+    "evidence_sets": [
+      [
+        "doc-9729e2ee1b6d",
+        "fx-c774d5834a43",
+        "policy",
+        "row-1a6c1cf54d65"
+      ]
+    ]
+  },
+  {
+    "issue_id": "issue-4577d640c445",
+    "type": "period_cutoff",
+    "affected_ids": [
+      "inv-986e23150aa5"
+    ],
+    "expected_amount_minor": 31685760,
+    "currency": "KZT",
+    "evidence_sets": [
+      [
+        "doc-cd0ffdec3f06",
+        "policy",
+        "row-73b2f3121846"
+      ]
+    ]
+  },
+  {
+    "issue_id": "issue-df2f60aa52a9",
+    "type": "period_cutoff",
+    "affected_ids": [
+      "inv-f2a7e38911d9"
+    ],
+    "expected_amount_minor": 22733695,
+    "currency": "KZT",
+    "evidence_sets": [
+      [
+        "doc-63bb71342980",
+        "policy",
+        "row-c9301f67501d"
+      ]
+    ]
+  }
+]

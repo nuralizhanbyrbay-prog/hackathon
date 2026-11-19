@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.1.0",
+  "episode_id": "ep-68ceb9c94ed1aced",
+  "company": "Synthetic Orion",
+  "base_currency": "KZT",
+  "period_start": "2026-10-01T00:00:00+09:00",
+  "period_end": "2026-11-01T00:00:00+09:00",
+  "timezone": "+09:00",
+  "record_counts": {
+    "ledger": 328,
+    "invoices": 59,
+    "payments": 74,
+    "fx": 195,
+    "policy": 1
+  },
+  "document_count": 134,
+  "rounding": "ROUND_HALF_EVEN"
+}

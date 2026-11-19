@@ -25,14 +25,15 @@ def reconcile(tables,manifest):
         rate=next(x for x in tables['fx'] if x['source_currency']==p['currency'] and x['target_currency']=='KZT' and x['date']==p['timestamp'][:10])
         rows=[x for x in ledger if x['payment_id']==p['payment_id']]
         bank=[x for x in rows if x['account']=='bank']
-        expected=convert(p['amount_minor'],rate['rate']);actual=sum(x['debit_minor'] for x in bank)
+        exponent=policy['currency_exponents'][p['currency']]
+        expected=convert(p['amount_minor'],rate['rate'],exponent);actual=sum(x['debit_minor'] for x in bank)
         if expected!=actual:
             finding('fx_conversion',[p['payment_id']],actual-expected,[p['doc_id'],bank[0]['row_id'],rate['row_id'],'policy'])
         for ref in p['invoice_refs']:
             if ref['invoice_id'] is None:continue
-            allocated=[x for x in rows if x['invoice_id']==ref['invoice_id'] and x['account']=='receivable']
+            allocated=[x for x in rows if x['invoice_id']==ref['invoice_id'] and x['account']=='receivable' and x['credit_minor']!=0]
             suspense=[x for x in rows if x['invoice_id']==ref['invoice_id'] and x['account']=='unallocated']
-            expected=convert(ref['amount_minor'],rate['rate']);actual=sum(x['credit_minor'] for x in allocated)
+            expected=convert(ref['amount_minor'],rate['rate'],exponent);actual=sum(x['credit_minor'] for x in allocated)
             if actual!=expected:
                 finding('payment_allocation',[p['payment_id'],ref['invoice_id']],expected-actual,
                         [p['doc_id'],rate['row_id'],'policy']+[x['row_id'] for x in allocated+suspense])

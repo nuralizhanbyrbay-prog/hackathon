@@ -9,7 +9,7 @@ import time
 import unittest
 from pathlib import Path
 from .client import AuditEnv
-from .generator import generate, TYPES
+from .generator import generate, TYPES, VERSION
 from .policies import run_policy, reconcile
 from .scoring import oracle, score
 
@@ -34,6 +34,10 @@ def independent_check(e):
     clean=e['provenance']['clean']
     assert sum(x['debit_minor']-x['credit_minor'] for x in clean['ledger'])==0
     assert sum(x['debit_minor']-x['credit_minor'] for x in e['tables']['ledger'])==0
+    balances={}
+    for row in clean['ledger']:
+        if row['account']=='receivable':balances[row['invoice_id']]=balances.get(row['invoice_id'],0)+row['debit_minor']-row['credit_minor']
+    assert all(x==0 for x in balances.values())
     assert reconcile(clean,e['manifest'])['findings']==[]
     answer=reconcile(e['tables'],e['manifest'])
     report=score(answer,e['manifest']['episode_id'],e['truth'],0)
@@ -58,13 +62,15 @@ def main():
     result=unittest.TextTestRunner(verbosity=2).run(suite)
     if not result.wasSuccessful():raise SystemExit(1)
     output=Path('artifacts');output.mkdir(exist_ok=True)
-    reports=[];configs=configurations();trajectories=output/'trajectories.jsonl'
+    reports=[];pairs=[];episode_index=[];configs=configurations();trajectories=output/'trajectories.jsonl'
     with trajectories.open('w',encoding='utf-8') as log:
         with AuditEnv() as env:
             for i,c in enumerate(configs):
                 seed=1000+i;e=generate(seed,c);independent_check(e)
                 split='train' if i<10 else 'dev'
                 export_episode(e,output/'episodes'/split/e['manifest']['episode_id'])
+                episode_index.append({'split':split,'episode_id':e['manifest']['episode_id'],
+                    'version':VERSION,'path':f"episodes/{split}/{e['manifest']['episode_id']}"})
                 for policy in ('random','reconcile','flag_all','oracle'):
                     initial,_=env.reset(seed,c,mode='evaluation');counter=0
                     def step(action):
@@ -83,16 +89,28 @@ def main():
                 changed=score(oracle(transformed['truth'],transformed['manifest']['episode_id']),transformed['manifest']['episode_id'],transformed['truth'],7)
                 assert original==changed
                 assert generate(seed,c)==e
+                for reference in reports[-4:]:
+                    policy=reference['policy']
+                    initial,_=env.reset(seed,{**c,'transform':5000+i},mode='evaluation')
+                    if policy=='oracle':env.step({'action':'submit','findings':oracle(transformed['truth'],transformed['manifest']['episode_id'])})
+                    else:run_policy(policy,initial,env.step)
+                    actual=env.report()
+                    keys=('TP','FP','FN','P','R','F1','reward','steps','truncated')
+                    assert all(reference[k]==actual[k] for k in keys),(policy,reference,actual)
+                    pairs.append({'episode_id':e['manifest']['episode_id'],'policy':policy,
+                                  'transform':5000+i,'passed':True,'metrics':{k:actual[k] for k in keys}})
     aggregate={}
     for policy in ('random','reconcile','flag_all','oracle'):
         rows=[r for r in reports if r['policy']==policy]
         aggregate[policy]={key:sum(r[key] for r in rows)/len(rows) for key in ('P','R','F1','reward','steps','seconds')}
-    summary={'version':'1.0.0','python':platform.python_version(),'platform':platform.platform(),
+    summary={'version':VERSION,'python':platform.python_version(),'platform':platform.platform(),
              'unit_tests':result.testsRun,'episodes':20,'clean_episodes':5,'interaction_episodes':5,
-             'metamorphic_pairs':20,'elapsed_seconds':time.perf_counter()-started,'policies':aggregate,
+             'metamorphic_pairs':20,'paired_policy_runs':len(pairs),'elapsed_seconds':time.perf_counter()-started,'policies':aggregate,
              'evaluation_rewards_hidden_in_trajectories':True,
              'note':'Development benchmark, not organizer-hidden results; no model training claim.'}
     dump(output/'metrics.json',summary);dump(output/'evaluator-reports.json',reports)
+    dump(output/'episode-index.json',episode_index)
+    dump(output/'metamorphic-reports.json',pairs)
     dump(output/'configs.json',{'train_seeds':list(range(1000,1010)),'dev_seeds':list(range(1010,1020)),'configs':configs})
     print(json.dumps(summary,indent=2))
 

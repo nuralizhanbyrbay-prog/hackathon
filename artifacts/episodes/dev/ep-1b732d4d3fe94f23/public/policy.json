@@ -1,0 +1,17 @@
+{
+  "doc_id": "policy",
+  "fx_date": "payment_local_date",
+  "period_rule": "service_at",
+  "period_interval": "[start,end)",
+  "rounding": "ROUND_HALF_EVEN",
+  "amount_tolerance_minor": 0,
+  "currency_exponents": {
+    "KZT": 2,
+    "USD": 2,
+    "EUR": 2,
+    "JPY": 0,
+    "KWD": 3
+  },
+  "settlement_rule": "remeasure receivable at payment-date FX before settling; final residual to fx_revaluation",
+  "allocation_rule": "sum signed invoice_refs per payment; no guessing null refs"
+}

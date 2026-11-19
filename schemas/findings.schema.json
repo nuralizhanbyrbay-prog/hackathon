@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "AuditLab submission v1.0.0",
+  "title": "AuditLab submission v1.1.0",
   "type": "object", "additionalProperties": false,
   "required": ["episode_id", "findings"],
   "properties": {

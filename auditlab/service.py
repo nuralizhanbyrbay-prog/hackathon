@@ -6,7 +6,7 @@ import re
 import sys
 import time
 from decimal import Decimal, localcontext
-from .generator import generate
+from .generator import generate, VERSION
 from .scoring import score
 
 def calculate(expression):
@@ -44,9 +44,11 @@ class Session:
         e=self.episode
         obs={'task':'Audit this synthetic company. Submit evidence-backed discrepancies.',
              'manifest':e['manifest'],'policy':e['tables']['policy'][0], 'remaining_steps':self.limit}
-        return copy.deepcopy(obs),{'schema_version':'1.0.0'}
+        return copy.deepcopy(obs),{'schema_version':VERSION}
     def step(self,action):
-        if self.done:return {'error':'episode_finished','remaining_steps':0},0.,True,False,{}
+        if self.done:
+            truncated=bool(self.report and self.report['truncated'])
+            return {'error':'episode_finished','remaining_steps':0},0.,not truncated,truncated,{}
         self.steps+=1;remaining=self.limit-self.steps
         if time.monotonic()-self.started>=self.timeout:
             return self.finish({'episode_id':self.episode['manifest']['episode_id'],'findings':[]},True)
@@ -85,6 +87,12 @@ class Session:
                            truncated=truncated,answer=copy.deepcopy(answer))
         reward=self.report['reward'] if self.mode=='train' else 0.
         return {'status':'truncated' if truncated else 'submitted','remaining_steps':self.limit-self.steps},reward,not truncated,truncated,{}
+    def abort(self,reason='runner_abort'):
+        if self.done:return self.step(None)
+        if reason not in ('runner_abort','agent_timeout','agent_exited','oversized_action','agent_io_error'):reason='runner_abort'
+        result=self.finish({'episode_id':self.episode['manifest']['episode_id'],'findings':[]},True)
+        self.report['runner_reason']=reason
+        return result
 
 def main():
     session=Session()
@@ -95,6 +103,7 @@ def main():
             if req['op']=='reset':result=session.reset(**req['args'])
             elif req['op']=='step':result=session.step(req['action'])
             elif req['op']=='report' and session.done:result=session.report
+            elif req['op']=='abort':result=session.abort(req.get('reason','runner_abort'))
             else:raise ValueError()
             print(json.dumps({'ok':True,'value':result},ensure_ascii=True),flush=True)
         except Exception:
