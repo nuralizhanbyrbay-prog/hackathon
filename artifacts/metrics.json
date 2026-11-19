@@ -2,13 +2,13 @@
   "version": "1.1.0",
   "python": "3.12.14",
   "platform": "Windows-11-10.0.26300-SP0",
-  "unit_tests": 52,
+  "unit_tests": 61,
   "episodes": 20,
   "clean_episodes": 5,
   "interaction_episodes": 5,
   "metamorphic_pairs": 20,
   "paired_policy_runs": 80,
-  "elapsed_seconds": 17.946570899919607,
+  "elapsed_seconds": 17.48887110000942,
   "policies": {
     "random": {
       "P": 0.0,
@@ -16,7 +16,7 @@
       "F1": 0.25,
       "reward": -0.504,
       "steps": 9.0,
-      "seconds": 0.00470000000204891
+      "seconds": 0.004649999999674037
     },
     "reconcile": {
       "P": 0.75,
@@ -24,7 +24,7 @@
       "F1": 1.0,
       "reward": 0.9623999999999999,
       "steps": 19.8,
-      "seconds": 0.032049999997252596
+      "seconds": 0.03059999999240972
     },
     "flag_all": {
       "P": 0.0,
@@ -32,7 +32,7 @@
       "F1": 0.0,
       "reward": -1.0,
       "steps": 19.8,
-      "seconds": 0.030399999994551764
+      "seconds": 0.031350000004749745
     },
     "oracle": {
       "P": 0.75,
