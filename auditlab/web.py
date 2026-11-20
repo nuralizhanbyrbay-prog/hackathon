@@ -1,5 +1,6 @@
 """Offline browser dashboard backed by the real audit environment. Loopback only."""
 import argparse
+import copy
 import json
 import secrets
 import threading
@@ -14,10 +15,32 @@ class Dashboard:
     def __init__(self):
         self.token=secrets.token_urlsafe(32);self.env=AuditEnv();self.lock=threading.Lock()
         self.initial=None;self.events=[];self.done=False;self.report=None
+        self.reset_args=None;self.started_at=None;self.comparisons=[];self.comparison_events=[]
     def close(self):self.env.close()
     def snapshot(self):
-        return {'initial':self.initial,'events':self.events,'done':self.done,'report':self.report,
+        return copy.deepcopy({'initial':self.initial,'events':self.events,'done':self.done,'report':self.report,
+                'comparisons':self.comparisons,
+                'remaining_seconds':max(0,60-(time.monotonic()-self.started_at)) if self.started_at and not self.done else 0,
                 'remaining_steps':self.events[-1]['observation']['remaining_steps'] if self.events else 100}
+        )
+    def compare(self):
+        if self.reset_args is None:raise ValueError('Сначала создайте компанию')
+        if not self.done:raise ValueError('Завершите текущий аудит перед сравнением агентов')
+        comparisons=[];events=[]
+        with AuditEnv() as env:
+            for policy in ('reconcile','random','flag_all'):
+                initial,_=env.reset(**self.reset_args,mode='train');step_number=0
+                def advance(action):
+                    nonlocal step_number
+                    obs,reward,term,trunc,info=env.step(action);step_number+=1
+                    events.append({'episode_id':initial['manifest']['episode_id'],'policy':policy,'step':step_number,
+                        'action':action,'observation':obs,'reward':reward,'terminated':term,'truncated':trunc})
+                    return obs,reward,term,trunc,info
+                run_policy(policy,initial,advance)
+                report=env.report()
+                comparisons.append({'policy':policy,'episode_id':initial['manifest']['episode_id'],
+                    **{k:report[k] for k in ('TP','FP','FN','P','R','F1','reward','steps','seconds','truncated')}})
+        self.comparisons=comparisons;self.comparison_events=events
     def step(self,action):
         if self.initial is None:raise ValueError('Сначала создайте компанию')
         if self.done:raise ValueError('Аудит завершён. Создайте новый эпизод')
@@ -35,6 +58,8 @@ class Dashboard:
                 config={'invoices':n,'errors':dict.fromkeys(TYPES,0 if scenario=='clean' else 1),
                         'interaction':scenario if scenario.endswith('cutoff') else None}
                 self.initial,_=self.env.reset(seed,config,mode='train');self.events=[];self.done=False;self.report=None
+                self.reset_args={'seed':seed,'config':config};self.started_at=time.monotonic()
+                self.comparisons=[];self.comparison_events=[]
             elif path=='/api/step':self.step(data.get('action'))
             elif path=='/api/run':
                 policy=data.get('policy','reconcile')
@@ -47,6 +72,11 @@ class Dashboard:
                     self.step(a);ev=self.events[-1]
                     return ev['observation'],ev['reward'],ev['terminated'],ev['truncated'],{}
                 run_policy(policy,self.initial,advance)
+            elif path=='/api/compare':self.compare()
+            elif path=='/api/export-comparison':
+                if not self.comparison_events:raise ValueError('Сначала сравните агентов')
+                return {'filename':self.initial['manifest']['episode_id']+'-comparison.jsonl',
+                        'content':''.join(json.dumps(x,ensure_ascii=False)+'\n' for x in self.comparison_events)}
             elif path=='/api/state':pass
             else:raise ValueError('Неизвестный запрос')
             return self.snapshot()

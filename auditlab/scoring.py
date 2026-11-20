@@ -20,7 +20,7 @@ def validate_submission(answer, episode_id):
 def score(answer, episode_id, truth, inspection_steps):
     try:findings=validate_submission(answer,episode_id)
     except (ValueError,TypeError,KeyError):
-        return {'reward':-1.0,'P':0.0,'R':0.0,'F1':0.0,'TP':0,'FP':0,'FN':len(truth),'invalid':True}
+        return {'reward':-1.0,'P':0.0,'R':0.0,'F1':0.0,'TP':0,'FP':0,'FN':len(truth),'invalid':True,'finding_results':[]}
     graph=[]
     for f in findings:
         graph.append([j for j,t in enumerate(truth) if f['type']==t['type']
@@ -39,6 +39,7 @@ def score(answer, episode_id, truth, inspection_steps):
     p=tp/(tp+fp) if tp+fp else 0.;rec=tp/(tp+fn) if tp+fn else 0.
     f1=2*tp/(2*tp+fp+fn) if 2*tp+fp+fn else 1.
     return {'P':p,'R':rec,'F1':f1,'TP':tp,'FP':fp,'FN':fn,'invalid':False,
+            'finding_results':[{'index':i,'matched':i in matched.values()} for i in range(len(findings))],
             'reward':max(-1.,min(1.,2*f1-1-.002*inspection_steps))}
 
 def oracle(truth,episode_id):

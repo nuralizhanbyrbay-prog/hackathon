@@ -1,0 +1,44 @@
+[
+  {
+    "policy": "reconcile",
+    "episode_id": "ep-3334e572279d1f74",
+    "TP": 6,
+    "FP": 0,
+    "FN": 0,
+    "P": 1.0,
+    "R": 1.0,
+    "F1": 1.0,
+    "reward": 0.968,
+    "steps": 17,
+    "seconds": 0.030999999959021807,
+    "truncated": false
+  },
+  {
+    "policy": "random",
+    "episode_id": "ep-3334e572279d1f74",
+    "TP": 0,
+    "FP": 0,
+    "FN": 6,
+    "P": 0.0,
+    "R": 0.0,
+    "F1": 0.0,
+    "reward": -1.0,
+    "steps": 9,
+    "seconds": 0.0,
+    "truncated": false
+  },
+  {
+    "policy": "flag_all",
+    "episode_id": "ep-3334e572279d1f74",
+    "TP": 0,
+    "FP": 30,
+    "FN": 6,
+    "P": 0.0,
+    "R": 0.0,
+    "F1": 0.0,
+    "reward": -1.0,
+    "steps": 17,
+    "seconds": 0.015000000013969839,
+    "truncated": false
+  }
+]
