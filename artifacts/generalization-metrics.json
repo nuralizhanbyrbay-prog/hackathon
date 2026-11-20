@@ -1,0 +1,11 @@
+{
+  "cases": 20,
+  "clean_cases": 5,
+  "interaction_cases": 5,
+  "policy_runs": 160,
+  "paired_comparisons": 80,
+  "independently_proven_evidence_sets": 83,
+  "seconds": 6.76500000001397,
+  "all_passed": true,
+  "note": "Published development generalization suite; not secret organizer results."
+}

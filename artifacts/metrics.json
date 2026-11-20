@@ -2,13 +2,13 @@
   "version": "1.1.0",
   "python": "3.12.14",
   "platform": "Windows-11-10.0.26300-SP0",
-  "unit_tests": 71,
+  "unit_tests": 86,
   "episodes": 20,
   "clean_episodes": 5,
   "interaction_episodes": 5,
   "metamorphic_pairs": 20,
   "paired_policy_runs": 80,
-  "elapsed_seconds": 16.563421400031075,
+  "elapsed_seconds": 15.405793099896982,
   "policies": {
     "random": {
       "P": 0.0,
@@ -16,7 +16,7 @@
       "F1": 0.25,
       "reward": -0.504,
       "steps": 9.0,
-      "seconds": 0.0030999999959021806
+      "seconds": 0.005549999990034848
     },
     "reconcile": {
       "P": 0.75,
@@ -24,7 +24,7 @@
       "F1": 1.0,
       "reward": 0.9623999999999999,
       "steps": 19.8,
-      "seconds": 0.026600000006146728
+      "seconds": 0.021899999998277055
     },
     "flag_all": {
       "P": 0.0,
@@ -32,7 +32,7 @@
       "F1": 0.0,
       "reward": -1.0,
       "steps": 19.8,
-      "seconds": 0.029099999996833503
+      "seconds": 0.02570000001578592
     },
     "oracle": {
       "P": 0.75,
@@ -40,7 +40,7 @@
       "F1": 1.0,
       "reward": 1.0,
       "steps": 1.0,
-      "seconds": 0.000750000000698492
+      "seconds": 0.0
     }
   },
   "evaluation_rewards_hidden_in_trajectories": true,

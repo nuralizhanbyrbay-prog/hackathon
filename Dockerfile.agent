@@ -1,4 +1,4 @@
-FROM python:3.11.11-slim
+FROM python:3.11.11-slim@sha256:081075da77b2b55c23c088251026fb69a7b2bf92471e491ff5fd75c192fd38e5
 WORKDIR /work
 COPY sandbox/agent_init.py /app/auditlab/__init__.py
 COPY auditlab/agent.py auditlab/policies.py auditlab/money.py /app/auditlab/

@@ -73,7 +73,8 @@ def self_test():
                'private_env_absent','nonroot_uid')
         actions=[e for e in r['trajectory'] if isinstance(e['action'],dict) and e['action'].get('action')=='calculator']
         if len(actions)!=len(names) or any(e['observation'].get('result',{}).get('value')!='1' for e in actions):
-            raise RuntimeError('sandbox isolation probe failed')
+            observed={name:e['observation'].get('result',{}).get('value') for name,e in zip(names,actions)}
+            raise RuntimeError('sandbox isolation probe failed: '+json.dumps({'agent_status':r['agent_status'],'checks':observed}))
         if r['report']['F1']!=1 or r['agent_status']!='completed':raise RuntimeError('probe did not finish cleanly')
         for name in names:cases.append({'case':name,'passed':True})
         forbidden=[e for e in r['trajectory'] if isinstance(e['action'],dict) and e['action'].get('op')=='report']
@@ -82,7 +83,9 @@ def self_test():
     start=time.monotonic();r=run_sandbox(config=clean,hang=True,timeout=2)
     if not r['report']['truncated'] or r['report']['answer']['findings']:raise RuntimeError('hung container not truncated')
     cases.append({'case':'hung_container_terminated','passed':True,'seconds':time.monotonic()-start})
-    return {'checks':cases,'all_passed':True,'scope':'Linux Docker isolation smoke tests; not a proof against kernel or Docker exploits'}
+    docker=docker_ready([AGENT_IMAGE,EVALUATOR_IMAGE])
+    images={image:subprocess.run([docker,'image','inspect','--format','{{.Id}}',image],capture_output=True,text=True,check=True).stdout.strip() for image in (AGENT_IMAGE,EVALUATOR_IMAGE)}
+    return {'checks':cases,'all_passed':True,'image_ids':images,'scope':'Linux Docker isolation smoke tests; not a proof against kernel or Docker exploits'}
 
 def main():
     p=argparse.ArgumentParser(description=__doc__);p.add_argument('--self-test',action='store_true')

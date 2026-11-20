@@ -1,0 +1,126 @@
+{
+  "run_url": "https://github.com/nuralizhanbyrbay-prog/hackathon/actions/runs/44742616568",
+  "source_commit": "1fb6d51ba818651e65b35e337ac9f6e328df5b00",
+  "measured_in": "GitHub Actions Linux Docker",
+  "container_limits": {
+    "network": "none",
+    "cpus": 2,
+    "memory": "4g",
+    "pids": 128
+  },
+  "metrics": {
+    "version": "1.1.0",
+    "python": "3.11.11",
+    "platform": "Linux-7.0.0-1019-azure-x86_64-with-glibc2.36",
+    "unit_tests": 86,
+    "episodes": 20,
+    "clean_episodes": 5,
+    "interaction_episodes": 5,
+    "metamorphic_pairs": 20,
+    "paired_policy_runs": 80,
+    "elapsed_seconds": 9.511054099000006,
+    "policies": {
+      "random": {
+        "P": 0,
+        "R": 0,
+        "F1": 0.25,
+        "reward": -0.504,
+        "steps": 9,
+        "seconds": 0.0016031727499999705
+      },
+      "reconcile": {
+        "P": 0.75,
+        "R": 0.75,
+        "F1": 1,
+        "reward": 0.9624000000000003,
+        "steps": 19.8,
+        "seconds": 0.01028264284999949
+      },
+      "flag_all": {
+        "P": 0,
+        "R": 0,
+        "F1": 0,
+        "reward": -1,
+        "steps": 19.8,
+        "seconds": 0.010277001549997066
+      },
+      "oracle": {
+        "P": 0.75,
+        "R": 0.75,
+        "F1": 1,
+        "reward": 1,
+        "steps": 1,
+        "seconds": 0.00014038079999920683
+      }
+    },
+    "evaluation_rewards_hidden_in_trajectories": true,
+    "note": "Development benchmark, not organizer-hidden results; no model training claim."
+  },
+  "isolation_self_test": {
+    "checks": [
+      {
+        "case": "fx_cutoff",
+        "F1": 1,
+        "steps": 17,
+        "passed": true
+      },
+      {
+        "case": "allocation_cutoff",
+        "F1": 1,
+        "steps": 17,
+        "passed": true
+      },
+      {
+        "case": "host_file_unreadable",
+        "passed": true
+      },
+      {
+        "case": "evaluator_sources_absent",
+        "passed": true
+      },
+      {
+        "case": "generator_import_denied",
+        "passed": true
+      },
+      {
+        "case": "root_write_denied",
+        "passed": true
+      },
+      {
+        "case": "network_denied",
+        "passed": true
+      },
+      {
+        "case": "no_new_privileges",
+        "passed": true
+      },
+      {
+        "case": "capabilities_dropped",
+        "passed": true
+      },
+      {
+        "case": "docker_socket_absent",
+        "passed": true
+      },
+      {
+        "case": "private_env_absent",
+        "passed": true
+      },
+      {
+        "case": "nonroot_uid",
+        "passed": true
+      },
+      {
+        "case": "report_operation_denied",
+        "passed": true
+      },
+      {
+        "case": "hung_container_terminated",
+        "passed": true,
+        "seconds": 2.4079808420000006
+      }
+    ],
+    "all_passed": true,
+    "scope": "Linux Docker isolation smoke tests; not a proof against kernel or Docker exploits"
+  }
+}
