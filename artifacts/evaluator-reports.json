@@ -13,7 +13,7 @@
     "reward": 0.984,
     "inspection_steps": 8,
     "steps": 9,
-    "seconds": 0.015999999945051968,
+    "seconds": 0.0,
     "truncated": false,
     "answer": {
       "episode_id": "ep-0ac58b8cc7d9f59b",
@@ -34,7 +34,7 @@
     "reward": 0.972,
     "inspection_steps": 14,
     "steps": 15,
-    "seconds": 0.015000000013969839,
+    "seconds": 0.03200000000651926,
     "truncated": false,
     "answer": {
       "episode_id": "ep-0ac58b8cc7d9f59b",
@@ -176,7 +176,7 @@
     "reward": -1.0,
     "inspection_steps": 14,
     "steps": 15,
-    "seconds": 0.015000000013969839,
+    "seconds": 0.01600000006146729,
     "truncated": false,
     "answer": {
       "episode_id": "ep-0ac58b8cc7d9f59b",
@@ -600,7 +600,7 @@
     "reward": 0.97,
     "inspection_steps": 15,
     "steps": 16,
-    "seconds": 0.015999999945051968,
+    "seconds": 0.01600000006146729,
     "truncated": false,
     "answer": {
       "episode_id": "ep-c1cb1f03dacbea00",
@@ -1145,7 +1145,7 @@
     "reward": 0.984,
     "inspection_steps": 8,
     "steps": 9,
-    "seconds": 0.01600000006146729,
+    "seconds": 0.0,
     "truncated": false,
     "answer": {
       "episode_id": "ep-b0b2be381595ada4",
@@ -1154,6 +1154,1138 @@
   },
   {
     "episode_id": "ep-b0b2be381595ada4",
+    "policy": "reconcile",
+    "P": 0.0,
+    "R": 0.0,
+    "F1": 1.0,
+    "TP": 0,
+    "FP": 0,
+    "FN": 0,
+    "invalid": false,
+    "finding_results": [],
+    "reward": 0.968,
+    "inspection_steps": 16,
+    "steps": 17,
+    "seconds": 0.015000000013969839,
+    "truncated": false,
+    "answer": {
+      "episode_id": "ep-b0b2be381595ada4",
+      "findings": []
+    }
+  },
+  {
+    "episode_id": "ep-b0b2be381595ada4",
+    "policy": "flag_all",
+    "P": 0.0,
+    "R": 0.0,
+    "F1": 0.0,
+    "TP": 0,
+    "FP": 30,
+    "FN": 0,
+    "invalid": false,
+    "finding_results": [
+      {
+        "index": 0,
+        "matched": false
+      },
+      {
+        "index": 1,
+        "matched": false
+      },
+      {
+        "index": 2,
+        "matched": false
+      },
+      {
+        "index": 3,
+        "matched": false
+      },
+      {
+        "index": 4,
+        "matched": false
+      },
+      {
+        "index": 5,
+        "matched": false
+      },
+      {
+        "index": 6,
+        "matched": false
+      },
+      {
+        "index": 7,
+        "matched": false
+      },
+      {
+        "index": 8,
+        "matched": false
+      },
+      {
+        "index": 9,
+        "matched": false
+      },
+      {
+        "index": 10,
+        "matched": false
+      },
+      {
+        "index": 11,
+        "matched": false
+      },
+      {
+        "index": 12,
+        "matched": false
+      },
+      {
+        "index": 13,
+        "matched": false
+      },
+      {
+        "index": 14,
+        "matched": false
+      },
+      {
+        "index": 15,
+        "matched": false
+      },
+      {
+        "index": 16,
+        "matched": false
+      },
+      {
+        "index": 17,
+        "matched": false
+      },
+      {
+        "index": 18,
+        "matched": false
+      },
+      {
+        "index": 19,
+        "matched": false
+      },
+      {
+        "index": 20,
+        "matched": false
+      },
+      {
+        "index": 21,
+        "matched": false
+      },
+      {
+        "index": 22,
+        "matched": false
+      },
+      {
+        "index": 23,
+        "matched": false
+      },
+      {
+        "index": 24,
+        "matched": false
+      },
+      {
+        "index": 25,
+        "matched": false
+      },
+      {
+        "index": 26,
+        "matched": false
+      },
+      {
+        "index": 27,
+        "matched": false
+      },
+      {
+        "index": 28,
+        "matched": false
+      },
+      {
+        "index": 29,
+        "matched": false
+      }
+    ],
+    "reward": -1.0,
+    "inspection_steps": 16,
+    "steps": 17,
+    "seconds": 0.015000000013969839,
+    "truncated": false,
+    "answer": {
+      "episode_id": "ep-b0b2be381595ada4",
+      "findings": [
+        {
+          "type": "duplicate_invoice",
+          "affected_ids": [
+            "row-a0a39f3a8cbc"
+          ],
+          "claimed_amount_minor": 0,
+          "currency": "KZT",
+          "evidence_ids": [
+            "row-a0a39f3a8cbc"
+          ],
+          "explanation": "Suspicious."
+        },
+        {
+          "type": "payment_allocation",
+          "affected_ids": [
+            "row-619444bb7b6a"
+          ],
+          "claimed_amount_minor": 0,
+          "currency": "KZT",
+          "evidence_ids": [
+            "row-619444bb7b6a"
+          ],
+          "explanation": "Suspicious."
+        },
+        {
+          "type": "fx_conversion",
+          "affected_ids": [
+            "row-d46b0ae3eb43"
+          ],
+          "claimed_amount_minor": 0,
+          "currency": "KZT",
+          "evidence_ids": [
+            "row-d46b0ae3eb43"
+          ],
+          "explanation": "Suspicious."
+        },
+        {
+          "type": "period_cutoff",
+          "affected_ids": [
+            "row-56b9ab949ffb"
+          ],
+          "claimed_amount_minor": 0,
+          "currency": "KZT",
+          "evidence_ids": [
+            "row-56b9ab949ffb"
+          ],
+          "explanation": "Suspicious."
+        },
+        {
+          "type": "duplicate_invoice",
+          "affected_ids": [
+            "row-eecd52da2a65"
+          ],
+          "claimed_amount_minor": 0,
+          "currency": "KZT",
+          "evidence_ids": [
+            "row-eecd52da2a65"
+          ],
+          "explanation": "Suspicious."
+        },
+        {
+          "type": "payment_allocation",
+          "affected_ids": [
+            "row-00ea05e5e67f"
+          ],
+          "claimed_amount_minor": 0,
+          "currency": "KZT",
+          "evidence_ids": [
+            "row-00ea05e5e67f"
+          ],
+          "explanation": "Suspicious."
+        },
+        {
+          "type": "fx_conversion",
+          "affected_ids": [
+            "row-e2af2fdf04e4"
+          ],
+          "claimed_amount_minor": 0,
+          "currency": "KZT",
+          "evidence_ids": [
+            "row-e2af2fdf04e4"
+          ],
+          "explanation": "Suspicious."
+        },
+        {
+          "type": "period_cutoff",
+          "affected_ids": [
+            "row-03b6de4ccfd9"
+          ],
+          "claimed_amount_minor": 0,
+          "currency": "KZT",
+          "evidence_ids": [
+            "row-03b6de4ccfd9"
+          ],
+          "explanation": "Suspicious."
+        },
+        {
+          "type": "duplicate_invoice",
+          "affected_ids": [
+            "row-48bd56228240"
+          ],
+          "claimed_amount_minor": 0,
+          "currency": "KZT",
+          "evidence_ids": [
+            "row-48bd56228240"
+          ],
+          "explanation": "Suspicious."
+        },
+        {
+          "type": "payment_allocation",
+          "affected_ids": [
+            "row-0db5df54bb48"
+          ],
+          "claimed_amount_minor": 0,
+          "currency": "KZT",
+          "evidence_ids": [
+            "row-0db5df54bb48"
+          ],
+          "explanation": "Suspicious."
+        },
+        {
+          "type": "fx_conversion",
+          "affected_ids": [
+            "row-cd48ad43fd31"
+          ],
+          "claimed_amount_minor": 0,
+          "currency": "KZT",
+          "evidence_ids": [
+            "row-cd48ad43fd31"
+          ],
+          "explanation": "Suspicious."
+        },
+        {
+          "type": "period_cutoff",
+          "affected_ids": [
+            "row-2efff94299a1"
+          ],
+          "claimed_amount_minor": 0,
+          "currency": "KZT",
+          "evidence_ids": [
+            "row-2efff94299a1"
+          ],
+          "explanation": "Suspicious."
+        },
+        {
+          "type": "duplicate_invoice",
+          "affected_ids": [
+            "row-2040abfd22f1"
+          ],
+          "claimed_amount_minor": 0,
+          "currency": "KZT",
+          "evidence_ids": [
+            "row-2040abfd22f1"
+          ],
+          "explanation": "Suspicious."
+        },
+        {
+          "type": "payment_allocation",
+          "affected_ids": [
+            "row-88dc561d842f"
+          ],
+          "claimed_amount_minor": 0,
+          "currency": "KZT",
+          "evidence_ids": [
+            "row-88dc561d842f"
+          ],
+          "explanation": "Suspicious."
+        },
+        {
+          "type": "fx_conversion",
+          "affected_ids": [
+            "row-d3959fec4a5e"
+          ],
+          "claimed_amount_minor": 0,
+          "currency": "KZT",
+          "evidence_ids": [
+            "row-d3959fec4a5e"
+          ],
+          "explanation": "Suspicious."
+        },
+        {
+          "type": "period_cutoff",
+          "affected_ids": [
+            "row-d847e65f4135"
+          ],
+          "claimed_amount_minor": 0,
+          "currency": "KZT",
+          "evidence_ids": [
+            "row-d847e65f4135"
+          ],
+          "explanation": "Suspicious."
+        },
+        {
+          "type": "duplicate_invoice",
+          "affected_ids": [
+            "row-bbd14a352fb6"
+          ],
+          "claimed_amount_minor": 0,
+          "currency": "KZT",
+          "evidence_ids": [
+            "row-bbd14a352fb6"
+          ],
+          "explanation": "Suspicious."
+        },
+        {
+          "type": "payment_allocation",
+          "affected_ids": [
+            "row-813b4532ff02"
+          ],
+          "claimed_amount_minor": 0,
+          "currency": "KZT",
+          "evidence_ids": [
+            "row-813b4532ff02"
+          ],
+          "explanation": "Suspicious."
+        },
+        {
+          "type": "fx_conversion",
+          "affected_ids": [
+            "row-6e0b38b1636d"
+          ],
+          "claimed_amount_minor": 0,
+          "currency": "KZT",
+          "evidence_ids": [
+            "row-6e0b38b1636d"
+          ],
+          "explanation": "Suspicious."
+        },
+        {
+          "type": "period_cutoff",
+          "affected_ids": [
+            "row-c74ad1efe71c"
+          ],
+          "claimed_amount_minor": 0,
+          "currency": "KZT",
+          "evidence_ids": [
+            "row-c74ad1efe71c"
+          ],
+          "explanation": "Suspicious."
+        },
+        {
+          "type": "duplicate_invoice",
+          "affected_ids": [
+            "row-e9c7434da63f"
+          ],
+          "claimed_amount_minor": 0,
+          "currency": "KZT",
+          "evidence_ids": [
+            "row-e9c7434da63f"
+          ],
+          "explanation": "Suspicious."
+        },
+        {
+          "type": "payment_allocation",
+          "affected_ids": [
+            "row-4596f9f7bfdf"
+          ],
+          "claimed_amount_minor": 0,
+          "currency": "KZT",
+          "evidence_ids": [
+            "row-4596f9f7bfdf"
+          ],
+          "explanation": "Suspicious."
+        },
+        {
+          "type": "fx_conversion",
+          "affected_ids": [
+            "row-3b4bd6d24289"
+          ],
+          "claimed_amount_minor": 0,
+          "currency": "KZT",
+          "evidence_ids": [
+            "row-3b4bd6d24289"
+          ],
+          "explanation": "Suspicious."
+        },
+        {
+          "type": "period_cutoff",
+          "affected_ids": [
+            "row-a885f0cd326d"
+          ],
+          "claimed_amount_minor": 0,
+          "currency": "KZT",
+          "evidence_ids": [
+            "row-a885f0cd326d"
+          ],
+          "explanation": "Suspicious."
+        },
+        {
+          "type": "duplicate_invoice",
+          "affected_ids": [
+            "row-38944653cd72"
+          ],
+          "claimed_amount_minor": 0,
+          "currency": "KZT",
+          "evidence_ids": [
+            "row-38944653cd72"
+          ],
+          "explanation": "Suspicious."
+        },
+        {
+          "type": "payment_allocation",
+          "affected_ids": [
+            "row-9342827d2934"
+          ],
+          "claimed_amount_minor": 0,
+          "currency": "KZT",
+          "evidence_ids": [
+            "row-9342827d2934"
+          ],
+          "explanation": "Suspicious."
+        },
+        {
+          "type": "fx_conversion",
+          "affected_ids": [
+            "row-089b0b4b38d5"
+          ],
+          "claimed_amount_minor": 0,
+          "currency": "KZT",
+          "evidence_ids": [
+            "row-089b0b4b38d5"
+          ],
+          "explanation": "Suspicious."
+        },
+        {
+          "type": "period_cutoff",
+          "affected_ids": [
+            "row-7e81515c0d51"
+          ],
+          "claimed_amount_minor": 0,
+          "currency": "KZT",
+          "evidence_ids": [
+            "row-7e81515c0d51"
+          ],
+          "explanation": "Suspicious."
+        },
+        {
+          "type": "duplicate_invoice",
+          "affected_ids": [
+            "row-612fcf1c8da5"
+          ],
+          "claimed_amount_minor": 0,
+          "currency": "KZT",
+          "evidence_ids": [
+            "row-612fcf1c8da5"
+          ],
+          "explanation": "Suspicious."
+        },
+        {
+          "type": "payment_allocation",
+          "affected_ids": [
+            "row-db77be668c04"
+          ],
+          "claimed_amount_minor": 0,
+          "currency": "KZT",
+          "evidence_ids": [
+            "row-db77be668c04"
+          ],
+          "explanation": "Suspicious."
+        }
+      ]
+    }
+  },
+  {
+    "episode_id": "ep-b0b2be381595ada4",
+    "policy": "oracle",
+    "P": 0.0,
+    "R": 0.0,
+    "F1": 1.0,
+    "TP": 0,
+    "FP": 0,
+    "FN": 0,
+    "invalid": false,
+    "finding_results": [],
+    "reward": 1.0,
+    "inspection_steps": 0,
+    "steps": 1,
+    "seconds": 0.0,
+    "truncated": false,
+    "answer": {
+      "episode_id": "ep-b0b2be381595ada4",
+      "findings": []
+    }
+  },
+  {
+    "episode_id": "ep-68ceb9c94ed1aced",
+    "policy": "random",
+    "P": 0.0,
+    "R": 0.0,
+    "F1": 1.0,
+    "TP": 0,
+    "FP": 0,
+    "FN": 0,
+    "invalid": false,
+    "finding_results": [],
+    "reward": 0.984,
+    "inspection_steps": 8,
+    "steps": 9,
+    "seconds": 0.0,
+    "truncated": false,
+    "answer": {
+      "episode_id": "ep-68ceb9c94ed1aced",
+      "findings": []
+    }
+  },
+  {
+    "episode_id": "ep-68ceb9c94ed1aced",
+    "policy": "reconcile",
+    "P": 0.0,
+    "R": 0.0,
+    "F1": 1.0,
+    "TP": 0,
+    "FP": 0,
+    "FN": 0,
+    "invalid": false,
+    "finding_results": [],
+    "reward": 0.968,
+    "inspection_steps": 16,
+    "steps": 17,
+    "seconds": 0.03200000000651926,
+    "truncated": false,
+    "answer": {
+      "episode_id": "ep-68ceb9c94ed1aced",
+      "findings": []
+    }
+  },
+  {
+    "episode_id": "ep-68ceb9c94ed1aced",
+    "policy": "flag_all",
+    "P": 0.0,
+    "R": 0.0,
+    "F1": 0.0,
+    "TP": 0,
+    "FP": 30,
+    "FN": 0,
+    "invalid": false,
+    "finding_results": [
+      {
+        "index": 0,
+        "matched": false
+      },
+      {
+        "index": 1,
+        "matched": false
+      },
+      {
+        "index": 2,
+        "matched": false
+      },
+      {
+        "index": 3,
+        "matched": false
+      },
+      {
+        "index": 4,
+        "matched": false
+      },
+      {
+        "index": 5,
+        "matched": false
+      },
+      {
+        "index": 6,
+        "matched": false
+      },
+      {
+        "index": 7,
+        "matched": false
+      },
+      {
+        "index": 8,
+        "matched": false
+      },
+      {
+        "index": 9,
+        "matched": false
+      },
+      {
+        "index": 10,
+        "matched": false
+      },
+      {
+        "index": 11,
+        "matched": false
+      },
+      {
+        "index": 12,
+        "matched": false
+      },
+      {
+        "index": 13,
+        "matched": false
+      },
+      {
+        "index": 14,
+        "matched": false
+      },
+      {
+        "index": 15,
+        "matched": false
+      },
+      {
+        "index": 16,
+        "matched": false
+      },
+      {
+        "index": 17,
+        "matched": false
+      },
+      {
+        "index": 18,
+        "matched": false
+      },
+      {
+        "index": 19,
+        "matched": false
+      },
+      {
+        "index": 20,
+        "matched": false
+      },
+      {
+        "index": 21,
+        "matched": false
+      },
+      {
+        "index": 22,
+        "matched": false
+      },
+      {
+        "index": 23,
+        "matched": false
+      },
+      {
+        "index": 24,
+        "matched": false
+      },
+      {
+        "index": 25,
+        "matched": false
+      },
+      {
+        "index": 26,
+        "matched": false
+      },
+      {
+        "index": 27,
+        "matched": false
+      },
+      {
+        "index": 28,
+        "matched": false
+      },
+      {
+        "index": 29,
+        "matched": false
+      }
+    ],
+    "reward": -1.0,
+    "inspection_steps": 16,
+    "steps": 17,
+    "seconds": 0.015999999945051968,
+    "truncated": false,
+    "answer": {
+      "episode_id": "ep-68ceb9c94ed1aced",
+      "findings": [
+        {
+          "type": "duplicate_invoice",
+          "affected_ids": [
+            "row-682ce0815c89"
+          ],
+          "claimed_amount_minor": 0,
+          "currency": "KZT",
+          "evidence_ids": [
+            "row-682ce0815c89"
+          ],
+          "explanation": "Suspicious."
+        },
+        {
+          "type": "payment_allocation",
+          "affected_ids": [
+            "row-5d46c193758c"
+          ],
+          "claimed_amount_minor": 0,
+          "currency": "KZT",
+          "evidence_ids": [
+            "row-5d46c193758c"
+          ],
+          "explanation": "Suspicious."
+        },
+        {
+          "type": "fx_conversion",
+          "affected_ids": [
+            "row-2c497c1e6467"
+          ],
+          "claimed_amount_minor": 0,
+          "currency": "KZT",
+          "evidence_ids": [
+            "row-2c497c1e6467"
+          ],
+          "explanation": "Suspicious."
+        },
+        {
+          "type": "period_cutoff",
+          "affected_ids": [
+            "row-a1554f2b9122"
+          ],
+          "claimed_amount_minor": 0,
+          "currency": "KZT",
+          "evidence_ids": [
+            "row-a1554f2b9122"
+          ],
+          "explanation": "Suspicious."
+        },
+        {
+          "type": "duplicate_invoice",
+          "affected_ids": [
+            "row-89b22b8c76b8"
+          ],
+          "claimed_amount_minor": 0,
+          "currency": "KZT",
+          "evidence_ids": [
+            "row-89b22b8c76b8"
+          ],
+          "explanation": "Suspicious."
+        },
+        {
+          "type": "payment_allocation",
+          "affected_ids": [
+            "row-fecc024b4b72"
+          ],
+          "claimed_amount_minor": 0,
+          "currency": "KZT",
+          "evidence_ids": [
+            "row-fecc024b4b72"
+          ],
+          "explanation": "Suspicious."
+        },
+        {
+          "type": "fx_conversion",
+          "affected_ids": [
+            "row-2bf0b26964b4"
+          ],
+          "claimed_amount_minor": 0,
+          "currency": "KZT",
+          "evidence_ids": [
+            "row-2bf0b26964b4"
+          ],
+          "explanation": "Suspicious."
+        },
+        {
+          "type": "period_cutoff",
+          "affected_ids": [
+            "row-9a6e6d863767"
+          ],
+          "claimed_amount_minor": 0,
+          "currency": "KZT",
+          "evidence_ids": [
+            "row-9a6e6d863767"
+          ],
+          "explanation": "Suspicious."
+        },
+        {
+          "type": "duplicate_invoice",
+          "affected_ids": [
+            "row-70bd37f4cf33"
+          ],
+          "claimed_amount_minor": 0,
+          "currency": "KZT",
+          "evidence_ids": [
+            "row-70bd37f4cf33"
+          ],
+          "explanation": "Suspicious."
+        },
+        {
+          "type": "payment_allocation",
+          "affected_ids": [
+            "row-24f8f3eda02f"
+          ],
+          "claimed_amount_minor": 0,
+          "currency": "KZT",
+          "evidence_ids": [
+            "row-24f8f3eda02f"
+          ],
+          "explanation": "Suspicious."
+        },
+        {
+          "type": "fx_conversion",
+          "affected_ids": [
+            "row-0455b73ee91c"
+          ],
+          "claimed_amount_minor": 0,
+          "currency": "KZT",
+          "evidence_ids": [
+            "row-0455b73ee91c"
+          ],
+          "explanation": "Suspicious."
+        },
+        {
+          "type": "period_cutoff",
+          "affected_ids": [
+            "row-4df3e0ec334b"
+          ],
+          "claimed_amount_minor": 0,
+          "currency": "KZT",
+          "evidence_ids": [
+            "row-4df3e0ec334b"
+          ],
+          "explanation": "Suspicious."
+        },
+        {
+          "type": "duplicate_invoice",
+          "affected_ids": [
+            "row-765568806f5b"
+          ],
+          "claimed_amount_minor": 0,
+          "currency": "KZT",
+          "evidence_ids": [
+            "row-765568806f5b"
+          ],
+          "explanation": "Suspicious."
+        },
+        {
+          "type": "payment_allocation",
+          "affected_ids": [
+            "row-2d72ae1a009a"
+          ],
+          "claimed_amount_minor": 0,
+          "currency": "KZT",
+          "evidence_ids": [
+            "row-2d72ae1a009a"
+          ],
+          "explanation": "Suspicious."
+        },
+        {
+          "type": "fx_conversion",
+          "affected_ids": [
+            "row-fc69c76b15b9"
+          ],
+          "claimed_amount_minor": 0,
+          "currency": "KZT",
+          "evidence_ids": [
+            "row-fc69c76b15b9"
+          ],
+          "explanation": "Suspicious."
+        },
+        {
+          "type": "period_cutoff",
+          "affected_ids": [
+            "row-fdb109c99af3"
+          ],
+          "claimed_amount_minor": 0,
+          "currency": "KZT",
+          "evidence_ids": [
+            "row-fdb109c99af3"
+          ],
+          "explanation": "Suspicious."
+        },
+        {
+          "type": "duplicate_invoice",
+          "affected_ids": [
+            "row-562e0f7fa1e9"
+          ],
+          "claimed_amount_minor": 0,
+          "currency": "KZT",
+          "evidence_ids": [
+            "row-562e0f7fa1e9"
+          ],
+          "explanation": "Suspicious."
+        },
+        {
+          "type": "payment_allocation",
+          "affected_ids": [
+            "row-ac30b63c9d64"
+          ],
+          "claimed_amount_minor": 0,
+          "currency": "KZT",
+          "evidence_ids": [
+            "row-ac30b63c9d64"
+          ],
+          "explanation": "Suspicious."
+        },
+        {
+          "type": "fx_conversion",
+          "affected_ids": [
+            "row-a5863a0acaf5"
+          ],
+          "claimed_amount_minor": 0,
+          "currency": "KZT",
+          "evidence_ids": [
+            "row-a5863a0acaf5"
+          ],
+          "explanation": "Suspicious."
+        },
+        {
+          "type": "period_cutoff",
+          "affected_ids": [
+            "row-0fef8954486d"
+          ],
+          "claimed_amount_minor": 0,
+          "currency": "KZT",
+          "evidence_ids": [
+            "row-0fef8954486d"
+          ],
+          "explanation": "Suspicious."
+        },
+        {
+          "type": "duplicate_invoice",
+          "affected_ids": [
+            "row-d42b4cd3567f"
+          ],
+          "claimed_amount_minor": 0,
+          "currency": "KZT",
+          "evidence_ids": [
+            "row-d42b4cd3567f"
+          ],
+          "explanation": "Suspicious."
+        },
+        {
+          "type": "payment_allocation",
+          "affected_ids": [
+            "row-c464c8ec02b9"
+          ],
+          "claimed_amount_minor": 0,
+          "currency": "KZT",
+          "evidence_ids": [
+            "row-c464c8ec02b9"
+          ],
+          "explanation": "Suspicious."
+        },
+        {
+          "type": "fx_conversion",
+          "affected_ids": [
+            "row-867dc5ca0aef"
+          ],
+          "claimed_amount_minor": 0,
+          "currency": "KZT",
+          "evidence_ids": [
+            "row-867dc5ca0aef"
+          ],
+          "explanation": "Suspicious."
+        },
+        {
+          "type": "period_cutoff",
+          "affected_ids": [
+            "row-d005c8a0800d"
+          ],
+          "claimed_amount_minor": 0,
+          "currency": "KZT",
+          "evidence_ids": [
+            "row-d005c8a0800d"
+          ],
+          "explanation": "Suspicious."
+        },
+        {
+          "type": "duplicate_invoice",
+          "affected_ids": [
+            "row-018c8296760e"
+          ],
+          "claimed_amount_minor": 0,
+          "currency": "KZT",
+          "evidence_ids": [
+            "row-018c8296760e"
+          ],
+          "explanation": "Suspicious."
+        },
+        {
+          "type": "payment_allocation",
+          "affected_ids": [
+            "row-3241f21a986f"
+          ],
+          "claimed_amount_minor": 0,
+          "currency": "KZT",
+          "evidence_ids": [
+            "row-3241f21a986f"
+          ],
+          "explanation": "Suspicious."
+        },
+        {
+          "type": "fx_conversion",
+          "affected_ids": [
+            "row-7d6f0f8a9f92"
+          ],
+          "claimed_amount_minor": 0,
+          "currency": "KZT",
+          "evidence_ids": [
+            "row-7d6f0f8a9f92"
+          ],
+          "explanation": "Suspicious."
+        },
+        {
+          "type": "period_cutoff",
+          "affected_ids": [
+            "row-a71eac46a86a"
+          ],
+          "claimed_amount_minor": 0,
+          "currency": "KZT",
+          "evidence_ids": [
+            "row-a71eac46a86a"
+          ],
+          "explanation": "Suspicious."
+        },
+        {
+          "type": "duplicate_invoice",
+          "affected_ids": [
+            "row-8ed99b3e40ea"
+          ],
+          "claimed_amount_minor": 0,
+          "currency": "KZT",
+          "evidence_ids": [
+            "row-8ed99b3e40ea"
+          ],
+          "explanation": "Suspicious."
+        },
+        {
+          "type": "payment_allocation",
+          "affected_ids": [
+            "row-a2ff784ce11d"
+          ],
+          "claimed_amount_minor": 0,
+          "currency": "KZT",
+          "evidence_ids": [
+            "row-a2ff784ce11d"
+          ],
+          "explanation": "Suspicious."
+        }
+      ]
+    }
+  },
+  {
+    "episode_id": "ep-68ceb9c94ed1aced",
+    "policy": "oracle",
+    "P": 0.0,
+    "R": 0.0,
+    "F1": 1.0,
+    "TP": 0,
+    "FP": 0,
+    "FN": 0,
+    "invalid": false,
+    "finding_results": [],
+    "reward": 1.0,
+    "inspection_steps": 0,
+    "steps": 1,
+    "seconds": 0.0,
+    "truncated": false,
+    "answer": {
+      "episode_id": "ep-68ceb9c94ed1aced",
+      "findings": []
+    }
+  },
+  {
+    "episode_id": "ep-33e0299a2d618221",
+    "policy": "random",
+    "P": 0.0,
+    "R": 0.0,
+    "F1": 1.0,
+    "TP": 0,
+    "FP": 0,
+    "FN": 0,
+    "invalid": false,
+    "finding_results": [],
+    "reward": 0.984,
+    "inspection_steps": 8,
+    "steps": 9,
+    "seconds": 0.01600000006146729,
+    "truncated": false,
+    "answer": {
+      "episode_id": "ep-33e0299a2d618221",
+      "findings": []
+    }
+  },
+  {
+    "episode_id": "ep-33e0299a2d618221",
     "policy": "reconcile",
     "P": 0.0,
     "R": 0.0,
@@ -1169,1138 +2301,6 @@
     "seconds": 0.030999999959021807,
     "truncated": false,
     "answer": {
-      "episode_id": "ep-b0b2be381595ada4",
-      "findings": []
-    }
-  },
-  {
-    "episode_id": "ep-b0b2be381595ada4",
-    "policy": "flag_all",
-    "P": 0.0,
-    "R": 0.0,
-    "F1": 0.0,
-    "TP": 0,
-    "FP": 30,
-    "FN": 0,
-    "invalid": false,
-    "finding_results": [
-      {
-        "index": 0,
-        "matched": false
-      },
-      {
-        "index": 1,
-        "matched": false
-      },
-      {
-        "index": 2,
-        "matched": false
-      },
-      {
-        "index": 3,
-        "matched": false
-      },
-      {
-        "index": 4,
-        "matched": false
-      },
-      {
-        "index": 5,
-        "matched": false
-      },
-      {
-        "index": 6,
-        "matched": false
-      },
-      {
-        "index": 7,
-        "matched": false
-      },
-      {
-        "index": 8,
-        "matched": false
-      },
-      {
-        "index": 9,
-        "matched": false
-      },
-      {
-        "index": 10,
-        "matched": false
-      },
-      {
-        "index": 11,
-        "matched": false
-      },
-      {
-        "index": 12,
-        "matched": false
-      },
-      {
-        "index": 13,
-        "matched": false
-      },
-      {
-        "index": 14,
-        "matched": false
-      },
-      {
-        "index": 15,
-        "matched": false
-      },
-      {
-        "index": 16,
-        "matched": false
-      },
-      {
-        "index": 17,
-        "matched": false
-      },
-      {
-        "index": 18,
-        "matched": false
-      },
-      {
-        "index": 19,
-        "matched": false
-      },
-      {
-        "index": 20,
-        "matched": false
-      },
-      {
-        "index": 21,
-        "matched": false
-      },
-      {
-        "index": 22,
-        "matched": false
-      },
-      {
-        "index": 23,
-        "matched": false
-      },
-      {
-        "index": 24,
-        "matched": false
-      },
-      {
-        "index": 25,
-        "matched": false
-      },
-      {
-        "index": 26,
-        "matched": false
-      },
-      {
-        "index": 27,
-        "matched": false
-      },
-      {
-        "index": 28,
-        "matched": false
-      },
-      {
-        "index": 29,
-        "matched": false
-      }
-    ],
-    "reward": -1.0,
-    "inspection_steps": 16,
-    "steps": 17,
-    "seconds": 0.015999999945051968,
-    "truncated": false,
-    "answer": {
-      "episode_id": "ep-b0b2be381595ada4",
-      "findings": [
-        {
-          "type": "duplicate_invoice",
-          "affected_ids": [
-            "row-a0a39f3a8cbc"
-          ],
-          "claimed_amount_minor": 0,
-          "currency": "KZT",
-          "evidence_ids": [
-            "row-a0a39f3a8cbc"
-          ],
-          "explanation": "Suspicious."
-        },
-        {
-          "type": "payment_allocation",
-          "affected_ids": [
-            "row-619444bb7b6a"
-          ],
-          "claimed_amount_minor": 0,
-          "currency": "KZT",
-          "evidence_ids": [
-            "row-619444bb7b6a"
-          ],
-          "explanation": "Suspicious."
-        },
-        {
-          "type": "fx_conversion",
-          "affected_ids": [
-            "row-d46b0ae3eb43"
-          ],
-          "claimed_amount_minor": 0,
-          "currency": "KZT",
-          "evidence_ids": [
-            "row-d46b0ae3eb43"
-          ],
-          "explanation": "Suspicious."
-        },
-        {
-          "type": "period_cutoff",
-          "affected_ids": [
-            "row-56b9ab949ffb"
-          ],
-          "claimed_amount_minor": 0,
-          "currency": "KZT",
-          "evidence_ids": [
-            "row-56b9ab949ffb"
-          ],
-          "explanation": "Suspicious."
-        },
-        {
-          "type": "duplicate_invoice",
-          "affected_ids": [
-            "row-eecd52da2a65"
-          ],
-          "claimed_amount_minor": 0,
-          "currency": "KZT",
-          "evidence_ids": [
-            "row-eecd52da2a65"
-          ],
-          "explanation": "Suspicious."
-        },
-        {
-          "type": "payment_allocation",
-          "affected_ids": [
-            "row-00ea05e5e67f"
-          ],
-          "claimed_amount_minor": 0,
-          "currency": "KZT",
-          "evidence_ids": [
-            "row-00ea05e5e67f"
-          ],
-          "explanation": "Suspicious."
-        },
-        {
-          "type": "fx_conversion",
-          "affected_ids": [
-            "row-e2af2fdf04e4"
-          ],
-          "claimed_amount_minor": 0,
-          "currency": "KZT",
-          "evidence_ids": [
-            "row-e2af2fdf04e4"
-          ],
-          "explanation": "Suspicious."
-        },
-        {
-          "type": "period_cutoff",
-          "affected_ids": [
-            "row-03b6de4ccfd9"
-          ],
-          "claimed_amount_minor": 0,
-          "currency": "KZT",
-          "evidence_ids": [
-            "row-03b6de4ccfd9"
-          ],
-          "explanation": "Suspicious."
-        },
-        {
-          "type": "duplicate_invoice",
-          "affected_ids": [
-            "row-48bd56228240"
-          ],
-          "claimed_amount_minor": 0,
-          "currency": "KZT",
-          "evidence_ids": [
-            "row-48bd56228240"
-          ],
-          "explanation": "Suspicious."
-        },
-        {
-          "type": "payment_allocation",
-          "affected_ids": [
-            "row-0db5df54bb48"
-          ],
-          "claimed_amount_minor": 0,
-          "currency": "KZT",
-          "evidence_ids": [
-            "row-0db5df54bb48"
-          ],
-          "explanation": "Suspicious."
-        },
-        {
-          "type": "fx_conversion",
-          "affected_ids": [
-            "row-cd48ad43fd31"
-          ],
-          "claimed_amount_minor": 0,
-          "currency": "KZT",
-          "evidence_ids": [
-            "row-cd48ad43fd31"
-          ],
-          "explanation": "Suspicious."
-        },
-        {
-          "type": "period_cutoff",
-          "affected_ids": [
-            "row-2efff94299a1"
-          ],
-          "claimed_amount_minor": 0,
-          "currency": "KZT",
-          "evidence_ids": [
-            "row-2efff94299a1"
-          ],
-          "explanation": "Suspicious."
-        },
-        {
-          "type": "duplicate_invoice",
-          "affected_ids": [
-            "row-2040abfd22f1"
-          ],
-          "claimed_amount_minor": 0,
-          "currency": "KZT",
-          "evidence_ids": [
-            "row-2040abfd22f1"
-          ],
-          "explanation": "Suspicious."
-        },
-        {
-          "type": "payment_allocation",
-          "affected_ids": [
-            "row-88dc561d842f"
-          ],
-          "claimed_amount_minor": 0,
-          "currency": "KZT",
-          "evidence_ids": [
-            "row-88dc561d842f"
-          ],
-          "explanation": "Suspicious."
-        },
-        {
-          "type": "fx_conversion",
-          "affected_ids": [
-            "row-d3959fec4a5e"
-          ],
-          "claimed_amount_minor": 0,
-          "currency": "KZT",
-          "evidence_ids": [
-            "row-d3959fec4a5e"
-          ],
-          "explanation": "Suspicious."
-        },
-        {
-          "type": "period_cutoff",
-          "affected_ids": [
-            "row-d847e65f4135"
-          ],
-          "claimed_amount_minor": 0,
-          "currency": "KZT",
-          "evidence_ids": [
-            "row-d847e65f4135"
-          ],
-          "explanation": "Suspicious."
-        },
-        {
-          "type": "duplicate_invoice",
-          "affected_ids": [
-            "row-bbd14a352fb6"
-          ],
-          "claimed_amount_minor": 0,
-          "currency": "KZT",
-          "evidence_ids": [
-            "row-bbd14a352fb6"
-          ],
-          "explanation": "Suspicious."
-        },
-        {
-          "type": "payment_allocation",
-          "affected_ids": [
-            "row-813b4532ff02"
-          ],
-          "claimed_amount_minor": 0,
-          "currency": "KZT",
-          "evidence_ids": [
-            "row-813b4532ff02"
-          ],
-          "explanation": "Suspicious."
-        },
-        {
-          "type": "fx_conversion",
-          "affected_ids": [
-            "row-6e0b38b1636d"
-          ],
-          "claimed_amount_minor": 0,
-          "currency": "KZT",
-          "evidence_ids": [
-            "row-6e0b38b1636d"
-          ],
-          "explanation": "Suspicious."
-        },
-        {
-          "type": "period_cutoff",
-          "affected_ids": [
-            "row-c74ad1efe71c"
-          ],
-          "claimed_amount_minor": 0,
-          "currency": "KZT",
-          "evidence_ids": [
-            "row-c74ad1efe71c"
-          ],
-          "explanation": "Suspicious."
-        },
-        {
-          "type": "duplicate_invoice",
-          "affected_ids": [
-            "row-e9c7434da63f"
-          ],
-          "claimed_amount_minor": 0,
-          "currency": "KZT",
-          "evidence_ids": [
-            "row-e9c7434da63f"
-          ],
-          "explanation": "Suspicious."
-        },
-        {
-          "type": "payment_allocation",
-          "affected_ids": [
-            "row-4596f9f7bfdf"
-          ],
-          "claimed_amount_minor": 0,
-          "currency": "KZT",
-          "evidence_ids": [
-            "row-4596f9f7bfdf"
-          ],
-          "explanation": "Suspicious."
-        },
-        {
-          "type": "fx_conversion",
-          "affected_ids": [
-            "row-3b4bd6d24289"
-          ],
-          "claimed_amount_minor": 0,
-          "currency": "KZT",
-          "evidence_ids": [
-            "row-3b4bd6d24289"
-          ],
-          "explanation": "Suspicious."
-        },
-        {
-          "type": "period_cutoff",
-          "affected_ids": [
-            "row-a885f0cd326d"
-          ],
-          "claimed_amount_minor": 0,
-          "currency": "KZT",
-          "evidence_ids": [
-            "row-a885f0cd326d"
-          ],
-          "explanation": "Suspicious."
-        },
-        {
-          "type": "duplicate_invoice",
-          "affected_ids": [
-            "row-38944653cd72"
-          ],
-          "claimed_amount_minor": 0,
-          "currency": "KZT",
-          "evidence_ids": [
-            "row-38944653cd72"
-          ],
-          "explanation": "Suspicious."
-        },
-        {
-          "type": "payment_allocation",
-          "affected_ids": [
-            "row-9342827d2934"
-          ],
-          "claimed_amount_minor": 0,
-          "currency": "KZT",
-          "evidence_ids": [
-            "row-9342827d2934"
-          ],
-          "explanation": "Suspicious."
-        },
-        {
-          "type": "fx_conversion",
-          "affected_ids": [
-            "row-089b0b4b38d5"
-          ],
-          "claimed_amount_minor": 0,
-          "currency": "KZT",
-          "evidence_ids": [
-            "row-089b0b4b38d5"
-          ],
-          "explanation": "Suspicious."
-        },
-        {
-          "type": "period_cutoff",
-          "affected_ids": [
-            "row-7e81515c0d51"
-          ],
-          "claimed_amount_minor": 0,
-          "currency": "KZT",
-          "evidence_ids": [
-            "row-7e81515c0d51"
-          ],
-          "explanation": "Suspicious."
-        },
-        {
-          "type": "duplicate_invoice",
-          "affected_ids": [
-            "row-612fcf1c8da5"
-          ],
-          "claimed_amount_minor": 0,
-          "currency": "KZT",
-          "evidence_ids": [
-            "row-612fcf1c8da5"
-          ],
-          "explanation": "Suspicious."
-        },
-        {
-          "type": "payment_allocation",
-          "affected_ids": [
-            "row-db77be668c04"
-          ],
-          "claimed_amount_minor": 0,
-          "currency": "KZT",
-          "evidence_ids": [
-            "row-db77be668c04"
-          ],
-          "explanation": "Suspicious."
-        }
-      ]
-    }
-  },
-  {
-    "episode_id": "ep-b0b2be381595ada4",
-    "policy": "oracle",
-    "P": 0.0,
-    "R": 0.0,
-    "F1": 1.0,
-    "TP": 0,
-    "FP": 0,
-    "FN": 0,
-    "invalid": false,
-    "finding_results": [],
-    "reward": 1.0,
-    "inspection_steps": 0,
-    "steps": 1,
-    "seconds": 0.0,
-    "truncated": false,
-    "answer": {
-      "episode_id": "ep-b0b2be381595ada4",
-      "findings": []
-    }
-  },
-  {
-    "episode_id": "ep-68ceb9c94ed1aced",
-    "policy": "random",
-    "P": 0.0,
-    "R": 0.0,
-    "F1": 1.0,
-    "TP": 0,
-    "FP": 0,
-    "FN": 0,
-    "invalid": false,
-    "finding_results": [],
-    "reward": 0.984,
-    "inspection_steps": 8,
-    "steps": 9,
-    "seconds": 0.0,
-    "truncated": false,
-    "answer": {
-      "episode_id": "ep-68ceb9c94ed1aced",
-      "findings": []
-    }
-  },
-  {
-    "episode_id": "ep-68ceb9c94ed1aced",
-    "policy": "reconcile",
-    "P": 0.0,
-    "R": 0.0,
-    "F1": 1.0,
-    "TP": 0,
-    "FP": 0,
-    "FN": 0,
-    "invalid": false,
-    "finding_results": [],
-    "reward": 0.968,
-    "inspection_steps": 16,
-    "steps": 17,
-    "seconds": 0.015999999945051968,
-    "truncated": false,
-    "answer": {
-      "episode_id": "ep-68ceb9c94ed1aced",
-      "findings": []
-    }
-  },
-  {
-    "episode_id": "ep-68ceb9c94ed1aced",
-    "policy": "flag_all",
-    "P": 0.0,
-    "R": 0.0,
-    "F1": 0.0,
-    "TP": 0,
-    "FP": 30,
-    "FN": 0,
-    "invalid": false,
-    "finding_results": [
-      {
-        "index": 0,
-        "matched": false
-      },
-      {
-        "index": 1,
-        "matched": false
-      },
-      {
-        "index": 2,
-        "matched": false
-      },
-      {
-        "index": 3,
-        "matched": false
-      },
-      {
-        "index": 4,
-        "matched": false
-      },
-      {
-        "index": 5,
-        "matched": false
-      },
-      {
-        "index": 6,
-        "matched": false
-      },
-      {
-        "index": 7,
-        "matched": false
-      },
-      {
-        "index": 8,
-        "matched": false
-      },
-      {
-        "index": 9,
-        "matched": false
-      },
-      {
-        "index": 10,
-        "matched": false
-      },
-      {
-        "index": 11,
-        "matched": false
-      },
-      {
-        "index": 12,
-        "matched": false
-      },
-      {
-        "index": 13,
-        "matched": false
-      },
-      {
-        "index": 14,
-        "matched": false
-      },
-      {
-        "index": 15,
-        "matched": false
-      },
-      {
-        "index": 16,
-        "matched": false
-      },
-      {
-        "index": 17,
-        "matched": false
-      },
-      {
-        "index": 18,
-        "matched": false
-      },
-      {
-        "index": 19,
-        "matched": false
-      },
-      {
-        "index": 20,
-        "matched": false
-      },
-      {
-        "index": 21,
-        "matched": false
-      },
-      {
-        "index": 22,
-        "matched": false
-      },
-      {
-        "index": 23,
-        "matched": false
-      },
-      {
-        "index": 24,
-        "matched": false
-      },
-      {
-        "index": 25,
-        "matched": false
-      },
-      {
-        "index": 26,
-        "matched": false
-      },
-      {
-        "index": 27,
-        "matched": false
-      },
-      {
-        "index": 28,
-        "matched": false
-      },
-      {
-        "index": 29,
-        "matched": false
-      }
-    ],
-    "reward": -1.0,
-    "inspection_steps": 16,
-    "steps": 17,
-    "seconds": 0.03200000000651926,
-    "truncated": false,
-    "answer": {
-      "episode_id": "ep-68ceb9c94ed1aced",
-      "findings": [
-        {
-          "type": "duplicate_invoice",
-          "affected_ids": [
-            "row-682ce0815c89"
-          ],
-          "claimed_amount_minor": 0,
-          "currency": "KZT",
-          "evidence_ids": [
-            "row-682ce0815c89"
-          ],
-          "explanation": "Suspicious."
-        },
-        {
-          "type": "payment_allocation",
-          "affected_ids": [
-            "row-5d46c193758c"
-          ],
-          "claimed_amount_minor": 0,
-          "currency": "KZT",
-          "evidence_ids": [
-            "row-5d46c193758c"
-          ],
-          "explanation": "Suspicious."
-        },
-        {
-          "type": "fx_conversion",
-          "affected_ids": [
-            "row-2c497c1e6467"
-          ],
-          "claimed_amount_minor": 0,
-          "currency": "KZT",
-          "evidence_ids": [
-            "row-2c497c1e6467"
-          ],
-          "explanation": "Suspicious."
-        },
-        {
-          "type": "period_cutoff",
-          "affected_ids": [
-            "row-a1554f2b9122"
-          ],
-          "claimed_amount_minor": 0,
-          "currency": "KZT",
-          "evidence_ids": [
-            "row-a1554f2b9122"
-          ],
-          "explanation": "Suspicious."
-        },
-        {
-          "type": "duplicate_invoice",
-          "affected_ids": [
-            "row-89b22b8c76b8"
-          ],
-          "claimed_amount_minor": 0,
-          "currency": "KZT",
-          "evidence_ids": [
-            "row-89b22b8c76b8"
-          ],
-          "explanation": "Suspicious."
-        },
-        {
-          "type": "payment_allocation",
-          "affected_ids": [
-            "row-fecc024b4b72"
-          ],
-          "claimed_amount_minor": 0,
-          "currency": "KZT",
-          "evidence_ids": [
-            "row-fecc024b4b72"
-          ],
-          "explanation": "Suspicious."
-        },
-        {
-          "type": "fx_conversion",
-          "affected_ids": [
-            "row-2bf0b26964b4"
-          ],
-          "claimed_amount_minor": 0,
-          "currency": "KZT",
-          "evidence_ids": [
-            "row-2bf0b26964b4"
-          ],
-          "explanation": "Suspicious."
-        },
-        {
-          "type": "period_cutoff",
-          "affected_ids": [
-            "row-9a6e6d863767"
-          ],
-          "claimed_amount_minor": 0,
-          "currency": "KZT",
-          "evidence_ids": [
-            "row-9a6e6d863767"
-          ],
-          "explanation": "Suspicious."
-        },
-        {
-          "type": "duplicate_invoice",
-          "affected_ids": [
-            "row-70bd37f4cf33"
-          ],
-          "claimed_amount_minor": 0,
-          "currency": "KZT",
-          "evidence_ids": [
-            "row-70bd37f4cf33"
-          ],
-          "explanation": "Suspicious."
-        },
-        {
-          "type": "payment_allocation",
-          "affected_ids": [
-            "row-24f8f3eda02f"
-          ],
-          "claimed_amount_minor": 0,
-          "currency": "KZT",
-          "evidence_ids": [
-            "row-24f8f3eda02f"
-          ],
-          "explanation": "Suspicious."
-        },
-        {
-          "type": "fx_conversion",
-          "affected_ids": [
-            "row-0455b73ee91c"
-          ],
-          "claimed_amount_minor": 0,
-          "currency": "KZT",
-          "evidence_ids": [
-            "row-0455b73ee91c"
-          ],
-          "explanation": "Suspicious."
-        },
-        {
-          "type": "period_cutoff",
-          "affected_ids": [
-            "row-4df3e0ec334b"
-          ],
-          "claimed_amount_minor": 0,
-          "currency": "KZT",
-          "evidence_ids": [
-            "row-4df3e0ec334b"
-          ],
-          "explanation": "Suspicious."
-        },
-        {
-          "type": "duplicate_invoice",
-          "affected_ids": [
-            "row-765568806f5b"
-          ],
-          "claimed_amount_minor": 0,
-          "currency": "KZT",
-          "evidence_ids": [
-            "row-765568806f5b"
-          ],
-          "explanation": "Suspicious."
-        },
-        {
-          "type": "payment_allocation",
-          "affected_ids": [
-            "row-2d72ae1a009a"
-          ],
-          "claimed_amount_minor": 0,
-          "currency": "KZT",
-          "evidence_ids": [
-            "row-2d72ae1a009a"
-          ],
-          "explanation": "Suspicious."
-        },
-        {
-          "type": "fx_conversion",
-          "affected_ids": [
-            "row-fc69c76b15b9"
-          ],
-          "claimed_amount_minor": 0,
-          "currency": "KZT",
-          "evidence_ids": [
-            "row-fc69c76b15b9"
-          ],
-          "explanation": "Suspicious."
-        },
-        {
-          "type": "period_cutoff",
-          "affected_ids": [
-            "row-fdb109c99af3"
-          ],
-          "claimed_amount_minor": 0,
-          "currency": "KZT",
-          "evidence_ids": [
-            "row-fdb109c99af3"
-          ],
-          "explanation": "Suspicious."
-        },
-        {
-          "type": "duplicate_invoice",
-          "affected_ids": [
-            "row-562e0f7fa1e9"
-          ],
-          "claimed_amount_minor": 0,
-          "currency": "KZT",
-          "evidence_ids": [
-            "row-562e0f7fa1e9"
-          ],
-          "explanation": "Suspicious."
-        },
-        {
-          "type": "payment_allocation",
-          "affected_ids": [
-            "row-ac30b63c9d64"
-          ],
-          "claimed_amount_minor": 0,
-          "currency": "KZT",
-          "evidence_ids": [
-            "row-ac30b63c9d64"
-          ],
-          "explanation": "Suspicious."
-        },
-        {
-          "type": "fx_conversion",
-          "affected_ids": [
-            "row-a5863a0acaf5"
-          ],
-          "claimed_amount_minor": 0,
-          "currency": "KZT",
-          "evidence_ids": [
-            "row-a5863a0acaf5"
-          ],
-          "explanation": "Suspicious."
-        },
-        {
-          "type": "period_cutoff",
-          "affected_ids": [
-            "row-0fef8954486d"
-          ],
-          "claimed_amount_minor": 0,
-          "currency": "KZT",
-          "evidence_ids": [
-            "row-0fef8954486d"
-          ],
-          "explanation": "Suspicious."
-        },
-        {
-          "type": "duplicate_invoice",
-          "affected_ids": [
-            "row-d42b4cd3567f"
-          ],
-          "claimed_amount_minor": 0,
-          "currency": "KZT",
-          "evidence_ids": [
-            "row-d42b4cd3567f"
-          ],
-          "explanation": "Suspicious."
-        },
-        {
-          "type": "payment_allocation",
-          "affected_ids": [
-            "row-c464c8ec02b9"
-          ],
-          "claimed_amount_minor": 0,
-          "currency": "KZT",
-          "evidence_ids": [
-            "row-c464c8ec02b9"
-          ],
-          "explanation": "Suspicious."
-        },
-        {
-          "type": "fx_conversion",
-          "affected_ids": [
-            "row-867dc5ca0aef"
-          ],
-          "claimed_amount_minor": 0,
-          "currency": "KZT",
-          "evidence_ids": [
-            "row-867dc5ca0aef"
-          ],
-          "explanation": "Suspicious."
-        },
-        {
-          "type": "period_cutoff",
-          "affected_ids": [
-            "row-d005c8a0800d"
-          ],
-          "claimed_amount_minor": 0,
-          "currency": "KZT",
-          "evidence_ids": [
-            "row-d005c8a0800d"
-          ],
-          "explanation": "Suspicious."
-        },
-        {
-          "type": "duplicate_invoice",
-          "affected_ids": [
-            "row-018c8296760e"
-          ],
-          "claimed_amount_minor": 0,
-          "currency": "KZT",
-          "evidence_ids": [
-            "row-018c8296760e"
-          ],
-          "explanation": "Suspicious."
-        },
-        {
-          "type": "payment_allocation",
-          "affected_ids": [
-            "row-3241f21a986f"
-          ],
-          "claimed_amount_minor": 0,
-          "currency": "KZT",
-          "evidence_ids": [
-            "row-3241f21a986f"
-          ],
-          "explanation": "Suspicious."
-        },
-        {
-          "type": "fx_conversion",
-          "affected_ids": [
-            "row-7d6f0f8a9f92"
-          ],
-          "claimed_amount_minor": 0,
-          "currency": "KZT",
-          "evidence_ids": [
-            "row-7d6f0f8a9f92"
-          ],
-          "explanation": "Suspicious."
-        },
-        {
-          "type": "period_cutoff",
-          "affected_ids": [
-            "row-a71eac46a86a"
-          ],
-          "claimed_amount_minor": 0,
-          "currency": "KZT",
-          "evidence_ids": [
-            "row-a71eac46a86a"
-          ],
-          "explanation": "Suspicious."
-        },
-        {
-          "type": "duplicate_invoice",
-          "affected_ids": [
-            "row-8ed99b3e40ea"
-          ],
-          "claimed_amount_minor": 0,
-          "currency": "KZT",
-          "evidence_ids": [
-            "row-8ed99b3e40ea"
-          ],
-          "explanation": "Suspicious."
-        },
-        {
-          "type": "payment_allocation",
-          "affected_ids": [
-            "row-a2ff784ce11d"
-          ],
-          "claimed_amount_minor": 0,
-          "currency": "KZT",
-          "evidence_ids": [
-            "row-a2ff784ce11d"
-          ],
-          "explanation": "Suspicious."
-        }
-      ]
-    }
-  },
-  {
-    "episode_id": "ep-68ceb9c94ed1aced",
-    "policy": "oracle",
-    "P": 0.0,
-    "R": 0.0,
-    "F1": 1.0,
-    "TP": 0,
-    "FP": 0,
-    "FN": 0,
-    "invalid": false,
-    "finding_results": [],
-    "reward": 1.0,
-    "inspection_steps": 0,
-    "steps": 1,
-    "seconds": 0.0,
-    "truncated": false,
-    "answer": {
-      "episode_id": "ep-68ceb9c94ed1aced",
-      "findings": []
-    }
-  },
-  {
-    "episode_id": "ep-33e0299a2d618221",
-    "policy": "random",
-    "P": 0.0,
-    "R": 0.0,
-    "F1": 1.0,
-    "TP": 0,
-    "FP": 0,
-    "FN": 0,
-    "invalid": false,
-    "finding_results": [],
-    "reward": 0.984,
-    "inspection_steps": 8,
-    "steps": 9,
-    "seconds": 0.015999999945051968,
-    "truncated": false,
-    "answer": {
-      "episode_id": "ep-33e0299a2d618221",
-      "findings": []
-    }
-  },
-  {
-    "episode_id": "ep-33e0299a2d618221",
-    "policy": "reconcile",
-    "P": 0.0,
-    "R": 0.0,
-    "F1": 1.0,
-    "TP": 0,
-    "FP": 0,
-    "FN": 0,
-    "invalid": false,
-    "finding_results": [],
-    "reward": 0.968,
-    "inspection_steps": 16,
-    "steps": 17,
-    "seconds": 0.015999999945051968,
-    "truncated": false,
-    "answer": {
       "episode_id": "ep-33e0299a2d618221",
       "findings": []
     }
@@ -2440,7 +2440,7 @@
     "reward": -1.0,
     "inspection_steps": 16,
     "steps": 17,
-    "seconds": 0.03100000007543713,
+    "seconds": 0.015000000013969839,
     "truncated": false,
     "answer": {
       "episode_id": "ep-33e0299a2d618221",
@@ -2843,7 +2843,7 @@
     "reward": -1.0,
     "inspection_steps": 8,
     "steps": 9,
-    "seconds": 0.0,
+    "seconds": 0.01600000006146729,
     "truncated": false,
     "answer": {
       "episode_id": "ep-a64b0ff9ff68dd78",
@@ -2889,7 +2889,7 @@
     "reward": 0.966,
     "inspection_steps": 17,
     "steps": 18,
-    "seconds": 0.03200000000651926,
+    "seconds": 0.030999999959021807,
     "truncated": false,
     "answer": {
       "episode_id": "ep-a64b0ff9ff68dd78",
@@ -3125,7 +3125,7 @@
     "reward": -1.0,
     "inspection_steps": 17,
     "steps": 18,
-    "seconds": 0.03100000007543713,
+    "seconds": 0.03200000000651926,
     "truncated": false,
     "answer": {
       "episode_id": "ep-a64b0ff9ff68dd78",
@@ -3693,7 +3693,7 @@
     "reward": 0.966,
     "inspection_steps": 17,
     "steps": 18,
-    "seconds": 0.015000000013969839,
+    "seconds": 0.0470000000204891,
     "truncated": false,
     "answer": {
       "episode_id": "ep-1763910f2efdeabb",
@@ -4493,7 +4493,7 @@
     "reward": 0.964,
     "inspection_steps": 18,
     "steps": 19,
-    "seconds": 0.015000000013969839,
+    "seconds": 0.030999999959021807,
     "truncated": false,
     "answer": {
       "episode_id": "ep-7a00e277a5428b19",
@@ -4729,7 +4729,7 @@
     "reward": -1.0,
     "inspection_steps": 18,
     "steps": 19,
-    "seconds": 0.030999999959021807,
+    "seconds": 0.03100000007543713,
     "truncated": false,
     "answer": {
       "episode_id": "ep-7a00e277a5428b19",
@@ -5251,7 +5251,7 @@
     "reward": -1.0,
     "inspection_steps": 8,
     "steps": 9,
-    "seconds": 0.0,
+    "seconds": 0.015999999945051968,
     "truncated": false,
     "answer": {
       "episode_id": "ep-255753944221adeb",
@@ -5297,7 +5297,7 @@
     "reward": 0.964,
     "inspection_steps": 18,
     "steps": 19,
-    "seconds": 0.01600000006146729,
+    "seconds": 0.0470000000204891,
     "truncated": false,
     "answer": {
       "episode_id": "ep-255753944221adeb",
@@ -5531,7 +5531,7 @@
     "reward": -1.0,
     "inspection_steps": 18,
     "steps": 19,
-    "seconds": 0.03100000007543713,
+    "seconds": 0.030999999959021807,
     "truncated": false,
     "answer": {
       "episode_id": "ep-255753944221adeb",
@@ -6051,7 +6051,7 @@
     "reward": -1.0,
     "inspection_steps": 8,
     "steps": 9,
-    "seconds": 0.015999999945051968,
+    "seconds": 0.0,
     "truncated": false,
     "answer": {
       "episode_id": "ep-b558299273d70b4f",
@@ -6097,7 +6097,7 @@
     "reward": 0.964,
     "inspection_steps": 18,
     "steps": 19,
-    "seconds": 0.01600000006146729,
+    "seconds": 0.030999999959021807,
     "truncated": false,
     "answer": {
       "episode_id": "ep-b558299273d70b4f",
@@ -6893,7 +6893,7 @@
     "reward": 0.964,
     "inspection_steps": 18,
     "steps": 19,
-    "seconds": 0.01600000006146729,
+    "seconds": 0.03100000007543713,
     "truncated": false,
     "answer": {
       "episode_id": "ep-017f8971d0bfa904",
@@ -7098,7 +7098,7 @@
     "reward": -1.0,
     "inspection_steps": 18,
     "steps": 19,
-    "seconds": 0.01600000006146729,
+    "seconds": 0.045999999972991645,
     "truncated": false,
     "answer": {
       "episode_id": "ep-017f8971d0bfa904",
@@ -7581,7 +7581,7 @@
     "reward": -1.0,
     "inspection_steps": 8,
     "steps": 9,
-    "seconds": 0.015999999945051968,
+    "seconds": 0.01600000006146729,
     "truncated": false,
     "answer": {
       "episode_id": "ep-6a82f14efd4a0d06",
@@ -7619,7 +7619,7 @@
     "reward": 0.96,
     "inspection_steps": 20,
     "steps": 21,
-    "seconds": 0.03200000000651926,
+    "seconds": 0.045999999972991645,
     "truncated": false,
     "answer": {
       "episode_id": "ep-6a82f14efd4a0d06",
@@ -7824,7 +7824,7 @@
     "reward": -1.0,
     "inspection_steps": 20,
     "steps": 21,
-    "seconds": 0.01600000006146729,
+    "seconds": 0.03100000007543713,
     "truncated": false,
     "answer": {
       "episode_id": "ep-6a82f14efd4a0d06",
@@ -8345,7 +8345,7 @@
     "reward": 0.96,
     "inspection_steps": 20,
     "steps": 21,
-    "seconds": 0.030999999959021807,
+    "seconds": 0.03200000000651926,
     "truncated": false,
     "answer": {
       "episode_id": "ep-65a1aff7430f5c69",
@@ -8550,7 +8550,7 @@
     "reward": -1.0,
     "inspection_steps": 20,
     "steps": 21,
-    "seconds": 0.030999999959021807,
+    "seconds": 0.03100000007543713,
     "truncated": false,
     "answer": {
       "episode_id": "ep-65a1aff7430f5c69",
@@ -9033,7 +9033,7 @@
     "reward": -1.0,
     "inspection_steps": 8,
     "steps": 9,
-    "seconds": 0.015000000013969839,
+    "seconds": 0.015999999945051968,
     "truncated": false,
     "answer": {
       "episode_id": "ep-9cce743c1c4ec7b8",
@@ -9071,7 +9071,7 @@
     "reward": 0.96,
     "inspection_steps": 20,
     "steps": 21,
-    "seconds": 0.015999999945051968,
+    "seconds": 0.0470000000204891,
     "truncated": false,
     "answer": {
       "episode_id": "ep-9cce743c1c4ec7b8",
@@ -9276,7 +9276,7 @@
     "reward": -1.0,
     "inspection_steps": 20,
     "steps": 21,
-    "seconds": 0.030999999959021807,
+    "seconds": 0.0470000000204891,
     "truncated": false,
     "answer": {
       "episode_id": "ep-9cce743c1c4ec7b8",
@@ -9675,7 +9675,7 @@
     "reward": 1.0,
     "inspection_steps": 0,
     "steps": 1,
-    "seconds": 0.0,
+    "seconds": 0.01600000006146729,
     "truncated": false,
     "answer": {
       "episode_id": "ep-9cce743c1c4ec7b8",
@@ -9759,7 +9759,7 @@
     "reward": -1.0,
     "inspection_steps": 8,
     "steps": 9,
-    "seconds": 0.0,
+    "seconds": 0.015999999945051968,
     "truncated": false,
     "answer": {
       "episode_id": "ep-822a3adb86f01a1b",
@@ -9797,7 +9797,7 @@
     "reward": 0.958,
     "inspection_steps": 21,
     "steps": 22,
-    "seconds": 0.015000000013969839,
+    "seconds": 0.030999999959021807,
     "truncated": false,
     "answer": {
       "episode_id": "ep-822a3adb86f01a1b",
@@ -10002,7 +10002,7 @@
     "reward": -1.0,
     "inspection_steps": 21,
     "steps": 22,
-    "seconds": 0.030999999959021807,
+    "seconds": 0.0470000000204891,
     "truncated": false,
     "answer": {
       "episode_id": "ep-822a3adb86f01a1b",
@@ -10523,7 +10523,7 @@
     "reward": 0.958,
     "inspection_steps": 21,
     "steps": 22,
-    "seconds": 0.0470000000204891,
+    "seconds": 0.062000000034458935,
     "truncated": false,
     "answer": {
       "episode_id": "ep-80f288497e873d0e",
@@ -10728,7 +10728,7 @@
     "reward": -1.0,
     "inspection_steps": 21,
     "steps": 22,
-    "seconds": 0.030999999959021807,
+    "seconds": 0.06299999996554106,
     "truncated": false,
     "answer": {
       "episode_id": "ep-80f288497e873d0e",
@@ -11249,7 +11249,7 @@
     "reward": 0.956,
     "inspection_steps": 22,
     "steps": 23,
-    "seconds": 0.015000000013969839,
+    "seconds": 0.0470000000204891,
     "truncated": false,
     "answer": {
       "episode_id": "ep-1b732d4d3fe94f23",
@@ -11454,7 +11454,7 @@
     "reward": -1.0,
     "inspection_steps": 22,
     "steps": 23,
-    "seconds": 0.015000000013969839,
+    "seconds": 0.06199999991804361,
     "truncated": false,
     "answer": {
       "episode_id": "ep-1b732d4d3fe94f23",
@@ -11975,7 +11975,7 @@
     "reward": 0.954,
     "inspection_steps": 23,
     "steps": 24,
-    "seconds": 0.030999999959021807,
+    "seconds": 0.0470000000204891,
     "truncated": false,
     "answer": {
       "episode_id": "ep-ff8c9db4a4fca667",
@@ -12180,7 +12180,7 @@
     "reward": -1.0,
     "inspection_steps": 23,
     "steps": 24,
-    "seconds": 0.03100000007543713,
+    "seconds": 0.0470000000204891,
     "truncated": false,
     "answer": {
       "episode_id": "ep-ff8c9db4a4fca667",
@@ -12663,7 +12663,7 @@
     "reward": -1.0,
     "inspection_steps": 8,
     "steps": 9,
-    "seconds": 0.0,
+    "seconds": 0.015999999945051968,
     "truncated": false,
     "answer": {
       "episode_id": "ep-3cc44619feed89f6",
@@ -12701,7 +12701,7 @@
     "reward": 0.954,
     "inspection_steps": 23,
     "steps": 24,
-    "seconds": 0.015000000013969839,
+    "seconds": 0.046999999904073775,
     "truncated": false,
     "answer": {
       "episode_id": "ep-3cc44619feed89f6",
@@ -12906,7 +12906,7 @@
     "reward": -1.0,
     "inspection_steps": 23,
     "steps": 24,
-    "seconds": 0.030999999959021807,
+    "seconds": 0.0470000000204891,
     "truncated": false,
     "answer": {
       "episode_id": "ep-3cc44619feed89f6",
@@ -13427,7 +13427,7 @@
     "reward": 0.954,
     "inspection_steps": 23,
     "steps": 24,
-    "seconds": 0.03200000000651926,
+    "seconds": 0.046999999904073775,
     "truncated": false,
     "answer": {
       "episode_id": "ep-2028758e562791a8",
@@ -13632,7 +13632,7 @@
     "reward": -1.0,
     "inspection_steps": 23,
     "steps": 24,
-    "seconds": 0.03200000000651926,
+    "seconds": 0.0470000000204891,
     "truncated": false,
     "answer": {
       "episode_id": "ep-2028758e562791a8",

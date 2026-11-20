@@ -98,7 +98,9 @@ def main():
     session=Session()
     for line in sys.stdin:
         try:
-            if len(line)>200000:raise ValueError()
+            # The public agent line is capped at 200000 characters by the broker.
+            # Private JSON re-encoding may expand one Unicode character to 12 ASCII bytes.
+            if len(line)>3000000:raise ValueError()
             req=json.loads(line)
             if req['op']=='reset':result=session.reset(**req['args'])
             elif req['op']=='step':result=session.step(req['action'])

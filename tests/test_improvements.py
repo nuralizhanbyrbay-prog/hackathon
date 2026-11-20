@@ -62,6 +62,11 @@ class ImprovedDataTests(unittest.TestCase):
                 self.assertLess(score(bad,e['manifest']['episode_id'],e['truth'],0)['TP'],baseline)
 
 class ExternalAgentTests(unittest.TestCase):
+    def test_unicode_malformed_submit_terminates_without_rpc_crash(self):
+        code='import sys,json; o=json.loads(sys.stdin.readline())["observation"]; f=dict(type="duplicate_invoice",affected_ids=["x"],claimed_amount_minor=0,currency="KZT",evidence_ids=["x"],explanation=chr(0x1F642)*70000); print(json.dumps(dict(action="submit",findings=dict(episode_id=o["manifest"]["episode_id"],findings=[f])),ensure_ascii=False),flush=True)'
+        result=run_external([sys.executable,'-c',code])
+        self.assertEqual(result['agent_status'],'completed')
+        self.assertTrue(result['report']['invalid']);self.assertEqual(result['report']['reward'],-1)
     def test_external_reconciliation(self):
         agent=str(Path(__file__).resolve().parent.parent/'auditlab/agent.py')
         result=run_external([sys.executable,'-I',agent,'reconcile'],config={'interaction':'fx_cutoff'})
