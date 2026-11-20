@@ -15,14 +15,14 @@ import time
 from pathlib import Path
 from .client import AuditEnv
 
-def run_external(command,seed=2026,config=None,timeout=60):
+def run_external(command,seed=2026,config=None,timeout=60,evaluator_command=None):
     if not 0<timeout<=60:raise ValueError('timeout must be >0 and <=60')
     events=[];reason=None
     # No secrets from the authoring process are deliberately inherited.
     allowed={'PATH','SYSTEMROOT','WINDIR','TEMP','TMP','LANG','LC_ALL'}
     child_env={k:v for k,v in os.environ.items() if k.upper() in allowed}
     child_env['PYTHONIOENCODING']='utf-8'
-    with AuditEnv() as env, tempfile.TemporaryDirectory(prefix='auditlab-agent-') as work:
+    with AuditEnv(service_command=evaluator_command) as env, tempfile.TemporaryDirectory(prefix='auditlab-agent-') as work:
         initial,_=env.reset(seed,config,mode='evaluation',timeout=timeout)
         proc=subprocess.Popen(command,cwd=work,env=child_env,stdin=subprocess.PIPE,stdout=subprocess.PIPE,
                               stderr=subprocess.DEVNULL,text=True,encoding='utf-8',bufsize=1,shell=False)

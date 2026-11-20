@@ -12,6 +12,7 @@ from .client import AuditEnv
 from .generator import generate, TYPES, VERSION
 from .policies import run_policy, reconcile
 from .scoring import oracle, score
+from .independent import validate_episode
 
 def dump(path,value):
     path.parent.mkdir(parents=True,exist_ok=True)
@@ -31,6 +32,7 @@ def export_episode(e,path):
 
 def independent_check(e):
     """Reconcile public documents independently of causal truth construction."""
+    validate_episode(e)
     clean=e['provenance']['clean']
     assert sum(x['debit_minor']-x['credit_minor'] for x in clean['ledger'])==0
     assert sum(x['debit_minor']-x['credit_minor'] for x in e['tables']['ledger'])==0

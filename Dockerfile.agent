@@ -1,0 +1,9 @@
+FROM python:3.11.11-slim
+WORKDIR /work
+COPY sandbox/agent_init.py /app/auditlab/__init__.py
+COPY auditlab/agent.py auditlab/policies.py auditlab/money.py /app/auditlab/
+COPY sandbox/probe_agent.py /app/probe_agent.py
+ENV PYTHONDONTWRITEBYTECODE=1 PYTHONUNBUFFERED=1
+USER 65532:65532
+ENTRYPOINT ["python", "-I", "-u"]
+CMD ["/app/auditlab/agent.py", "reconcile"]

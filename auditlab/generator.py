@@ -3,13 +3,10 @@ import hashlib
 import json
 import random
 from datetime import datetime, timedelta, timezone
-from decimal import Decimal, ROUND_HALF_EVEN
+from decimal import Decimal
+from .money import TYPES, convert
 
-TYPES = ('duplicate_invoice', 'payment_allocation', 'fx_conversion', 'period_cutoff')
 VERSION = '1.1.0'
-
-def convert(amount, rate, source_exponent=2, target_exponent=2):
-    return int((Decimal(amount) * Decimal(rate) * Decimal(10)**(target_exponent-source_exponent)).quantize(Decimal('1'), rounding=ROUND_HALF_EVEN))
 
 def generate(seed, config=None):
     c = {'invoices': 60, 'errors': dict.fromkeys(TYPES, 1), 'interaction': None,

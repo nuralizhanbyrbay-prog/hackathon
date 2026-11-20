@@ -8,8 +8,8 @@ class AuditEnv:
     Evaluation reports must remain with the runner until the complete benchmark ends.
     This is a process boundary, not a sandbox for hostile Python programs.
     """
-    def __init__(self):
-        self._proc=subprocess.Popen([sys.executable,'-m','auditlab.service'],stdin=subprocess.PIPE,
+    def __init__(self,service_command=None):
+        self._proc=subprocess.Popen(service_command or [sys.executable,'-m','auditlab.service'],stdin=subprocess.PIPE,
                                     stdout=subprocess.PIPE,stderr=subprocess.DEVNULL,text=True,encoding='utf-8')
     def _rpc(self,request):
         self._proc.stdin.write(json.dumps(request)+'\n');self._proc.stdin.flush()

@@ -9,7 +9,35 @@ jobs:
         with:
           python-version: '3.11'
       - run: python -m auditlab.verify
+      - run: python -m auditlab.heldout
       - uses: actions/upload-artifact@v4
         with:
           name: auditlab-results
           path: artifacts/
+  containers:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Build private evaluator and public agent images
+        run: |
+          docker build -t auditlab-evaluator:1.1 .
+          docker build -f Dockerfile.agent -t auditlab-agent:1.1 .
+      - name: Verify offline under the hackathon resource limits
+        run: docker run --name auditlab-container-check --network none --cpus 2 --memory 4g --pids-limit 128 auditlab-evaluator:1.1
+      - name: Copy measured container results
+        run: docker cp auditlab-container-check:/app/artifacts container-results
+      - name: Test two-container isolation and adversarial probes
+        run: python -m auditlab.sandbox --self-test
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: container-isolation-results
+          path: |
+            container-results/
+            artifacts/sandbox-checks.json
+      - name: Remove only the owned verification container
+        if: always()
+        run: docker rm -f auditlab-container-check || true

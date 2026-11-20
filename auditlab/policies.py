@@ -1,7 +1,7 @@
 """Policies use public tables; the oracle is separately evaluator-only."""
 import random
 from datetime import datetime
-from .generator import TYPES, convert
+from .money import TYPES, convert
 
 def reconcile(tables,manifest):
     findings=[];ledger=tables['ledger'];policy=tables['policy'][0]
